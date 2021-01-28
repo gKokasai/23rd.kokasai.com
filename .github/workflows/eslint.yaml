@@ -1,4 +1,4 @@
-name: ci eslint
+name: ci prettier
 
 on:
   push:
@@ -22,7 +22,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - name: yarn install, eslint
+      - name: yarn install, prettier
         run: |
           yarn install
-          yarn eslint
+          yarn prettier
