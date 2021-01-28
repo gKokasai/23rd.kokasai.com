@@ -1,13 +1,12 @@
 import path from 'path';
-import { Configuration } from 'webpack';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
 
-const config: Configuration = {
+const config = {
     context: path.join(__dirname, 'src'),
     entry: './index.tsx',
     output: {
         path: path.join(__dirname, 'build'),
         filename: 'bundle.js',
-        publicPath: '/assets',
     },
     module: {
         rules: [
@@ -27,6 +26,12 @@ const config: Configuration = {
         open: true,
         port: 3000,
     },
+    plugins: 
+        new HtmlWebpackPlugin({
+            template: './static/index.html'
+            }
+        )
+    
 };
 
 export default config;
