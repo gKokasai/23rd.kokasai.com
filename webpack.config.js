@@ -26,6 +26,9 @@ module.exports = {
         include: path.resolve(__dirname, "src"),
         exclude: /node_modules/,
       },
+      {
+        test: 
+      }
     ],
   },
 
