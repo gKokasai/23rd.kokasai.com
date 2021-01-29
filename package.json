@@ -13,10 +13,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "css-loader": "^5.0.1",
     "eslint": "^7.18.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "scss-loader": "^0.0.1"
   },
   "devDependencies": {
     "@types/react-dom": "^17.0.0",
