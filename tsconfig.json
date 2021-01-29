@@ -1,20 +1,18 @@
 {
-    "compilerOptions": {
-        "sourceMap": true,
-        "baseUrl": "./",
-        "target": "es5",
-        "strict": true,
-        "module": "commonjs",
-        "jsx": "react",
-        "lib": ["ES5", "ES6", "DOM"],
-        "allowSyntheticDefaultImports": true,
-        "esModuleInterop": true,
-        "isolatedModules": true,
-        "noImplicitReturns": true,
-        "noUnusedLocals": true,
-        "noUnusedParameters": true,
-    },
-    "exclude": [
-        "node_modules"
-    ]
+  "compilerOptions": {
+    "sourceMap": true,
+    "baseUrl": "./",
+    "target": "es5",
+    "strict": true,
+    "module": "commonjs",
+    "jsx": "react",
+    "lib": ["ES5", "ES6", "DOM"],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  },
+  "exclude": ["node_modules"]
 }
