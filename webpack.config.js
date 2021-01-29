@@ -26,6 +26,25 @@ module.exports = {
         include: path.resolve(__dirname, "src"),
         exclude: /node_modules/,
       },
+      {
+        test: /\.scss/,
+        use: [
+          "style-loader",
+          {
+            loader: "css-loader",
+            options: { url: false }
+          },
+          {
+            loader:"sass-loader",
+            options: {
+              implementaons: require('sass'),
+              sassOptions: {
+                outputStyle: 'compressed',
+              },
+            }
+          }
+        ]
+      }
     ],
   },
 
