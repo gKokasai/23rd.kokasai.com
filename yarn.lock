@@ -822,6 +822,11 @@ cliui@^5.0.0:
     strip-ansi "^5.2.0"
     wrap-ansi "^5.1.0"
 
+cname-webpack-plugin@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/cname-webpack-plugin/-/cname-webpack-plugin-3.0.0.tgz#07260b0774cbd714b963f71b8f45886893098107"
+  integrity sha512-kL+C2Xwiev19vE5vOpVsUGelnGiebJtap6u9s29IsQ2cEoLcLmSeAiWI0aVsUTRzgOjnLuEmTu+MbqMDKVIjyw==
+
 collection-visit@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/collection-visit/-/collection-visit-1.0.0.tgz#4bc0373c164bc3291b4d368c829cf1a80a59dca0"
