@@ -1,37 +1,36 @@
-import path from 'path';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-const config = {
-    context: path.join(__dirname, 'src'),
-    entry: './index.tsx',
-    output: {
-        path: path.join(__dirname, 'build'),
-        filename: 'bundle.js',
-    },
-    module: {
-        rules: [
-            {
-                test: /\.tsx?$/,
-                use: 'ts-loader',
-            },
-        ],
-    },
-    mode: "development",
-    resolve: {
-        extensions: ['.ts', '.tsx', '.js', '.jsx'],
-    },
-    devtool: "inline-source-map",
-    devServer: {
-        contentBase: path.join(__dirname, 'static'),
-        open: true,
-        port: 3000,
-    },
-    plugins: 
-        new HtmlWebpackPlugin({
-            template: './static/index.html'
-            }
-        )
-    
+module.exports = {
+  mode: "development",
+
+  entry: "./src/index.tsx",
+
+  output: {
+    path: path.resolve(__dirname, "dist"),
+    filename: "index.js",
+  },
+
+  resolve: {
+    extensions: [".js", ".json", ".ts", ".tsx"],
+  },
+
+  devtool: "source-map",
+
+  module: {
+    rules: [
+      {
+        test: /\.tsx?$/,
+        use: "ts-loader",
+        include: path.resolve(__dirname, "src"),
+        exclude: /node_modules/,
+      },
+    ],
+  },
+
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./static/index.html",
+    }),
+  ],
 };
-
-export default config;
