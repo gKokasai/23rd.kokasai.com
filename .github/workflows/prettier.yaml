@@ -25,4 +25,4 @@ jobs:
       - name: yarn install, prettier
         run: |
           yarn install
-          yarn prettier
+          yarn prettier --write src/*
