@@ -22,10 +22,10 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - name: yarn install, prettier
-        run: |
-          yarn install
-          yarn prettier --write src/*
-      - uses: stefanzweifel/git-auto-commit-action@v3.0.0
+      - name: Prettify code
+        uses: creyD/prettier_action@v3.1
         with:
-          commit_message: 'prettier: Apply Prettier Change'
+          prettier_options: --write **/*.{js,md}
+          commit_message: 'prettier: Prettierを実行'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
