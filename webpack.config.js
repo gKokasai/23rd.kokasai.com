@@ -10,6 +10,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "index.js",
+    publicPath: "/"
   },
 
   resolve: {
@@ -26,9 +27,31 @@ module.exports = {
         include: path.resolve(__dirname, "src"),
         exclude: /node_modules/,
       },
+      {
+        test: /\.scss/,
+        use: [
+          "style-loader",
+          {
+            loader: "css-loader",
+            options: { url: false }
+          },
+          {
+            loader:"sass-loader",
+            options: {
+              implementaons: require('sass'),
+              sassOptions: {
+                outputStyle: 'compressed',
+              },
+            }
+          }
+        ]
+      }
     ],
   },
-
+  devServer: {
+    historyApiFallback: true,
+  },
+  
   plugins: [
     new HtmlWebpackPlugin({
       template: "./static/index.html",

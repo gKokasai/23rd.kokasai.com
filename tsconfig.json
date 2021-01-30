@@ -12,7 +12,8 @@
     "isolatedModules": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
-    "noUnusedParameters": true
+    "noUnusedParameters": true,
+    "noImplicitAny": false,
   },
   "exclude": ["node_modules"]
 }
