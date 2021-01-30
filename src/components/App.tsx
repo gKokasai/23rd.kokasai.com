@@ -13,15 +13,15 @@ const App: FC = (): JSX.Element => {
   return (
     <div className="app">
       <Router>
-      <div>
-            <Header/>
-            <Switch>
-                <Route exact path="/" component={Home}/>
-                <Route path="/project" component={Project}/>
-                <Route path="/access" component={Access}/>
-                <Route path="/busInfo" component={BusInfo}/>
-                <Route path="/forCumpus" component={ForCumpus}/>
-            </Switch>
+        <div>
+          <Header />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/project" component={Project} />
+            <Route path="/access" component={Access} />
+            <Route path="/busInfo" component={BusInfo} />
+            <Route path="/forCumpus" component={ForCumpus} />
+          </Switch>
         </div>
       </Router>
     </div>
