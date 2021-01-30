@@ -46,7 +46,7 @@ const ForCumpus: FC = (): JSX.Element => {
         <form onSubmit={() => console.log(inputEmail, inputPassWord)}>
             <input type="text" onChange={handleEmailForm}/>
             <input type="text" onChange={handlePassWordForm}/>
-            <Link to="/ForCumpus">
+            <Link to="/account">
                 <button onClick={() => login()}>Login</button>
             </Link>
         </form>
