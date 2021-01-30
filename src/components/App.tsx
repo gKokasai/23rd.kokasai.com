@@ -21,6 +21,7 @@ const App: FC = (): JSX.Element => {
             <Route path="/access" component={Access} />
             <Route path="/busInfo" component={BusInfo} />
             <Route path="/forCumpus" component={ForCumpus} />
+
           </Switch>
         </div>
       </Router>
