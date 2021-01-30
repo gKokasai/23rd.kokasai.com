@@ -14,6 +14,7 @@ const Header: FC = (): JSX.Element => {
       <Link to="/busInfo">バス情報</Link>
       <br />
       <Link to="/login">学内向け</Link>
+
     </header>
   );
 };
