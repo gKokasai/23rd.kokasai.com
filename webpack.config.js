@@ -52,7 +52,8 @@ module.exports = {
     historyApiFallback: true,
     proxy: {
       '/login': {
-        target: 'https://api.kokasai.com'
+        target: 'https://api.kokasai.com',
+        changeOrigin: true,
       }
     }
   },
