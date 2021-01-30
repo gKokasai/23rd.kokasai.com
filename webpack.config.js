@@ -10,6 +10,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "index.js",
+    publicPath: "/"
   },
 
   resolve: {
@@ -47,7 +48,10 @@ module.exports = {
       }
     ],
   },
-
+  devServer: {
+    historyApiFallback: true,
+  },
+  
   plugins: [
     new HtmlWebpackPlugin({
       template: "./static/index.html",
