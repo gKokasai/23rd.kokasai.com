@@ -6,9 +6,15 @@ const Header: FC = (): JSX.Element => {
   return (
     <header>
         <div>工華祭</div>
-        <Link to="/">Home</Link>
+        <Link to="/">トップ</Link>
         <br/>
-        <Link to="/project">Project</Link>
+        <Link to="/project">企画</Link>
+        <br/>
+        <Link to="/access">アクセス</Link>
+        <br/>
+        <Link to="/bus">バス情報</Link>
+        <br/>
+        <Link to="/login">学内向け</Link>
     </header>
   );
 };
