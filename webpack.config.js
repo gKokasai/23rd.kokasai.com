@@ -50,6 +50,11 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
+    proxy: {
+      '/login': {
+        target: 'https://api.kokasai.com'
+      }
+    }
   },
   
   plugins: [
