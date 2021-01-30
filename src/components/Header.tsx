@@ -12,7 +12,7 @@ const Header: FC = (): JSX.Element => {
         <br/>
         <Link to="/access">アクセス</Link>
         <br/>
-        <Link to="/bus">バス情報</Link>
+        <Link to="/busInfo">バス情報</Link>
         <br/>
         <Link to="/login">学内向け</Link>
     </header>
