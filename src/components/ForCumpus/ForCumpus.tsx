@@ -1,10 +1,8 @@
 import React, { useState, FC } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import { Base64 } from "js-base64";
 
 const ForCumpus: FC = (): JSX.Element => {
-    const apiUrl: string = "https://api.kokasai.com"
 
     const [inputEmail, setInputEmail] = useState(""); 
     const handleEmailForm = (event: React.ChangeEvent<HTMLInputElement>): void => {
@@ -17,26 +15,16 @@ const ForCumpus: FC = (): JSX.Element => {
         setInputPassWord(event.target.value);
     }
 
-    const encodeToBase64: any = (email: any, passWord: any) => {
-        return (Base64.encode(email) + ":" + Base64.encode(passWord));
-    }
-
-    const createHeader: any = () => {
-        const emailAndPassword: string = encodeToBase64(inputEmail, inputPassWord);
-        const headers = {
-            "Authorization": `Basic ${emailAndPassword}`
-        }
-        return headers;
-    }
 
     const login = () => {
-        const loginEndPointUrl: string = apiUrl + "/login"
-        const header = createHeader();
-        console.log(header);
+        const loginEndPointUrl: string = "/login"
         axios
-            .post(loginEndPointUrl, {
-                headers: header
-            })
+            .post(loginEndPointUrl,
+                 {
+                auth: {
+                    username: inputEmail,
+                    password: inputPassWord
+            }})
             .then((res)=>{
                 console.log(res);
             })
