@@ -8,6 +8,7 @@ const ForCumpus: FC = (): JSX.Element => {
 
     const [inputEmail, setInputEmail] = useState(""); 
     const handleEmailForm = (event: React.ChangeEvent<HTMLInputElement>): void => {
+        console.log(event.target.value)
         setInputEmail(event.target.value);
     };
 
@@ -31,21 +32,25 @@ const ForCumpus: FC = (): JSX.Element => {
     const login = () => {
         const loginEndPointUrl: string = apiUrl + "/login"
         const header = createHeader();
+        console.log(header);
         axios
-            .get(loginEndPointUrl, {
+            .post(loginEndPointUrl, {
                 headers: header
             })
             .then((res)=>{
                 console.log(res);
             })
+            .catch((error)=>{
+                console.log(error);
+            })
         
     }
     return(
         <form onSubmit={() => console.log(inputEmail, inputPassWord)}>
-            <input type="text" onChange={() => handleEmailForm}/>
-            <input type="text" onChange={() => handlePassWordForm}/>
+            <input type="text" onChange={handleEmailForm}/>
+            <input type="text" onChange={handlePassWordForm}/>
             <Link to="/ForCumpus">
-                <button onClick={() => login}>Login</button>
+                <button onClick={() => login()}>Login</button>
             </Link>
         </form>
     );
