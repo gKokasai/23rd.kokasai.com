@@ -11,7 +11,7 @@ on:
 jobs:
   build:
     name: build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.0.4
     steps:
       - uses: actions/checkout@v1 
       - name: yarn install
