@@ -5,21 +5,22 @@ module.exports = {
   },
   extends: [
     'plugin:react/recommended',
+    // Airbnbが提供する共有設定。広く使われている
     'airbnb',
+    // 各プラグイン推奨共有設定
     'airbnb/hooks',
     'plugin:import/errors',
     'plugin:import/warnings',
     'plugin:import/typescript',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requring-type-checking',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 12,
+    ecmaVersion: 2020,
     project: './tsconfig.eslint.json',
     sourceType: 'module',
     tsconfigRootDir: __dirname,
