@@ -9,18 +9,8 @@ on:
       - master
 
 jobs:
-  build:
-    name: build
-    runs-on: ubuntu-18.04
+  eslint:
+    runs-on: ubuntu-19.04
     steps:
-      - uses: actions/checkout@v1 
-      - name: yarn install
-        run: yarn install
-      - name: eslint review
-        uses: reviewdog/action-eslint@v1
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          reporter: github-pr-review
-          eslint_flags: './src/*'
-      - name: Run eslint
-        run: yarn lint
+      - uses: actions/checkout@v1
+      - uses: stefanoeb/eslint-action@1.0.2
