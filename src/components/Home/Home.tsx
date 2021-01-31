@@ -1,11 +1,9 @@
-import React, { FC } from "react";
+import React, { FC } from 'react';
 
-const Home: FC = () => {
-  return (
-    <>
-      <h1>ホームです。</h1>
-    </>
-  );
-};
+const Home: FC = () => (
+  <>
+    <h1>ホームです。</h1>
+  </>
+);
 
 export default Home;

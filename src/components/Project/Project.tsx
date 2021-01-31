@@ -1,11 +1,9 @@
-import React, { FC } from "react";
+import React, { FC } from 'react';
 
-const Project: FC = () => {
-  return (
-    <>
-      <h1>企画ページです。</h1>
-    </>
-  );
-};
+const Project: FC = () => (
+  <>
+    <h1>企画ページです。</h1>
+  </>
+);
 
 export default Project;
