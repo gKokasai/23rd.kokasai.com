@@ -10,27 +10,17 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-18.04
-
-    strategy:
-      matrix:
-        node-version: [10]
-
+    name: build
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v1 
+      - name: yarn install
+        run: yarn install
+      - name: eslint review
+        uses: reviewdog/action-eslint@v1
         with:
-          node-version: ${{ matrix.node-version }}
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          ref: ${{ github.head_ref }}
-          fetch-depth: 0
-      - name: Prettify code
-        uses: creyD/prettier_action@v3.1
-        with:
-          prettier_options: --write src/*
-          commit_message: 'prettier: Prettierを実行'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          reporter: github-pr-review
+          eslint_flags: './src/*'
+      - name: Run eslint
+        run: yarn lint
