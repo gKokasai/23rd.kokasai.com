@@ -9,28 +9,8 @@ on:
       - master
 
 jobs:
-  build:
+  eslint:
     runs-on: ubuntu-18.04
-
-    strategy:
-      matrix:
-        node-version: [10]
-
     steps:
       - uses: actions/checkout@v1
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          ref: ${{ github.head_ref }}
-          fetch-depth: 0
-      - name: Prettify code
-        uses: creyD/prettier_action@v3.1
-        with:
-          prettier_options: --write src/*
-          commit_message: 'prettier: Prettierを実行'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: stefanoeb/eslint-action@1.0.2

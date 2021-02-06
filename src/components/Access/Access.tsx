@@ -1,10 +1,8 @@
-import React, { FC } from "react";
+import React, { FC } from 'react';
 
-const Access: FC = (): JSX.Element => {
-  return (
-    <>
-      <div>アクセスのページです。</div>
-    </>
-  );
-};
+const Access: FC = (): JSX.Element => (
+  <>
+    <div>アクセスのページです。</div>
+  </>
+);
 export default Access;
