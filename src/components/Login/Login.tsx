@@ -42,15 +42,11 @@ const Login: FC<Props> = (props): JSX.Element => {
       .post(loginEndPointUrl, null, {
         headers: header,
       })
-      .then((res) => {
-        console.log(res);
+      .then(() => {
         props.setIsLoggedIn(true);
         props.setUser(inputEmail);
         setInputEmail('');
         setInputPassWord('');
-      })
-      .catch((error) => {
-        console.log(error);
       });
   };
   return (
