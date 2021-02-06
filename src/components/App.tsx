@@ -26,7 +26,7 @@ const App: FC = (): JSX.Element => {
             <Route path="/busInfo" component={BusInfo} />
             <Route path="/login" render={() => <Login setIsLoggedIn={setIsLoggedIn} setUser={setUser} />} />
             <Route path="/account" render={() => <Account user={user} isLoggedIn={isLoggedIn} />} />
-            <Route path="/auth:token" render={() => <Auth />} />
+            <Route path="/auth" render={() => <Auth />} />
           </Switch>
         </div>
       </Router>
