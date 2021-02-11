@@ -2,14 +2,14 @@ import React, { useState, FC } from 'react';
 import {
   BrowserRouter as Router, Switch, Route,
 } from 'react-router-dom';
-import Home from './Home/Home';
-import Project from './Project/Project';
-import Access from './Access/Access';
-import BusInfo from './BusInfo/BusInfo';
+import Home from './pages/Home';
+import Project from './pages/Project';
+import Access from './pages/Access';
+import BusInfo from './pages/BusInfo';
 import Header from './common/Header';
-import Login from './Login/Login';
-import Account from './Account/Account';
-import Auth from './Auth/Auth';
+import Login from './pages/Login';
+import Account from './pages/Account';
+import Auth from './pages/Auth';
 
 const App: FC = (): JSX.Element => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
