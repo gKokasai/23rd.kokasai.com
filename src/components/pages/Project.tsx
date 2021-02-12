@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 
 const Project: FC = () => (
   <>
-    <h1>企画ページです。</h1>
+    <div>企画です</div>
   </>
 );
 
