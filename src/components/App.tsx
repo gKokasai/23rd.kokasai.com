@@ -10,6 +10,7 @@ import Header from './common/Header';
 import Login from './pages/Login';
 import Account from './pages/Account';
 import Auth from './pages/Auth';
+import './App.scss';
 
 const App: FC = (): JSX.Element => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
