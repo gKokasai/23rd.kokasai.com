@@ -6,7 +6,7 @@ import { Base64 } from 'js-base64';
 type Props = {
   setIsLoggedIn: React.Dispatch<React.SetStateAction<boolean>>;
   setUser: React.Dispatch<React.SetStateAction<string>>;
-}
+};
 
 const Login: FC<Props> = (props): JSX.Element => {
   const [inputEmail, setInputEmail] = useState('');
@@ -25,10 +25,10 @@ const Login: FC<Props> = (props): JSX.Element => {
 
   const encodeToBase64 = (email: string, passWord: string): string => Base64.encode(`${email}:${passWord}`);
 
-  const createHeader = (): {[key: string]: string} => {
+  const createHeader = (): { [key: string]: string } => {
     const emailAndPassword: string = encodeToBase64(inputEmail, inputPassWord);
     const headers: {
-      [key: string]: string
+      [key: string]: string;
     } = {
       Authorization: `Basic ${emailAndPassword}`,
     };
@@ -50,11 +50,13 @@ const Login: FC<Props> = (props): JSX.Element => {
       });
   };
   return (
-    <form>
+    <form className="login">
       <input type="text" onChange={handleEmailForm} />
       <input type="text" onChange={handlePassWordForm} />
       <Link to="/account">
-        <button type="button" onClick={() => login()}>Login</button>
+        <button type="button" onClick={() => login()}>
+          Login
+        </button>
       </Link>
     </form>
   );
