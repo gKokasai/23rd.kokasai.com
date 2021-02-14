@@ -1,7 +1,5 @@
 import React, { useState, FC } from 'react';
-import {
-  BrowserRouter as Router, Switch, Route,
-} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Project from './pages/Project';
 import Access from './pages/Access';
@@ -25,8 +23,16 @@ const App: FC = (): JSX.Element => {
             <Route path="/project" component={Project} />
             <Route path="/access" component={Access} />
             <Route path="/busInfo" component={BusInfo} />
-            <Route path="/login" render={() => <Login setIsLoggedIn={setIsLoggedIn} setUser={setUser} />} />
-            <Route path="/account" render={() => <Account user={user} isLoggedIn={isLoggedIn} />} />
+            <Route
+              path="/login"
+              render={() => (
+                <Login setIsLoggedIn={setIsLoggedIn} setUser={setUser} />
+              )}
+            />
+            <Route
+              path="/account"
+              render={() => <Account user={user} isLoggedIn={isLoggedIn} />}
+            />
             <Route path="/auth" render={() => <Auth />} />
           </Switch>
         </div>
