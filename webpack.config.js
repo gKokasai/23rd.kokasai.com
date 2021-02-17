@@ -50,14 +50,8 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-    proxy: {
-      '/login': {
-        target: 'https://api.kokasai.com',
-        changeOrigin: true,
-      }
-    }
   },
-  
+
   plugins: [
     new HtmlWebpackPlugin({
       template: "./static/index.html",
