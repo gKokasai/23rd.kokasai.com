@@ -1931,7 +1931,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".app {\n  font-family: \"Noto Sans Japanese\";\n}", "",{"version":3,"sources":["webpack://./src/components/App.scss"],"names":[],"mappings":"AAAA;EACE,iCAAiC;AACnC","sourcesContent":[".app {\n  font-family: \"Noto Sans Japanese\";\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".app {\n  font-family: \"Noto Sans Japanese\";\n}\n\n.home,\n.project,\n.busInfo,\n.access,\n.login {\n  margin: 0 auto;\n  width: 80%;\n  max-width: 500px;\n}", "",{"version":3,"sources":["webpack://./src/components/App.scss"],"names":[],"mappings":"AAAA;EACE,iCAAiC;AACnC;;AAEA;;;;;EAKE,cAAc;EACd,UAAU;EACV,gBAAgB;AAClB","sourcesContent":[".app {\n  font-family: \"Noto Sans Japanese\";\n}\n\n.home,\n.project,\n.busInfo,\n.access,\n.login {\n  margin: 0 auto;\n  width: 80%;\n  max-width: 500px;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1958,7 +1958,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".navbar {\n  background-color: #80e464;\n}\n.navbar .navbar-brand {\n  color: #121611;\n}\n.navbar .navbar-brand:hover, .navbar .navbar-brand:focus {\n  color: #f6fbf6;\n}\n.navbar .navbar-text {\n  color: #121611;\n}\n.navbar .navbar-text a {\n  color: #f6fbf6;\n}\n.navbar .navbar-text a:hover, .navbar .navbar-text a:focus {\n  color: #f6fbf6;\n}\n.navbar .navbar-nav .nav-link {\n  color: #121611;\n  border-radius: 0.25rem;\n  margin: 0 0.25em;\n}\n.navbar .navbar-nav .nav-link:not(.disabled):hover, .navbar .navbar-nav .nav-link:not(.disabled):focus {\n  color: #f6fbf6;\n}\n.navbar .navbar-nav .dropdown-menu {\n  background-color: #80e464;\n  border-color: #e07f2d;\n}\n.navbar .navbar-nav .dropdown-menu .dropdown-item {\n  color: #121611;\n}\n.navbar .navbar-nav .dropdown-menu .dropdown-item:hover, .navbar .navbar-nav .dropdown-menu .dropdown-item:focus, .navbar .navbar-nav .dropdown-menu .dropdown-item.active {\n  color: #f6fbf6;\n  background-color: #e07f2d;\n}\n.navbar .navbar-nav .dropdown-menu .dropdown-divider {\n  border-top-color: #e07f2d;\n}\n.navbar .navbar-nav .nav-item.active .nav-link, .navbar .navbar-nav .nav-item.active .nav-link:hover, .navbar .navbar-nav .nav-item.active .nav-link:focus, .navbar .navbar-nav .nav-item.show .nav-link, .navbar .navbar-nav .nav-item.show .nav-link:hover, .navbar .navbar-nav .nav-item.show .nav-link:focus {\n  color: #f6fbf6;\n  background-color: #e07f2d;\n}\n.navbar .navbar-toggler {\n  border-color: #e07f2d;\n}\n.navbar .navbar-toggler:hover, .navbar .navbar-toggler:focus {\n  background-color: #e07f2d;\n}\n.navbar .navbar-toggler .navbar-toggler-icon {\n  background-image: url(\"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30'xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(51, 51, 51, 1)'stroke-width='3' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E\");\n}\n.navbar .navbar-collapse,\n.navbar .navbar-form {\n  border-color: #121611;\n}\n.navbar .navbar-link {\n  color: #121611;\n}\n.navbar .navbar-link:hover {\n  color: #f6fbf6;\n}\n\n@media (max-width: 575px) {\n  .navbar-expend-sm .navbar-nav .show .dropdown-menu .dropdown-item {\n    color: #121611;\n  }\n  .navbar-expend-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover, .navbar-expend-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {\n    color: #f6fbf6;\n  }\n  .navbar-expend-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {\n    color: #f6fbf6;\n    background-color: #e07f2d;\n  }\n}\n@media (max-width: 767px) {\n  .navbar-expend-md .navbar-nav .show .dropdown-menu .dropdown-item {\n    color: #121611;\n  }\n  .navbar-expend-md .navbar-nav .show .dropdown-menu .dropdown-item:hover, .navbar-expend-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {\n    color: #f6fbf6;\n  }\n  .navbar-expend-md .navbar-nav .show .dropdown-menu .dropdown-item.active {\n    color: #f6fbf6;\n    background-color: #e07f2d;\n  }\n}\n@media (max-width: 991px) {\n  .navbar-expend-lg .navbar-nav .show .dropdown-menu .dropdown-item {\n    color: #121611;\n  }\n  .navbar-expend-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover, .navbar-expend-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {\n    color: #f6fbf6;\n  }\n  .navbar-expend-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {\n    color: #f6fbf6;\n    background-color: #e07f2d;\n  }\n}\n@media (max-width: 1199px) {\n  .navbar-expend-xl .navbar-nav .show .dropdown-menu .dropdown-item {\n    color: #121611;\n  }\n  .navbar-expend-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover, .navbar-expend-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {\n    color: #f6fbf6;\n  }\n  .navbar-expend-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {\n    color: #f6fbf6;\n    background-color: #e07f2d;\n  }\n}\n.navbar-expend .navbar-nav .show .dropdown-menu .dropdown-item {\n  color: #121611;\n}\n.navbar-expend .navbar-nav .show .dropdown-menu .dropdown-item:hover, .navbar-expend .navbar-nav .show .dropdown-menu .dropdown-item:focus {\n  color: #f6fbf6;\n}\n.navbar-expend .navbar-nav .show .dropdown-menu .dropdown-item.active {\n  color: #f6fbf6;\n  background-color: #e07f2d;\n}", "",{"version":3,"sources":["webpack://./src/components/common/Header.scss"],"names":[],"mappings":"AAAA;EACE,yBAAyB;AAC3B;AACA;EACE,cAAc;AAChB;AACA;EACE,cAAc;AAChB;AACA;EACE,cAAc;AAChB;AACA;EACE,cAAc;AAChB;AACA;EACE,cAAc;AAChB;AACA;EACE,cAAc;EACd,sBAAsB;EACtB,gBAAgB;AAClB;AACA;EACE,cAAc;AAChB;AACA;EACE,yBAAyB;EACzB,qBAAqB;AACvB;AACA;EACE,cAAc;AAChB;AACA;EACE,cAAc;EACd,yBAAyB;AAC3B;AACA;EACE,yBAAyB;AAC3B;AACA;EACE,cAAc;EACd,yBAAyB;AAC3B;AACA;EACE,qBAAqB;AACvB;AACA;EACE,yBAAyB;AAC3B;AACA;EACE,6OAA6O;AAC/O;AACA;;EAEE,qBAAqB;AACvB;AACA;EACE,cAAc;AAChB;AACA;EACE,cAAc;AAChB;;AAEA;EACE;IACE,cAAc;EAChB;EACA;IACE,cAAc;EAChB;EACA;IACE,cAAc;IACd,yBAAyB;EAC3B;AACF;AACA;EACE;IACE,cAAc;EAChB;EACA;IACE,cAAc;EAChB;EACA;IACE,cAAc;IACd,yBAAyB;EAC3B;AACF;AACA;EACE;IACE,cAAc;EAChB;EACA;IACE,cAAc;EAChB;EACA;IACE,cAAc;IACd,yBAAyB;EAC3B;AACF;AACA;EACE;IACE,cAAc;EAChB;EACA;IACE,cAAc;EAChB;EACA;IACE,cAAc;IACd,yBAAyB;EAC3B;AACF;AACA;EACE,cAAc;AAChB;AACA;EACE,cAAc;AAChB;AACA;EACE,cAAc;EACd,yBAAyB;AAC3B","sourcesContent":[".navbar {\n  background-color: #80e464;\n}\n.navbar .navbar-brand {\n  color: #121611;\n}\n.navbar .navbar-brand:hover, .navbar .navbar-brand:focus {\n  color: #f6fbf6;\n}\n.navbar .navbar-text {\n  color: #121611;\n}\n.navbar .navbar-text a {\n  color: #f6fbf6;\n}\n.navbar .navbar-text a:hover, .navbar .navbar-text a:focus {\n  color: #f6fbf6;\n}\n.navbar .navbar-nav .nav-link {\n  color: #121611;\n  border-radius: 0.25rem;\n  margin: 0 0.25em;\n}\n.navbar .navbar-nav .nav-link:not(.disabled):hover, .navbar .navbar-nav .nav-link:not(.disabled):focus {\n  color: #f6fbf6;\n}\n.navbar .navbar-nav .dropdown-menu {\n  background-color: #80e464;\n  border-color: #e07f2d;\n}\n.navbar .navbar-nav .dropdown-menu .dropdown-item {\n  color: #121611;\n}\n.navbar .navbar-nav .dropdown-menu .dropdown-item:hover, .navbar .navbar-nav .dropdown-menu .dropdown-item:focus, .navbar .navbar-nav .dropdown-menu .dropdown-item.active {\n  color: #f6fbf6;\n  background-color: #e07f2d;\n}\n.navbar .navbar-nav .dropdown-menu .dropdown-divider {\n  border-top-color: #e07f2d;\n}\n.navbar .navbar-nav .nav-item.active .nav-link, .navbar .navbar-nav .nav-item.active .nav-link:hover, .navbar .navbar-nav .nav-item.active .nav-link:focus, .navbar .navbar-nav .nav-item.show .nav-link, .navbar .navbar-nav .nav-item.show .nav-link:hover, .navbar .navbar-nav .nav-item.show .nav-link:focus {\n  color: #f6fbf6;\n  background-color: #e07f2d;\n}\n.navbar .navbar-toggler {\n  border-color: #e07f2d;\n}\n.navbar .navbar-toggler:hover, .navbar .navbar-toggler:focus {\n  background-color: #e07f2d;\n}\n.navbar .navbar-toggler .navbar-toggler-icon {\n  background-image: url(\"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30'xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(51, 51, 51, 1)'stroke-width='3' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E\");\n}\n.navbar .navbar-collapse,\n.navbar .navbar-form {\n  border-color: #121611;\n}\n.navbar .navbar-link {\n  color: #121611;\n}\n.navbar .navbar-link:hover {\n  color: #f6fbf6;\n}\n\n@media (max-width: 575px) {\n  .navbar-expend-sm .navbar-nav .show .dropdown-menu .dropdown-item {\n    color: #121611;\n  }\n  .navbar-expend-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover, .navbar-expend-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {\n    color: #f6fbf6;\n  }\n  .navbar-expend-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {\n    color: #f6fbf6;\n    background-color: #e07f2d;\n  }\n}\n@media (max-width: 767px) {\n  .navbar-expend-md .navbar-nav .show .dropdown-menu .dropdown-item {\n    color: #121611;\n  }\n  .navbar-expend-md .navbar-nav .show .dropdown-menu .dropdown-item:hover, .navbar-expend-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {\n    color: #f6fbf6;\n  }\n  .navbar-expend-md .navbar-nav .show .dropdown-menu .dropdown-item.active {\n    color: #f6fbf6;\n    background-color: #e07f2d;\n  }\n}\n@media (max-width: 991px) {\n  .navbar-expend-lg .navbar-nav .show .dropdown-menu .dropdown-item {\n    color: #121611;\n  }\n  .navbar-expend-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover, .navbar-expend-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {\n    color: #f6fbf6;\n  }\n  .navbar-expend-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {\n    color: #f6fbf6;\n    background-color: #e07f2d;\n  }\n}\n@media (max-width: 1199px) {\n  .navbar-expend-xl .navbar-nav .show .dropdown-menu .dropdown-item {\n    color: #121611;\n  }\n  .navbar-expend-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover, .navbar-expend-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {\n    color: #f6fbf6;\n  }\n  .navbar-expend-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {\n    color: #f6fbf6;\n    background-color: #e07f2d;\n  }\n}\n.navbar-expend .navbar-nav .show .dropdown-menu .dropdown-item {\n  color: #121611;\n}\n.navbar-expend .navbar-nav .show .dropdown-menu .dropdown-item:hover, .navbar-expend .navbar-nav .show .dropdown-menu .dropdown-item:focus {\n  color: #f6fbf6;\n}\n.navbar-expend .navbar-nav .show .dropdown-menu .dropdown-item.active {\n  color: #f6fbf6;\n  background-color: #e07f2d;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".navbar {\n  background-color: #80e464;\n}\n.navbar .navbar-brand {\n  color: #121611;\n}\n.navbar .navbar-brand:hover, .navbar .navbar-brand:focus {\n  color: #f6fbf6;\n}\n.navbar .navbar-text {\n  color: #121611;\n}\n.navbar .navbar-text a {\n  color: #f6fbf6;\n}\n.navbar .navbar-text a:hover, .navbar .navbar-text a:focus {\n  color: #f6fbf6;\n}\n.navbar .navbar-nav .nav-link {\n  color: #121611;\n  border-radius: 0.25rem;\n  margin: 0 0.25em;\n}\n.navbar .navbar-nav .nav-link:not(.disabled):hover, .navbar .navbar-nav .nav-link:not(.disabled):focus {\n  color: #f6fbf6;\n}\n.navbar .navbar-nav .dropdown-menu {\n  background-color: #80e464;\n  border-color: #e07f2d;\n}\n.navbar .navbar-nav .dropdown-menu .dropdown-item {\n  color: #121611;\n}\n.navbar .navbar-nav .dropdown-menu .dropdown-item:hover, .navbar .navbar-nav .dropdown-menu .dropdown-item:focus, .navbar .navbar-nav .dropdown-menu .dropdown-item.active {\n  color: #f6fbf6;\n  background-color: #e07f2d;\n}\n.navbar .navbar-nav .dropdown-menu .dropdown-divider {\n  border-top-color: #e07f2d;\n}\n.navbar .navbar-nav .nav-item.active .nav-link,\n.navbar .navbar-nav .nav-item.active .nav-link:hover,\n.navbar .navbar-nav .nav-item.active .nav-link:focus,\n.navbar .navbar-nav .nav-item.show .nav-link,\n.navbar .navbar-nav .nav-item.show .nav-link:hover,\n.navbar .navbar-nav .nav-item.show .nav-link:focus {\n  color: #f6fbf6;\n  background-color: #e07f2d;\n}\n.navbar .navbar-toggler {\n  border-color: #e07f2d;\n}\n.navbar .navbar-toggler:hover, .navbar .navbar-toggler:focus {\n  background-color: #e07f2d;\n}\n.navbar .navbar-toggler .navbar-toggler-icon {\n  background-image: url(\"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30'xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(51, 51, 51, 1)'stroke-width='3' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E\");\n}\n.navbar .navbar-collapse,\n.navbar .navbar-form {\n  border-color: #121611;\n}\n.navbar .navbar-link {\n  color: #121611;\n}\n.navbar .navbar-link:hover {\n  color: #f6fbf6;\n}\n\n@media (max-width: 575px) {\n  .navbar-expend-sm .navbar-nav .show .dropdown-menu .dropdown-item {\n    color: #121611;\n  }\n  .navbar-expend-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover, .navbar-expend-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {\n    color: #f6fbf6;\n  }\n  .navbar-expend-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {\n    color: #f6fbf6;\n    background-color: #e07f2d;\n  }\n}\n@media (max-width: 767px) {\n  .navbar-expend-md .navbar-nav .show .dropdown-menu .dropdown-item {\n    color: #121611;\n  }\n  .navbar-expend-md .navbar-nav .show .dropdown-menu .dropdown-item:hover, .navbar-expend-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {\n    color: #f6fbf6;\n  }\n  .navbar-expend-md .navbar-nav .show .dropdown-menu .dropdown-item.active {\n    color: #f6fbf6;\n    background-color: #e07f2d;\n  }\n}\n@media (max-width: 991px) {\n  .navbar-expend-lg .navbar-nav .show .dropdown-menu .dropdown-item {\n    color: #121611;\n  }\n  .navbar-expend-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover, .navbar-expend-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {\n    color: #f6fbf6;\n  }\n  .navbar-expend-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {\n    color: #f6fbf6;\n    background-color: #e07f2d;\n  }\n}\n@media (max-width: 1199px) {\n  .navbar-expend-xl .navbar-nav .show .dropdown-menu .dropdown-item {\n    color: #121611;\n  }\n  .navbar-expend-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover, .navbar-expend-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {\n    color: #f6fbf6;\n  }\n  .navbar-expend-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {\n    color: #f6fbf6;\n    background-color: #e07f2d;\n  }\n}\n.navbar-expend .navbar-nav .show .dropdown-menu .dropdown-item {\n  color: #121611;\n}\n.navbar-expend .navbar-nav .show .dropdown-menu .dropdown-item:hover, .navbar-expend .navbar-nav .show .dropdown-menu .dropdown-item:focus {\n  color: #f6fbf6;\n}\n.navbar-expend .navbar-nav .show .dropdown-menu .dropdown-item.active {\n  color: #f6fbf6;\n  background-color: #e07f2d;\n}", "",{"version":3,"sources":["webpack://./src/components/common/Header.scss"],"names":[],"mappings":"AAAA;EACE,yBAAyB;AAC3B;AACA;EACE,cAAc;AAChB;AACA;EACE,cAAc;AAChB;AACA;EACE,cAAc;AAChB;AACA;EACE,cAAc;AAChB;AACA;EACE,cAAc;AAChB;AACA;EACE,cAAc;EACd,sBAAsB;EACtB,gBAAgB;AAClB;AACA;EACE,cAAc;AAChB;AACA;EACE,yBAAyB;EACzB,qBAAqB;AACvB;AACA;EACE,cAAc;AAChB;AACA;EACE,cAAc;EACd,yBAAyB;AAC3B;AACA;EACE,yBAAyB;AAC3B;AACA;;;;;;EAME,cAAc;EACd,yBAAyB;AAC3B;AACA;EACE,qBAAqB;AACvB;AACA;EACE,yBAAyB;AAC3B;AACA;EACE,6OAA6O;AAC/O;AACA;;EAEE,qBAAqB;AACvB;AACA;EACE,cAAc;AAChB;AACA;EACE,cAAc;AAChB;;AAEA;EACE;IACE,cAAc;EAChB;EACA;IACE,cAAc;EAChB;EACA;IACE,cAAc;IACd,yBAAyB;EAC3B;AACF;AACA;EACE;IACE,cAAc;EAChB;EACA;IACE,cAAc;EAChB;EACA;IACE,cAAc;IACd,yBAAyB;EAC3B;AACF;AACA;EACE;IACE,cAAc;EAChB;EACA;IACE,cAAc;EAChB;EACA;IACE,cAAc;IACd,yBAAyB;EAC3B;AACF;AACA;EACE;IACE,cAAc;EAChB;EACA;IACE,cAAc;EAChB;EACA;IACE,cAAc;IACd,yBAAyB;EAC3B;AACF;AACA;EACE,cAAc;AAChB;AACA;EACE,cAAc;AAChB;AACA;EACE,cAAc;EACd,yBAAyB;AAC3B","sourcesContent":[".navbar {\n  background-color: #80e464;\n}\n.navbar .navbar-brand {\n  color: #121611;\n}\n.navbar .navbar-brand:hover, .navbar .navbar-brand:focus {\n  color: #f6fbf6;\n}\n.navbar .navbar-text {\n  color: #121611;\n}\n.navbar .navbar-text a {\n  color: #f6fbf6;\n}\n.navbar .navbar-text a:hover, .navbar .navbar-text a:focus {\n  color: #f6fbf6;\n}\n.navbar .navbar-nav .nav-link {\n  color: #121611;\n  border-radius: 0.25rem;\n  margin: 0 0.25em;\n}\n.navbar .navbar-nav .nav-link:not(.disabled):hover, .navbar .navbar-nav .nav-link:not(.disabled):focus {\n  color: #f6fbf6;\n}\n.navbar .navbar-nav .dropdown-menu {\n  background-color: #80e464;\n  border-color: #e07f2d;\n}\n.navbar .navbar-nav .dropdown-menu .dropdown-item {\n  color: #121611;\n}\n.navbar .navbar-nav .dropdown-menu .dropdown-item:hover, .navbar .navbar-nav .dropdown-menu .dropdown-item:focus, .navbar .navbar-nav .dropdown-menu .dropdown-item.active {\n  color: #f6fbf6;\n  background-color: #e07f2d;\n}\n.navbar .navbar-nav .dropdown-menu .dropdown-divider {\n  border-top-color: #e07f2d;\n}\n.navbar .navbar-nav .nav-item.active .nav-link,\n.navbar .navbar-nav .nav-item.active .nav-link:hover,\n.navbar .navbar-nav .nav-item.active .nav-link:focus,\n.navbar .navbar-nav .nav-item.show .nav-link,\n.navbar .navbar-nav .nav-item.show .nav-link:hover,\n.navbar .navbar-nav .nav-item.show .nav-link:focus {\n  color: #f6fbf6;\n  background-color: #e07f2d;\n}\n.navbar .navbar-toggler {\n  border-color: #e07f2d;\n}\n.navbar .navbar-toggler:hover, .navbar .navbar-toggler:focus {\n  background-color: #e07f2d;\n}\n.navbar .navbar-toggler .navbar-toggler-icon {\n  background-image: url(\"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30'xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(51, 51, 51, 1)'stroke-width='3' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E\");\n}\n.navbar .navbar-collapse,\n.navbar .navbar-form {\n  border-color: #121611;\n}\n.navbar .navbar-link {\n  color: #121611;\n}\n.navbar .navbar-link:hover {\n  color: #f6fbf6;\n}\n\n@media (max-width: 575px) {\n  .navbar-expend-sm .navbar-nav .show .dropdown-menu .dropdown-item {\n    color: #121611;\n  }\n  .navbar-expend-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover, .navbar-expend-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {\n    color: #f6fbf6;\n  }\n  .navbar-expend-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {\n    color: #f6fbf6;\n    background-color: #e07f2d;\n  }\n}\n@media (max-width: 767px) {\n  .navbar-expend-md .navbar-nav .show .dropdown-menu .dropdown-item {\n    color: #121611;\n  }\n  .navbar-expend-md .navbar-nav .show .dropdown-menu .dropdown-item:hover, .navbar-expend-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {\n    color: #f6fbf6;\n  }\n  .navbar-expend-md .navbar-nav .show .dropdown-menu .dropdown-item.active {\n    color: #f6fbf6;\n    background-color: #e07f2d;\n  }\n}\n@media (max-width: 991px) {\n  .navbar-expend-lg .navbar-nav .show .dropdown-menu .dropdown-item {\n    color: #121611;\n  }\n  .navbar-expend-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover, .navbar-expend-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {\n    color: #f6fbf6;\n  }\n  .navbar-expend-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {\n    color: #f6fbf6;\n    background-color: #e07f2d;\n  }\n}\n@media (max-width: 1199px) {\n  .navbar-expend-xl .navbar-nav .show .dropdown-menu .dropdown-item {\n    color: #121611;\n  }\n  .navbar-expend-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover, .navbar-expend-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {\n    color: #f6fbf6;\n  }\n  .navbar-expend-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {\n    color: #f6fbf6;\n    background-color: #e07f2d;\n  }\n}\n.navbar-expend .navbar-nav .show .dropdown-menu .dropdown-item {\n  color: #121611;\n}\n.navbar-expend .navbar-nav .show .dropdown-menu .dropdown-item:hover, .navbar-expend .navbar-nav .show .dropdown-menu .dropdown-item:focus {\n  color: #f6fbf6;\n}\n.navbar-expend .navbar-nav .show .dropdown-menu .dropdown-item.active {\n  color: #f6fbf6;\n  background-color: #e07f2d;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -36831,6 +36831,52 @@ function warning(condition, message) {
 
 /***/ }),
 
+/***/ "./src/api/api.ts":
+/*!************************!*\
+  !*** ./src/api/api.ts ***!
+  \************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var axios_1 = __importDefault(__webpack_require__(/*! axios */ "./node_modules/axios/index.js"));
+var js_base64_1 = __webpack_require__(/*! js-base64 */ "./node_modules/js-base64/base64.mjs");
+var Api = /** @class */ (function () {
+    function Api(email, passWord) {
+        this.URL = 'https://api.kokasai.com';
+        this.email = email;
+        this.passWord = passWord;
+    }
+    Api.prototype.login = function () {
+        var _this = this;
+        var encodeToBase64 = function (email, passWord) { return js_base64_1.Base64.encode(email + ":" + passWord); };
+        var createHeader = function () {
+            var emailAndPassword = encodeToBase64(_this.email, _this.passWord);
+            var headers = {
+                Authorization: "Basic " + emailAndPassword,
+            };
+            return headers;
+        };
+        var loginEndPointUrl = this.URL + "/login";
+        var header = createHeader();
+        axios_1.default
+            .post(loginEndPointUrl, null, {
+            headers: header,
+        })
+            .then(function () { return true; })
+            .catch(function () { return false; });
+    };
+    return Api;
+}());
+exports.default = Api;
+
+
+/***/ }),
+
 /***/ "./src/components/App.tsx":
 /*!********************************!*\
   !*** ./src/components/App.tsx ***!
@@ -36885,11 +36931,33 @@ var App = function () {
                     react_1.default.createElement(react_router_dom_1.Route, { path: "/project", component: Project_1.default }),
                     react_1.default.createElement(react_router_dom_1.Route, { path: "/access", component: Access_1.default }),
                     react_1.default.createElement(react_router_dom_1.Route, { path: "/busInfo", component: BusInfo_1.default }),
-                    react_1.default.createElement(react_router_dom_1.Route, { path: "/login", render: function () { return react_1.default.createElement(Login_1.default, { setIsLoggedIn: setIsLoggedIn, setUser: setUser }); } }),
+                    react_1.default.createElement(react_router_dom_1.Route, { path: "/login", render: function () { return (react_1.default.createElement(Login_1.default, { setIsLoggedIn: setIsLoggedIn, setUser: setUser })); } }),
                     react_1.default.createElement(react_router_dom_1.Route, { path: "/account", render: function () { return react_1.default.createElement(Account_1.default, { user: user, isLoggedIn: isLoggedIn }); } }),
                     react_1.default.createElement(react_router_dom_1.Route, { path: "/auth", render: function () { return react_1.default.createElement(Auth_1.default, null); } }))))));
 };
 exports.default = App;
+
+
+/***/ }),
+
+/***/ "./src/components/atoms/Text.tsx":
+/*!***************************************!*\
+  !*** ./src/components/atoms/Text.tsx ***!
+  \***************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var Text = function (props) {
+    var children = props.children, className = props.className;
+    return react_1.default.createElement("div", { className: className }, children);
+};
+exports.default = Text;
 
 
 /***/ }),
@@ -36947,8 +37015,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-var Access = function () { return (react_1.default.createElement(react_1.default.Fragment, null,
-    react_1.default.createElement("div", null, "\u30A2\u30AF\u30BB\u30B9\u306E\u30DA\u30FC\u30B8\u3067\u3059\u3002"))); };
+var Text_1 = __importDefault(__webpack_require__(/*! ../atoms/Text */ "./src/components/atoms/Text.tsx"));
+var Access = function () { return (react_1.default.createElement(Text_1.default, { className: "access" }, "\u30A2\u30AF\u30BB\u30B9\u3067\u3059.")); };
 exports.default = Access;
 
 
@@ -36974,7 +37042,7 @@ var Acccount = function (props) {
             user,
             "\u3067\u30ED\u30B0\u30A4\u30F3\u4E2D\u3067\u3059\u3002"));
     }
-    return (react_1.default.createElement("div", null, "\u30ED\u30B0\u30A4\u30F3\u3057\u3066\u3044\u307E\u305B\u3093\u3002"));
+    return react_1.default.createElement("div", null, "\u30ED\u30B0\u30A4\u30F3\u3057\u3066\u3044\u307E\u305B\u3093\u3002");
 };
 exports.default = Acccount;
 
@@ -36998,7 +37066,7 @@ var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/r
 // }
 var Auth = function () {
     var test = 'test';
-    return (react_1.default.createElement("div", null, test));
+    return react_1.default.createElement("div", null, test);
 };
 exports.default = Auth;
 
@@ -37018,8 +37086,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-var Businfo = function () { return (react_1.default.createElement(react_1.default.Fragment, null,
-    react_1.default.createElement("div", null, "\u30D0\u30B9\u60C5\u5831\u306E\u30DA\u30FC\u30B8\u3067\u3059\u3002"))); };
+var Text_1 = __importDefault(__webpack_require__(/*! ../atoms/Text */ "./src/components/atoms/Text.tsx"));
+var Businfo = function () { return react_1.default.createElement(Text_1.default, { className: "busInfo" }, "\u30D0\u30B9\u60C5\u5831\u3067\u3059."); };
 exports.default = Businfo;
 
 
@@ -37038,8 +37106,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-var Home = function () { return (react_1.default.createElement(react_1.default.Fragment, null,
-    react_1.default.createElement("div", null, "Home\u3067\u3059"))); };
+var Text_1 = __importDefault(__webpack_require__(/*! ../atoms/Text */ "./src/components/atoms/Text.tsx"));
+var Home = function () { return react_1.default.createElement(Text_1.default, { className: "home" }, "Home\u3067\u3059."); };
 exports.default = Home;
 
 
@@ -37078,9 +37146,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 var react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-var axios_1 = __importDefault(__webpack_require__(/*! axios */ "./node_modules/axios/index.js"));
-var js_base64_1 = __webpack_require__(/*! js-base64 */ "./node_modules/js-base64/base64.mjs");
+var api_1 = __importDefault(__webpack_require__(/*! ../../api/api */ "./src/api/api.ts"));
 var Login = function (props) {
+    var setIsLoggedIn = props.setIsLoggedIn, setUser = props.setUser;
     var _a = react_1.useState(''), inputEmail = _a[0], setInputEmail = _a[1];
     var handleEmailForm = function (event) {
         setInputEmail(event.target.value);
@@ -37089,29 +37157,15 @@ var Login = function (props) {
     var handlePassWordForm = function (event) {
         setInputPassWord(event.target.value);
     };
-    var encodeToBase64 = function (email, passWord) { return js_base64_1.Base64.encode(email + ":" + passWord); };
-    var createHeader = function () {
-        var emailAndPassword = encodeToBase64(inputEmail, inputPassWord);
-        var headers = {
-            Authorization: "Basic " + emailAndPassword,
-        };
-        return headers;
-    };
     var login = function () {
-        var loginEndPointUrl = '/login';
-        var header = createHeader();
-        axios_1.default
-            .post(loginEndPointUrl, null, {
-            headers: header,
-        })
-            .then(function () {
-            props.setIsLoggedIn(true);
-            props.setUser(inputEmail);
-            setInputEmail('');
-            setInputPassWord('');
-        });
+        var api = new api_1.default(inputEmail, inputPassWord);
+        api.login();
+        setIsLoggedIn(true);
+        setUser(inputEmail);
+        setInputEmail('');
+        setInputPassWord('');
     };
-    return (react_1.default.createElement("form", null,
+    return (react_1.default.createElement("form", { className: "login" },
         react_1.default.createElement("input", { type: "text", onChange: handleEmailForm }),
         react_1.default.createElement("input", { type: "text", onChange: handlePassWordForm }),
         react_1.default.createElement(react_router_dom_1.Link, { to: "/account" },
@@ -37135,8 +37189,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-var Project = function () { return (react_1.default.createElement(react_1.default.Fragment, null,
-    react_1.default.createElement("div", null, "\u4F01\u753B\u3067\u3059"))); };
+var Text_1 = __importDefault(__webpack_require__(/*! ../atoms/Text */ "./src/components/atoms/Text.tsx"));
+var Project = function () { return react_1.default.createElement(Text_1.default, { className: "project" }, "\u4F01\u753B\u3067\u3059\u3002"); };
 exports.default = Project;
 
 
