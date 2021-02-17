@@ -1,3 +1,13 @@
-.app{
-    font-family: "Noto Sans Japanese";
+.app {
+  font-family: "Noto Sans Japanese";
+}
+
+.home,
+.project,
+.busInfo,
+.access,
+.login {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 500px;
 }

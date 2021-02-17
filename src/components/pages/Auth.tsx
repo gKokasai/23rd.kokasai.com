@@ -5,8 +5,6 @@ import React, { FC } from 'react';
 // }
 const Auth: FC = () => {
   const test = 'test';
-  return (
-    <div>{test}</div>
-  );
+  return <div>{test}</div>;
 };
 export default Auth;
