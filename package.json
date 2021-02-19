@@ -25,7 +25,7 @@
     "react-bootstrap": "^1.4.3",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
-    "sass": "^1.32.7",
+    "sass": "^1.32.8",
     "style-loader": "^2.0.0"
   },
   "devDependencies": {
