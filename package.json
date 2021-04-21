@@ -8,7 +8,7 @@
     "start": "webpack-cli serve --mode development",
     "build": "webpack",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
-    "lint:fix": " eslint --fix 'src/**/*.{js,jsx,ts,tsx}'"
+    "lint:fix": " eslint --fix src/**/*.{js,jsx,ts,tsx}"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +21,7 @@
     "css-loader": "^5.0.1",
     "framer-motion": "^3.3.0",
     "js-base64": "^3.6.0",
+    "material-ui": "^1.0.0-beta.47",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.3",
     "react-dom": "^17.0.1",
