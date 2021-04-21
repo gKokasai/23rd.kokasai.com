@@ -3,9 +3,10 @@ import axios from 'axios';
 
 const URL = 'https://api.kokasai.com';
 
-export const getToken = (Id: string) => axios.post(`${URL}/login`, { id: Id });
+export const getToken = (Id?: string) => axios.post(`${URL}/login`,
+  { id: Id });
 
-export const login = (id: string, pass: string) => {
+export const login = (id?: string, pass?: string) => {
   const config:{
     [key: string]: string;
   } = {
