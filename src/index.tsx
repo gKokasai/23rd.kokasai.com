@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { GlobalProvider } from './contexts/Global';
+import { AuthProvider } from './contexts/Global';
 import App from './components/App';
 import './index.scss';
 
 ReactDOM.render((
-  <GlobalProvider>
+  <AuthProvider>
     <App />
-  </GlobalProvider>
+  </AuthProvider>
 ), document.getElementById('app'));
