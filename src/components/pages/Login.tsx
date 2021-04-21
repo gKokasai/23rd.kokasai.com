@@ -1,46 +1,53 @@
-import React, { useState, FC } from 'react';
-import { Link } from 'react-router-dom';
-import Api from '../../api/api';
+import React, { FC } from 'react';
+import { Button, CircularProgress, TextField } from '@material-ui/core';
+import { useAuth } from '../../contexts/Global';
 
-type Props = {
-  setIsLoggedIn: React.Dispatch<React.SetStateAction<boolean>>;
-  setUser: React.Dispatch<React.SetStateAction<string>>;
-};
-
-const Login: FC<Props> = (props): JSX.Element => {
-  const { setIsLoggedIn, setUser } = props;
-  const [inputEmail, setInputEmail] = useState('');
-  const handleEmailForm = (
+const Login: FC = () => {
+  const auth = useAuth();
+  const handleIdForm = (
     event: React.ChangeEvent<HTMLInputElement>,
   ): void => {
-    setInputEmail(event.target.value);
+    console.log(event.target.value);
+    auth.setUser({ inputId: event.target.value });
   };
 
-  const [inputPassWord, setInputPassWord] = useState('');
   const handlePassWordForm = (
     event: React.ChangeEvent<HTMLInputElement>,
   ): void => {
-    setInputPassWord(event.target.value);
+    console.log(event.target.value);
+    auth.setUser({ inputPassWord: event.target.value });
   };
 
-  const login = (): void => {
-    const api = new Api(inputEmail, inputPassWord);
-    api.login();
-    setIsLoggedIn(true);
-    setUser(inputEmail);
-    setInputEmail('');
-    setInputPassWord('');
+  const handleLoginFormSubmit = (event): void => {
+    event.preventDefault();
+    auth.setUser({ isLoading: true });
+    auth.login();
   };
 
+  const handleIdFormSubmit = (event): void => {
+    event.preventDefault();
+    auth.getToken();
+  };
+
+  console.log(auth.user?.isLoading, auth.user?.postedId);
+
+  if (auth.user?.isLoading === true) {
+    return (
+      <CircularProgress />
+    );
+  } if (auth.user?.postedId === undefined) {
+    return (
+      <form className="login" onSubmit={handleIdFormSubmit}>
+        <TextField type="text" onChange={handleIdForm} />
+        <Button onClick={handleIdFormSubmit} variant="contained" color="primary">メール</Button>
+      </form>
+    );
+  }
   return (
     <form className="login">
-      <input type="text" onChange={handleEmailForm} />
-      <input type="text" onChange={handlePassWordForm} />
-      <Link to="/account">
-        <button type="button" onClick={() => login()}>
-          Login
-        </button>
-      </Link>
+      <TextField type="text" onChange={handleIdForm} defaultValue={auth.user?.inputId} />
+      <TextField type="text" onChange={handlePassWordForm} />
+      <Button onClick={handleLoginFormSubmit} variant="contained" color="primary">ログイン</Button>
     </form>
   );
 };

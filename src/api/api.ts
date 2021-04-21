@@ -1,39 +1,31 @@
-import axios from 'axios';
 import { Base64 } from 'js-base64';
+import axios from 'axios';
 
-class Api {
-  URL: string;
+const URL = 'https://api.kokasai.com';
 
-  email: string;
+export const getToken = (Id: string) => axios.post(`${URL}/login`, { id: Id });
 
-  passWord: string;
+export const login = (id: string, pass: string) => {
+  const config:{
+    [key: string]: string;
+  } = {
+    Authorization: `Basic ${Base64.encode(`${id}:${pass}`)}`,
+  };
 
-  constructor(email: string, passWord: string) {
-    this.URL = 'https://api.kokasai.com';
-    this.email = email;
-    this.passWord = passWord;
-  }
+  return axios.post(`${URL}/auth`, null, config);
+};
 
-  login() {
-    const encodeToBase64 = (email: string, passWord: string): string => Base64.encode(`${email}:${passWord}`);
-    const createHeader = (): { [key: string]: string } => {
-      const emailAndPassword: string = encodeToBase64(this.email, this.passWord);
-      const headers: {
-          [key: string]: string;
-        } = {
-          Authorization: `Basic ${emailAndPassword}`,
-        };
-      return headers;
-    };
-    const loginEndPointUrl = `${this.URL}/login`;
-    const header = createHeader();
-    axios
-      .post(loginEndPointUrl, null, {
-        headers: header,
-      })
-      .then(() => true)
-      .catch(() => false);
-  }
-}
+export const logout = () => axios.post(`${URL}/logout`);
+export const getFile = (path: string) => axios.get(`${URL}/file/${path}`);
 
-export default Api;
+export const getDocument = (documentName: string) => axios.get(`${URL}/document/${documentName}`);
+
+export const getGroupDocumentList = (groupName: string) => axios.get(`${URL}/group/document/list/${groupName}`);
+
+export const changeGroupDocumentList = (groupName: string, changedDocumentList: [string]) => axios.post(`${URL}/group/document/list/${groupName}`, changedDocumentList);
+
+export const getListOfUsersBelongingGroup = (groupName: string) => axios.get(`${URL}/group/user/list/${groupName}`);
+
+export const changeListOfUsersBelongingGroup = (groupName: string, changedUsersList: [string]) => axios.post(`${URL}/group/user/list/${groupName}`, changedUsersList);
+
+export const getAccessibleDocumentList = () => axios.get(`${URL}/user/document/list`);
