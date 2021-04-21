@@ -93134,6 +93134,17 @@ exports.default = Home;
 
 "use strict";
 
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -93149,12 +93160,13 @@ var Login = function () {
         auth.setUser({ inputId: event.target.value });
     };
     var handlePassWordForm = function (event) {
+        event.preventDefault();
         console.log(event.target.value);
-        auth.setUser({ inputPassWord: event.target.value });
+        auth.setUser({ inputPassWord: event.target.value, postedId: true });
     };
     var handleLoginFormSubmit = function (event) {
         event.preventDefault();
-        auth.setUser({ isLoading: true });
+        auth.setUser(__assign(__assign({}, auth.user), { isLoading: true }));
         auth.login();
     };
     var handleIdFormSubmit = function (event) {
@@ -93168,12 +93180,12 @@ var Login = function () {
     if (((_d = auth.user) === null || _d === void 0 ? void 0 : _d.postedId) === undefined) {
         return (react_1.default.createElement("form", { className: "login", onSubmit: handleIdFormSubmit },
             react_1.default.createElement(core_1.TextField, { type: "text", onChange: handleIdForm }),
-            react_1.default.createElement(core_1.Button, { onClick: handleIdFormSubmit, variant: "contained", color: "primary" }, "\u30E1\u30FC\u30EB")));
+            react_1.default.createElement(core_1.Button, { onClick: handleIdFormSubmit, variant: "contained", color: "primary" }, "\u30E1\u30FC\u30EB\u3092\u9001\u308B")));
     }
     return (react_1.default.createElement("form", { className: "login" },
         react_1.default.createElement(core_1.TextField, { type: "text", onChange: handleIdForm, defaultValue: (_e = auth.user) === null || _e === void 0 ? void 0 : _e.inputId }),
         react_1.default.createElement(core_1.TextField, { type: "text", onChange: handlePassWordForm }),
-        react_1.default.createElement(core_1.Button, { onClick: handleLoginFormSubmit, variant: "contained", color: "primary" }, "\u30ED\u30B0\u30A4\u30F3")));
+        react_1.default.createElement(core_1.Button, { onClick: handleLoginFormSubmit, variant: "contained", color: "primary" }, "\u30ED\u30B0\u30A4\u30F3\u3059\u308B")));
 };
 exports.default = Login;
 
@@ -93208,6 +93220,17 @@ exports.default = Project;
 
 "use strict";
 
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
@@ -93246,14 +93269,13 @@ exports.useAuth = useAuth;
 var useAuthCtx = function () {
     var _a = react_1.useState(null), user = _a[0], setUser = _a[1];
     var getToken = function () {
-        setUser({ postedId: true });
-        var result = api.getToken(user === null || user === void 0 ? void 0 : user.inputId);
+        var result = api.getToken(user === null || user === void 0 ? void 0 : user.inputId).then(function () { setUser({ postedId: true }); });
         console.log(result, setUser);
     };
     var login = function () {
         setUser({ isLoading: true });
         var result = api.login(user === null || user === void 0 ? void 0 : user.inputId, user === null || user === void 0 ? void 0 : user.inputPassWord)
-            .then(function () { setUser({ isLoading: false, isLoggedIn: true }); });
+            .then(function () { setUser(__assign(__assign({}, user), { isLoading: false })); });
         console.log(result);
     };
     var logout = function () {
