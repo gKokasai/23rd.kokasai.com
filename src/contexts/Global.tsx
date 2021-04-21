@@ -33,15 +33,14 @@ const useAuthCtx = (): authContextType => {
   const [user, setUser] = useState<User | null>(null);
 
   const getToken = () => {
-    setUser({ postedId: true });
-    const result = api.getToken(user?.inputId);
+    const result = api.getToken(user?.inputId).then(() => { setUser({ postedId: true }); });
     console.log(result, setUser);
   };
 
   const login = () => {
     setUser({ isLoading: true });
     const result = api.login(user?.inputId, user?.inputPassWord)
-      .then(() => { setUser({ isLoading: false, isLoggedIn: true }); });
+      .then(() => { setUser({ ...user, isLoading: false }); });
     console.log(result);
   };
 
