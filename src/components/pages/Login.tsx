@@ -14,13 +14,14 @@ const Login: FC = () => {
   const handlePassWordForm = (
     event: React.ChangeEvent<HTMLInputElement>,
   ): void => {
+    event.preventDefault();
     console.log(event.target.value);
-    auth.setUser({ inputPassWord: event.target.value });
+    auth.setUser({ inputPassWord: event.target.value, postedId: true});
   };
 
   const handleLoginFormSubmit = (event): void => {
     event.preventDefault();
-    auth.setUser({ isLoading: true });
+    auth.setUser({ ...auth.user, isLoading: true });
     auth.login();
   };
 
@@ -39,7 +40,7 @@ const Login: FC = () => {
     return (
       <form className="login" onSubmit={handleIdFormSubmit}>
         <TextField type="text" onChange={handleIdForm} />
-        <Button onClick={handleIdFormSubmit} variant="contained" color="primary">メール</Button>
+        <Button onClick={handleIdFormSubmit} variant="contained" color="primary">メールを送る</Button>
       </form>
     );
   }
@@ -47,7 +48,7 @@ const Login: FC = () => {
     <form className="login">
       <TextField type="text" onChange={handleIdForm} defaultValue={auth.user?.inputId} />
       <TextField type="text" onChange={handlePassWordForm} />
-      <Button onClick={handleLoginFormSubmit} variant="contained" color="primary">ログイン</Button>
+      <Button onClick={handleLoginFormSubmit} variant="contained" color="primary">ログインする</Button>
     </form>
   );
 };
