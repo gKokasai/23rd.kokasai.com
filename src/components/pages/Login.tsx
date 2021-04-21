@@ -39,7 +39,7 @@ const Login: FC = () => {
     return (
       <form className="login" onSubmit={handleIdFormSubmit}>
         <TextField type="text" onChange={handleIdForm} />
-        <Button onClick={handleIdFormSubmit} variant="contained" color="primary">ログイン</Button>
+        <Button onClick={handleIdFormSubmit} variant="contained" color="primary">メール</Button>
       </form>
     );
   }
@@ -47,7 +47,7 @@ const Login: FC = () => {
     <form className="login">
       <TextField type="text" onChange={handleIdForm} defaultValue={auth.user?.inputId} />
       <TextField type="text" onChange={handlePassWordForm} />
-      <Button onClick={handleLoginFormSubmit} variant="contained" color="primary">メールを送る</Button>
+      <Button onClick={handleLoginFormSubmit} variant="contained" color="primary">ログイン</Button>
     </form>
   );
 };
