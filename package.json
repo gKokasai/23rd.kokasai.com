@@ -19,7 +19,7 @@
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "css-loader": "^5.0.1",
-    "framer-motion": "^3.3.0",
+    "framer-motion": "^4.1.9",
     "js-base64": "^3.6.0",
     "material-ui": "^1.0.0-beta.47",
     "react": "^17.0.1",
