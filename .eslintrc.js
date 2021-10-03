@@ -5,15 +5,14 @@ module.exports = {
   },
   extends: [
     'plugin:react/recommended',
-    // Airbnbが提供する共有設定。広く使われている
     'airbnb',
-    // 各プラグイン推奨共有設定
     'airbnb/hooks',
     'plugin:import/errors',
     'plugin:import/warnings',
     'plugin:import/typescript',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
+    'prettier'
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -31,6 +30,7 @@ module.exports = {
     'jsx-a11y',
     'react',
     'react-hooks',
+    'prettier'
   ],
   root: true,
   rules: {
@@ -65,6 +65,9 @@ module.exports = {
         extensions: ['.jsx', '.tsx'],
       },
     ],
+    'linebreak-style': ["error", "unix"],
+    "max-len": [1, 200],
+    "prettier/prettier": "error"
   },
   overrides: [
     {

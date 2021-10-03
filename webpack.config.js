@@ -1,5 +1,8 @@
 const path = require("path");
+const TailwindCss = require("tailwindcss");
+const Autoprefixer = require("autoprefixer");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   mode: "development",
@@ -23,31 +26,37 @@ module.exports = {
       {
         test: /\.tsx?$/,
         use: "ts-loader",
-        include: path.resolve(__dirname, "src"),
-        exclude: /node_modules/,
       },
       {
-        test: /\.scss/,
+        test: /\.css$/i,
         use: [
-          "style-loader",
+          MiniCssExtractPlugin.loader,
           {
-            loader: "css-loader",
-            options: { url: false }
+            loader: 'css-loader',
+            options: {
+              sourceMap: true,
+            }
           },
           {
-            loader:"sass-loader",
+            loader: 'postcss-loader',
             options: {
-              implementaons: require('sass'),
-              sassOptions: {
-                outputStyle: 'compressed',
-              },
+              postcssOptions: {
+                plugins: [
+                  TailwindCss,
+                  Autoprefixer
+                ]
+              }
             }
           }
         ]
-      }
+      },
     ],
   },
   devServer: {
+    static: {
+      directory: `${__dirname}/static`
+    },
+    hot: true,
     historyApiFallback: true,
     proxy: {
       '/login':{
@@ -65,6 +74,9 @@ module.exports = {
       filename: "404.html",
       template: "./static/404.html",
       inject: false
+    }),
+    new MiniCssExtractPlugin({
+      filename: 'index.css',
     })
   ],
 };

@@ -3,4 +3,6 @@ public/
 **/coverage/
 **/node_modules/
 **/*.min.js
-*.config.js
+*.config.*.js
+.eslintrc.js
+dist/
