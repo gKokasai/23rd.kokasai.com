@@ -1,19 +1,12 @@
 {
+  "include": ["src/**/*"],
   "compilerOptions": {
-    "sourceMap": true,
-    "baseUrl": "./",
+    "sourceMap": false,
     "target": "es5",
-    "strict": true,
     "module": "commonjs",
-    "jsx": "react",
-    "lib": ["ES5", "ES6", "DOM"],
-    "allowSyntheticDefaultImports": true,
+    "lib": ["es2017", "dom"],
+    "moduleResolution": "node",
     "esModuleInterop": true,
-    "isolatedModules": true,
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitAny": false,
-  },
-  "exclude": ["node_modules"]
+    "jsx": "react-jsx"
+  }
 }
