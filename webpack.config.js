@@ -2,6 +2,8 @@ const path = require("path");
 const TailwindCss = require("tailwindcss");
 const Autoprefixer = require("autoprefixer");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
+const WriteFilePlugin = require("write-file-webpack-plugin")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
@@ -67,6 +69,14 @@ module.exports = {
   },
 
   plugins: [
+    new CopyPlugin(
+      {
+        patterns: [
+          { from: "**/*.svg", to: path.resolve(__dirname, "dist"), context: "static"}
+        ]
+      }
+    ),
+    new WriteFilePlugin(),
     new HtmlWebpackPlugin({
       template: "./static/index.html",
     }),
@@ -77,6 +87,7 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: 'index.css',
-    })
-  ],
+    }),
+
+  ]
 };
