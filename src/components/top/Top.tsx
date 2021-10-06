@@ -3,12 +3,12 @@ import Left from "./left/Left";
 import Right from "./right/Right";
 
 const Top: React.FC = () => (
-  <div className="container flex justify-between h-full w-full">
-    <div className="flex h-full w-full">
-      <div className="flex flex-col justify-between h-full w-1/4">
+  <div className="container h-full w-full">
+    <div className="flex flex-wrap h-full w-full">
+      <div className="pc:h-full pc:w-1/4 hidden pc:inline-block">
         <Left />
       </div>
-      <div className="flex flex-col justify-between h-full w-3/4">
+      <div className="pc:h-full pc:w-3/4 smartphone:w-full">
         <Right />
       </div>
     </div>

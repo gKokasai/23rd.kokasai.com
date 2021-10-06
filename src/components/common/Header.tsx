@@ -6,17 +6,17 @@ const Header: React.FC = () => (
     <header className="flex justify-between items-center">
       <h1 className="xl:font-serif text-4xl text-green-200">工華祭</h1>
       <div className="flex">
-        <a href="https://twitter.com/NITGC_Kokasai">
+        <a href={Static.twitter.url}>
           <img
             className="container h-6 w-6"
-            src={Static.twitterIcon}
+            src={Static.twitter.icon}
             alt="Twitterのsvgアイコン"
           />
         </a>
-        <a href="https://Instagram.com/nitgc_kokasai">
+        <a href={Static.instagram.url}>
           <img
             className="container h-7 w-7"
-            src={Static.instagramIcon}
+            src={Static.instagram.icon}
             alt="Instagramのsvgアイコン"
           />
         </a>
