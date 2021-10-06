@@ -7,21 +7,23 @@ import Static from "../../../static";
 
 const Right: React.FC = () => (
   <div className="container h-full w-full">
-    <div className="bg-cream h-full flex-row items-center w-full">
-      <LogoIllust />
+    <div className="bg-cream h-full flex flex-col justify-between items-center w-full">
+      <div className="pt-3 pb-3">
+        <LogoIllust />
+      </div>
       <DateAndTime />
       <Description />
       <div className="container">
         <div className="flex justify-end">
           <Icon
-            src={Static.instagramIcon}
+            src={Static.instagram.icon}
             alt="Instagramのアイコン"
-            href="https://Instagram.com"
+            href={Static.instagram.url}
           />
           <Icon
-            src={Static.twitterIcon}
+            src={Static.twitter.icon}
             alt="Twitterのアイコン"
-            href="https://twitter.com"
+            href={Static.twitter.url}
           />
         </div>
       </div>

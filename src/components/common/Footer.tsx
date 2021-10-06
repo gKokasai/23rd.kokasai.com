@@ -8,16 +8,21 @@ const Footer: React.FC = () => (
         <div>
           <h4 className="font-semibold pb-2">ページ一覧</h4>
           <ul>
-            {Object.keys(Pages).map((key) => (
-              <a href="/">
-                <li className="pb-4">{Pages[key].displayName}</li>
-              </a>
-            ))}
+            {
+              // TODO: 各ページ実装後、仮リンクではなく実装する
+              Object.keys(Pages).map((key) => (
+                <a href="/">
+                  <li className="pb-4" key={key}>
+                    {Pages[key].displayName}
+                  </li>
+                </a>
+              ))
+            }
           </ul>
         </div>
         <ul>
-          <a href="/">
-            <li>プライバシーポリシー</li>
+          <a href={Pages.privacyPolicy.path}>
+            <li>{Pages.privacyPolicy.displayName}</li>
           </a>
         </ul>
       </div>
