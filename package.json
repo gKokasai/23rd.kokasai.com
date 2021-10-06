@@ -9,7 +9,7 @@
     "start": "webpack serve",
     "build": "webpack",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
-    "lint:fix": " eslint --fix 'src/**/*.{js,jsx,ts,tsx}'"
+    "lint:fix": " eslint --fix src/**/*.{js,jsx,ts,tsx}"
   },
   "keywords": [],
   "author": "",
