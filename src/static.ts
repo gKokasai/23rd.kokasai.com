@@ -14,7 +14,7 @@ const Static = {
     icon: "/img/kokasai-logo.svg",
   },
   kokasaiIllust: {
-    icon: "/img/kokasai-illust.svg",
+    icon: "/img/kokasai-illust.png",
   },
 };
 
