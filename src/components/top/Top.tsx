@@ -8,7 +8,7 @@ const Top: React.FC = () => (
       <div className="pc:h-full pc:w-1/4 hidden pc:inline-block">
         <Left />
       </div>
-      <div className="pc:h-full pc:w-3/4 smartphone:w-full">
+      <div className="w-full pc:h-full pc:w-3/4 ">
         <Right />
       </div>
     </div>

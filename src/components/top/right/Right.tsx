@@ -8,7 +8,7 @@ import Static from "../../../static";
 const Right: React.FC = () => (
   <div className="container h-full w-full">
     <div className="bg-cream h-full flex flex-col justify-between items-center w-full">
-      <div className="pt-3 pb-3">
+      <div className="pt-10 pc:pt-3">
         <LogoIllust />
       </div>
       <DateAndTime />

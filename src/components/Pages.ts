@@ -15,10 +15,6 @@ const Pages = {
     displayName: "ごあいさつ",
     path: "/greeting",
   },
-  privacyPolicy: {
-    displayName: "プライバシーポリシー",
-    path: "/privacy-policy",
-  },
 };
 
 export default Pages;
