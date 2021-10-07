@@ -35,7 +35,7 @@ const Footer: React.FC = () => (
             <li className="pb-4">工華祭公式Instagram</li>
           </a>
           <a href={Static.twitter.url}>
-            <li className="pb-4">工華祭公式Twitter</li>
+            <li className="pb-4">Twitter</li>
           </a>
         </ul>
       </div>
