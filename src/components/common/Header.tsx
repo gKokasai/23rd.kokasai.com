@@ -7,7 +7,7 @@ const Header: React.FC = () => {
   return (
     <div className="bg-midBlue mx-auto container items-center">
       <header className="flex justify-between">
-        <h1 className="font-serif text-4xl text-white">工華祭</h1>
+        <h1 className="text-4xl text-white">工華祭</h1>
         <div className="w-10" onClick={() => setOpenHamburger(!openHamburger)}>
           <img
             src={Static.hamburgerMenu.icon}
@@ -23,7 +23,7 @@ const Header: React.FC = () => {
               Object.keys(Pages).map((key) => (
                 <div className="border-b-2">
                   <a href="/">
-                    <li className="pt-4 font-serif" key={key}>
+                    <li className="pt-4" key={key}>
                       {Pages[key].displayName}
                     </li>
                   </a>
