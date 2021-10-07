@@ -21,8 +21,11 @@ const Footer: React.FC = () => (
           </ul>
         </div>
         <ul>
-          <a href={Pages.privacyPolicy.path}>
-            <li>{Pages.privacyPolicy.displayName}</li>
+          {
+            // TODO: 仮リンクではなく、別ファイルで定義したものを参照する
+          }
+          <a href="/">
+            <li>プライバシーポリシー</li>
           </a>
         </ul>
       </div>
