@@ -1,28 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import Static from "../../static";
+import Pages from "../Pages";
 
-const Header: React.FC = () => (
-  <div className="bg-blue-300 mx-auto container items-center">
-    <header className="flex justify-between items-center">
-      <h1 className="xl:font-serif text-4xl text-green-200">工華祭</h1>
-      <div className="flex">
-        <a href={Static.twitter.url}>
+const Header: React.FC = () => {
+  const [openHamburger, setOpenHamburger] = useState<boolean>(false);
+  return (
+    <div className="bg-midBlue mx-auto container items-center">
+      <header className="flex justify-between">
+        <h1 className="font-serif text-4xl text-white">工華祭</h1>
+        <div className="w-10" onClick={() => setOpenHamburger(!openHamburger)}>
           <img
-            className="container h-6 w-6"
-            src={Static.twitter.icon}
-            alt="Twitterのsvgアイコン"
+            src={Static.hamburgerMenu.icon}
+            alt="ハンバーガーメニューのアイコン"
           />
-        </a>
-        <a href={Static.instagram.url}>
-          <img
-            className="container h-7 w-7"
-            src={Static.instagram.icon}
-            alt="Instagramのsvgアイコン"
-          />
-        </a>
+        </div>
+      </header>
+      <div className={openHamburger ? "inline-block" : "hidden"}>
+        <div className="container">
+          <ul className="flex flex-col justify-end">
+            {
+              // TODO: 各ページ実装後、仮リンクではなく実装する
+              Object.keys(Pages).map((key) => (
+                <a href="/">
+                  <li className="pt-4" key={key}>
+                    {Pages[key].displayName}
+                  </li>
+                </a>
+              ))
+            }
+          </ul>
+        </div>
       </div>
-    </header>
-  </div>
-);
+    </div>
+  );
+};
 
 export default Header;

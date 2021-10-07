@@ -7,6 +7,9 @@ const Static = {
     icon: "/img/instagram-icon.svg",
     url: "https://instagram.com/nitgc_kokasai",
   },
+  hamburgerMenu: {
+    icon: "/img/hamburger-menu.svg",
+  },
   kokasaiLogo: {
     icon: "/img/kokasai-logo.svg",
   },
