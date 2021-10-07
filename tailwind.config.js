@@ -5,6 +5,7 @@ module.exports = {
     screens: {
       'smartphone': '600px',
       'pc': '1280px',
+      'desktop': '1920px',
     },
     extend: {
       colors: {
