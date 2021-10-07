@@ -31097,7 +31097,7 @@ var jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules
 var Top_1 = __importDefault(__webpack_require__(/*! ./top/Top */ "./src/components/top/Top.tsx"));
 var Footer_1 = __importDefault(__webpack_require__(/*! ./common/Footer */ "./src/components/common/Footer.tsx"));
 var Header_1 = __importDefault(__webpack_require__(/*! ./common/Header */ "./src/components/common/Header.tsx"));
-var App = function () { return ((0, jsx_runtime_1.jsx)("div", __assign({ className: "container h-full w-full" }, { children: (0, jsx_runtime_1.jsxs)("div", __assign({ className: "flex flex-col h-full w-full" }, { children: [(0, jsx_runtime_1.jsx)("div", __assign({ className: "visible pc:hidden" }, { children: (0, jsx_runtime_1.jsx)(Header_1.default, {}, void 0) }), void 0), (0, jsx_runtime_1.jsx)("div", __assign({ className: "flex-grow min-h-screen h-full w-full" }, { children: (0, jsx_runtime_1.jsx)(Top_1.default, {}, void 0) }), void 0), (0, jsx_runtime_1.jsx)(Footer_1.default, {}, void 0)] }), void 0) }), void 0)); };
+var App = function () { return ((0, jsx_runtime_1.jsx)("div", __assign({ className: "container h-full w-full font-serif" }, { children: (0, jsx_runtime_1.jsxs)("div", __assign({ className: "flex flex-col h-full w-full" }, { children: [(0, jsx_runtime_1.jsx)("div", __assign({ className: "visible pc:hidden" }, { children: (0, jsx_runtime_1.jsx)(Header_1.default, {}, void 0) }), void 0), (0, jsx_runtime_1.jsx)("div", __assign({ className: "flex-grow min-h-screen h-full w-full" }, { children: (0, jsx_runtime_1.jsx)(Top_1.default, {}, void 0) }), void 0), (0, jsx_runtime_1.jsx)(Footer_1.default, {}, void 0)] }), void 0) }), void 0)); };
 exports["default"] = App;
 
 
@@ -31158,9 +31158,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 var jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 var Pages_1 = __importDefault(__webpack_require__(/*! ../Pages */ "./src/components/Pages.ts"));
+var static_1 = __importDefault(__webpack_require__(/*! ../../static */ "./src/static.ts"));
 var Footer = function () { return ((0, jsx_runtime_1.jsx)("footer", __assign({ className: "bg-blue-300 w-full" }, { children: (0, jsx_runtime_1.jsxs)("div", __assign({ className: "container mx-auto pt-8 pb-4 w-full" }, { children: [(0, jsx_runtime_1.jsxs)("div", __assign({ className: "flex flex-wrap justify-around" }, { children: [(0, jsx_runtime_1.jsxs)("div", { children: [(0, jsx_runtime_1.jsx)("h4", __assign({ className: "font-semibold pb-2" }, { children: "\u30DA\u30FC\u30B8\u4E00\u89A7" }), void 0), (0, jsx_runtime_1.jsx)("ul", { children: 
                                 // TODO: 各ページ実装後、仮リンクではなく実装する
-                                Object.keys(Pages_1.default).map(function (key) { return ((0, jsx_runtime_1.jsx)("a", __assign({ href: "/" }, { children: (0, jsx_runtime_1.jsx)("li", __assign({ className: "pb-4" }, { children: Pages_1.default[key].displayName }), key) }), void 0)); }) }, void 0)] }, void 0), (0, jsx_runtime_1.jsx)("ul", { children: (0, jsx_runtime_1.jsx)("a", __assign({ href: "/" }, { children: (0, jsx_runtime_1.jsx)("li", { children: "\u30D7\u30E9\u30A4\u30D0\u30B7\u30FC\u30DD\u30EA\u30B7\u30FC" }, void 0) }), void 0) }, void 0)] }), void 0), (0, jsx_runtime_1.jsx)("div", __assign({ className: "text-center" }, { children: (0, jsx_runtime_1.jsx)("small", { children: "\u00A9 2021 \u5DE5\u83EF\u796D\u5B9F\u884C\u59D4\u54E1\u4F1A" }, void 0) }), void 0)] }), void 0) }), void 0)); };
+                                Object.keys(Pages_1.default).map(function (key) { return ((0, jsx_runtime_1.jsx)("a", __assign({ href: "/" }, { children: (0, jsx_runtime_1.jsx)("li", __assign({ className: "pb-4" }, { children: Pages_1.default[key].displayName }), key) }), void 0)); }) }, void 0)] }, void 0), (0, jsx_runtime_1.jsxs)("ul", { children: [(0, jsx_runtime_1.jsx)("a", __assign({ href: "/" }, { children: (0, jsx_runtime_1.jsx)("li", __assign({ className: "pb-4" }, { children: "\u30D7\u30E9\u30A4\u30D0\u30B7\u30FC\u30DD\u30EA\u30B7\u30FC" }), void 0) }), void 0), (0, jsx_runtime_1.jsx)("a", __assign({ href: "https://www.gunma-ct.ac.jp/" }, { children: (0, jsx_runtime_1.jsx)("li", __assign({ className: "pb-4" }, { children: "\u7FA4\u99AC\u9AD8\u5C02\u516C\u5F0F\u30B5\u30A4\u30C8" }), void 0) }), void 0), (0, jsx_runtime_1.jsx)("a", __assign({ href: static_1.default.instagram.url }, { children: (0, jsx_runtime_1.jsx)("li", __assign({ className: "pb-4" }, { children: "Instagram" }), void 0) }), void 0), (0, jsx_runtime_1.jsx)("a", __assign({ href: static_1.default.twitter.url }, { children: (0, jsx_runtime_1.jsx)("li", __assign({ className: "pb-4" }, { children: "Twitter" }), void 0) }), void 0)] }, void 0)] }), void 0), (0, jsx_runtime_1.jsx)("div", __assign({ className: "text-center" }, { children: (0, jsx_runtime_1.jsx)("small", { children: "\u00A9 2021 \u5DE5\u83EF\u796D\u5B9F\u884C\u59D4\u54E1\u4F1A" }, void 0) }), void 0)] }), void 0) }), void 0)); };
 exports["default"] = Footer;
 
 
@@ -31194,9 +31195,9 @@ var static_1 = __importDefault(__webpack_require__(/*! ../../static */ "./src/st
 var Pages_1 = __importDefault(__webpack_require__(/*! ../Pages */ "./src/components/Pages.ts"));
 var Header = function () {
     var _a = (0, react_1.useState)(false), openHamburger = _a[0], setOpenHamburger = _a[1];
-    return ((0, jsx_runtime_1.jsxs)("div", __assign({ className: "bg-midBlue mx-auto container items-center" }, { children: [(0, jsx_runtime_1.jsxs)("header", __assign({ className: "flex justify-between" }, { children: [(0, jsx_runtime_1.jsx)("h1", __assign({ className: "font-serif text-4xl text-white" }, { children: "\u5DE5\u83EF\u796D" }), void 0), (0, jsx_runtime_1.jsx)("div", __assign({ className: "w-10", onClick: function () { return setOpenHamburger(!openHamburger); } }, { children: (0, jsx_runtime_1.jsx)("img", { src: static_1.default.hamburgerMenu.icon, alt: "\u30CF\u30F3\u30D0\u30FC\u30AC\u30FC\u30E1\u30CB\u30E5\u30FC\u306E\u30A2\u30A4\u30B3\u30F3" }, void 0) }), void 0)] }), void 0), (0, jsx_runtime_1.jsx)("div", __assign({ className: openHamburger ? "inline-block" : "hidden" }, { children: (0, jsx_runtime_1.jsx)("div", __assign({ className: "container" }, { children: (0, jsx_runtime_1.jsx)("ul", __assign({ className: "flex flex-col justify-end" }, { children: 
+    return ((0, jsx_runtime_1.jsxs)("div", __assign({ className: "bg-midBlue mx-auto container items-center" }, { children: [(0, jsx_runtime_1.jsxs)("header", __assign({ className: "flex justify-between" }, { children: [(0, jsx_runtime_1.jsx)("h1", __assign({ className: "text-4xl text-white" }, { children: "\u5DE5\u83EF\u796D" }), void 0), (0, jsx_runtime_1.jsx)("div", __assign({ className: "w-10", onClick: function () { return setOpenHamburger(!openHamburger); } }, { children: (0, jsx_runtime_1.jsx)("img", { src: static_1.default.hamburgerMenu.icon, alt: "\u30CF\u30F3\u30D0\u30FC\u30AC\u30FC\u30E1\u30CB\u30E5\u30FC\u306E\u30A2\u30A4\u30B3\u30F3" }, void 0) }), void 0)] }), void 0), (0, jsx_runtime_1.jsx)("div", __assign({ className: openHamburger ? "inline-block" : "hidden" }, { children: (0, jsx_runtime_1.jsx)("div", __assign({ className: "container" }, { children: (0, jsx_runtime_1.jsx)("ul", __assign({ className: "flex flex-col pb-2" }, { children: 
                         // TODO: 各ページ実装後、仮リンクではなく実装する
-                        Object.keys(Pages_1.default).map(function (key) { return ((0, jsx_runtime_1.jsx)("a", __assign({ href: "/" }, { children: (0, jsx_runtime_1.jsx)("li", __assign({ className: "pt-4" }, { children: Pages_1.default[key].displayName }), key) }), void 0)); }) }), void 0) }), void 0) }), void 0)] }), void 0));
+                        Object.keys(Pages_1.default).map(function (key) { return ((0, jsx_runtime_1.jsx)("div", __assign({ className: "border-b-2" }, { children: (0, jsx_runtime_1.jsx)("a", __assign({ href: "/" }, { children: (0, jsx_runtime_1.jsx)("li", __assign({ className: "pt-4" }, { children: Pages_1.default[key].displayName }), key) }), void 0) }), void 0)); }) }), void 0) }), void 0) }), void 0)] }), void 0));
 };
 exports["default"] = Header;
 
@@ -31284,7 +31285,7 @@ var __assign = (this && this.__assign) || function () {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 var jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-var DateAndTime = function () { return ((0, jsx_runtime_1.jsx)("div", __assign({ className: "text-center text-3xl pc:text-4xl pt-3 pb-3 font-serif" }, { children: "2021 10/30, 31 \u958B\u50AC\u4E88\u5B9A" }), void 0)); };
+var DateAndTime = function () { return ((0, jsx_runtime_1.jsx)("div", __assign({ className: "text-center text-3xl pc:text-4xl pt-3 pb-3" }, { children: "2021 10/30, 31 \u958B\u50AC\u4E88\u5B9A" }), void 0)); };
 exports["default"] = DateAndTime;
 
 
@@ -31369,7 +31370,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 var jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 var static_1 = __importDefault(__webpack_require__(/*! ../../../static */ "./src/static.ts"));
-var LogoIllust = function () { return ((0, jsx_runtime_1.jsx)("div", __assign({ className: "w-11/12 mx-auto" }, { children: (0, jsx_runtime_1.jsx)("img", { src: static_1.default.kokasaiIllust.icon, alt: "\u5DE5\u83EF\u796D\u306E\u30ED\u30B4" }, void 0) }), void 0)); };
+var LogoIllust = function () { return ((0, jsx_runtime_1.jsx)("div", __assign({ className: "w-10/12 mx-auto" }, { children: (0, jsx_runtime_1.jsx)("img", { src: static_1.default.kokasaiIllust.icon, alt: "\u5DE5\u83EF\u796D\u306E\u30ED\u30B4" }, void 0) }), void 0)); };
 exports["default"] = LogoIllust;
 
 
@@ -31454,7 +31455,7 @@ var Static = {
         icon: "/img/kokasai-logo.svg",
     },
     kokasaiIllust: {
-        icon: "/img/kokasai-illust.svg",
+        icon: "/img/kokasai-illust.png",
     },
 };
 exports["default"] = Static;
