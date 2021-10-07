@@ -72,7 +72,7 @@ module.exports = {
     new CopyPlugin(
       {
         patterns: [
-          { from: "**/*.svg", to: path.resolve(__dirname, "dist"), context: "static"}
+          { from: "**/img/*", to: path.resolve(__dirname, "dist"), context: "static"}
         ]
       }
     ),
