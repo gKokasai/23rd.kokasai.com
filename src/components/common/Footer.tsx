@@ -1,10 +1,11 @@
 import React from "react";
 import Pages from "../Pages";
+import Static from "../../static";
 
 const Footer: React.FC = () => (
   <footer className="bg-blue-300 w-full">
     <div className="container mx-auto pt-8 pb-4 w-full">
-      <div className="flex flex-wrap justify-around">
+      <div className="flex flex-wrap justify-around font-serif">
         <div>
           <h4 className="font-semibold pb-2">ページ一覧</h4>
           <ul>
@@ -25,7 +26,16 @@ const Footer: React.FC = () => (
             // TODO: 仮リンクではなく、別ファイルで定義したものを参照する
           }
           <a href="/">
-            <li>プライバシーポリシー</li>
+            <li className="pb-4">プライバシーポリシー</li>
+          </a>
+          <a href="https://www.gunma-ct.ac.jp/">
+            <li className="pb-4">群馬高専公式サイト</li>
+          </a>
+          <a href={Static.instagram.url}>
+            <li className="pb-4">工華祭公式Instagram</li>
+          </a>
+          <a href={Static.twitter.url}>
+            <li className="pb-4">工華祭公式Twitter</li>
           </a>
         </ul>
       </div>
