@@ -17,15 +17,17 @@ const Header: React.FC = () => {
       </header>
       <div className={openHamburger ? "inline-block" : "hidden"}>
         <div className="container">
-          <ul className="flex flex-col justify-end">
+          <ul className="flex flex-col pb-2">
             {
               // TODO: 各ページ実装後、仮リンクではなく実装する
               Object.keys(Pages).map((key) => (
-                <a href="/">
-                  <li className="pt-4" key={key}>
-                    {Pages[key].displayName}
-                  </li>
-                </a>
+                <div className="border-b-2">
+                  <a href="/">
+                    <li className="pt-4 font-serif" key={key}>
+                      {Pages[key].displayName}
+                    </li>
+                  </a>
+                </div>
               ))
             }
           </ul>
