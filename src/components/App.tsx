@@ -4,7 +4,7 @@ import Footer from "./common/Footer";
 import Header from "./common/Header";
 
 const App: React.FC = () => (
-  <div className="container h-full w-full">
+  <div className="container h-full w-full font-serif">
     <div className="flex flex-col h-full w-full">
       <div className="visible pc:hidden">
         <Header />

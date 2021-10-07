@@ -5,7 +5,7 @@ import Static from "../../static";
 const Footer: React.FC = () => (
   <footer className="bg-blue-300 w-full">
     <div className="container mx-auto pt-8 pb-4 w-full">
-      <div className="flex flex-wrap justify-around font-serif">
+      <div className="flex flex-wrap justify-around">
         <div>
           <h4 className="font-semibold pb-2">ページ一覧</h4>
           <ul>
