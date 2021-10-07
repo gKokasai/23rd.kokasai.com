@@ -12,9 +12,11 @@ const Right: React.FC = () => (
         <LogoIllust />
       </div>
       <DateAndTime />
-      <Description />
+      <div className="pr-2 pl-2">
+        <Description />
+      </div>
       <div className="container">
-        <div className="flex justify-end">
+        <div className="flex justify-end pr-2 pb-10">
           <Icon
             src={Static.instagram.icon}
             alt="Instagramのアイコン"
