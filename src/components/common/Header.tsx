@@ -8,12 +8,13 @@ const Header: React.FC = () => {
     <div className="bg-midBlue mx-auto container items-center">
       <header className="flex justify-between">
         <h1 className="text-4xl text-white">工華祭</h1>
-        <div className="w-10" onClick={() => setOpenHamburger(!openHamburger)}>
-          <img
-            src={Static.hamburgerMenu.icon}
-            alt="ハンバーガーメニューのアイコン"
-          />
-        </div>
+        <input
+          type="image"
+          src={Static.hamburgerMenu.icon}
+          alt="ハンバーガーメニューのアイコン"
+          className="w-10"
+          onClick={() => setOpenHamburger(!openHamburger)}
+        />
       </header>
       <div className={openHamburger ? "inline-block" : "hidden"}>
         <div className="container">
