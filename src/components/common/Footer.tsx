@@ -12,10 +12,8 @@ const Footer: React.FC = () => (
             {
               // TODO: 各ページ実装後、仮リンクではなく実装する
               Object.keys(Pages).map((key) => (
-                <a href="/">
-                  <li className="pb-4" key={key}>
-                    {Pages[key].displayName}
-                  </li>
+                <a href="/" key={key}>
+                  <li className="pb-4">{Pages[key].displayName}</li>
                 </a>
               ))
             }

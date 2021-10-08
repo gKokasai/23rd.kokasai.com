@@ -6,10 +6,8 @@ const Left: React.FC = () => (
     <div className="bg-midBlue flex h-full flex-col items-end justify-end pr-4 text-white">
       <ul>
         {Object.keys(Pages).map((key) => (
-          <a href="/">
-            <li className="pb-4" key={key}>
-              {Pages[key].displayName}
-            </li>
+          <a href="/" key={key}>
+            <li className="pb-4">{Pages[key].displayName}</li>
           </a>
         ))}
       </ul>

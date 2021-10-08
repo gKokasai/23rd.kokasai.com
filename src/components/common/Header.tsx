@@ -22,11 +22,9 @@ const Header: React.FC = () => {
             {
               // TODO: 各ページ実装後、仮リンクではなく実装する
               Object.keys(Pages).map((key) => (
-                <div className="border-b-2">
+                <div className="border-b-2" key={key}>
                   <a href="/">
-                    <li className="pt-4" key={key}>
-                      {Pages[key].displayName}
-                    </li>
+                    <li className="pt-4">{Pages[key].displayName}</li>
                   </a>
                 </div>
               ))
