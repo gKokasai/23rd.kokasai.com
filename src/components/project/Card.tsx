@@ -30,9 +30,11 @@ const Card: FC<CardProps> = (props) => {
         </div>
         <div className="flex flex-col pl-3">
           <h3 className="font-bold pb-3">{name}</h3>
-          <div className="pl-10 pb-4">{description}</div>
-          <div className="pl-10 pb-4">{gradeAndClass}</div>
-          <div className="pl-10 pb-4">{place}</div>
+          <div className="pl-10">
+            <div className="pb-4">{description}</div>
+            <div className="pb-4">{gradeAndClass}</div>
+            <div className="pb-4">{place}</div>
+          </div>
         </div>
       </div>
     </div>
