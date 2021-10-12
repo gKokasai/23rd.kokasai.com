@@ -8,8 +8,8 @@
     "prettier": "prettier ./src --ext ts,tsx --write",
     "start": "webpack serve",
     "build": "webpack",
-    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
-    "lint:fix": " eslint --fix 'src/**/*.{js,jsx,ts,tsx}'"
+    "lint": "eslint . --ext .js,.ts,.tsx",
+    "lint:fix": "eslint . --fix --ext .js,.ts,.tsx"
   },
   "keywords": [],
   "author": "",
