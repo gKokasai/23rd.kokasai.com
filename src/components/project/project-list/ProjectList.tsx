@@ -1,5 +1,5 @@
 import React from "react";
-import * as projectList from "../../json/projectList.json";
+import * as projectList from "../../../json/projectList.json";
 import Card from "./Card";
 
 const ProjectList: React.FC = () => (
