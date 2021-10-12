@@ -3,7 +3,7 @@ import * as projectList from "../../../json/projectList.json";
 import Card from "./Card";
 
 const ProjectList: React.FC = () => (
-  <div>
+  <ul>
     {Object.keys(projectList)
       .filter((project) => project !== "default")
       .map((key) => (
@@ -17,7 +17,7 @@ const ProjectList: React.FC = () => (
           />
         </li>
       ))}
-  </div>
+  </ul>
 );
 
 export default ProjectList;
