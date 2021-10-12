@@ -5,4 +5,7 @@ public/
 **/*.min.js
 *.config.*.js
 .eslintrc.js
+postcss.config.js
+tailwind.config.js
+webpack.config.js
 dist/
