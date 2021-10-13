@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Static from "../../static";
-import Pages from "../Pages";
+import { Pages } from "../Pages";
 
 const Header: React.FC = () => {
   const [openHamburger, setOpenHamburger] = useState<boolean>(false);

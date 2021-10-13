@@ -2,9 +2,11 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Top from "./top/Top";
 import Footer from "./common/Footer";
-import Pages from "./Pages";
+import { Pages } from "./Pages";
 import Project from "./project/Project";
 import Left from "./common/Left";
+import ProjectMap from "./project/map/ProjectMap";
+import ProjectGroup from "./project/group/ProjectGroup";
 
 const App: React.FC = () => (
   <div className="bg-cream h-full w-full relative">
@@ -20,6 +22,16 @@ const App: React.FC = () => (
                 <Switch>
                   <Route exact path={Pages.top.path} component={Top} />
                   <Route exact path={Pages.project.path} component={Project} />
+                  <Route
+                    exact
+                    path={Pages.projectGroup.path}
+                    component={ProjectGroup}
+                  />
+                  <Route
+                    exact
+                    path={Pages.projectMap.path}
+                    component={ProjectMap}
+                  />
                 </Switch>
               </div>
               <div className="w-full">

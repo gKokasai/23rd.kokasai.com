@@ -1,4 +1,4 @@
-const Pages = {
+export const Pages = {
   top: {
     displayName: "トップページ",
     path: "/",
@@ -6,6 +6,14 @@ const Pages = {
   project: {
     displayName: "企画一覧",
     path: "/project",
+  },
+  projectMap: {
+    displayName: "企画一覧",
+    path: "/project/map",
+  },
+  projectGroup: {
+    displayName: "企画一覧",
+    path: "/project/group",
   },
   access: {
     displayName: "アクセス",
@@ -17,4 +25,9 @@ const Pages = {
   },
 };
 
-export default Pages;
+export const ToShowPages = [
+  Pages.top,
+  Pages.project,
+  Pages.access,
+  Pages.greeting,
+];
