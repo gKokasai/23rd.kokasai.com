@@ -16,10 +16,12 @@ const App: React.FC = () => (
               <Left />
             </div>
             <div className="h-full pc:w-3/4 pc:overflow-y-scroll">
-              <Switch>
-                <Route exact path={Pages.top.path} component={Top} />
-                <Route exact path={Pages.project.path} component={Project} />
-              </Switch>
+              <div className="min-h-screen h-full w-full">
+                <Switch>
+                  <Route exact path={Pages.top.path} component={Top} />
+                  <Route exact path={Pages.project.path} component={Project} />
+                </Switch>
+              </div>
               <div className="w-full">
                 <Footer />
               </div>
