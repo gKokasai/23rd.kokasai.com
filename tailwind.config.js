@@ -11,7 +11,8 @@ module.exports = {
       colors: {
         midBlue: '#0A81AB',
         cream: '#F9F3DF',
-      }
+        greenC7D1BD: '#C7D1BD',
+      },
     },
   },
   variants: {

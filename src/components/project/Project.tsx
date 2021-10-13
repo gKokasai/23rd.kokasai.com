@@ -1,13 +1,20 @@
 import React from "react";
-import ProjectList from "./project-list/ProjectList";
+import { Link } from "react-router-dom";
+import Block from "./Block";
 
 // TODO: 企画一覧ページの作成
 const Project: React.FC = () => (
-  <ul>
-    <div className="pt-2 pl-10">
-      <ProjectList />
+  <div className="container h-full w-full">
+    <h2 className="pc:text-2xl desktop:text-4xl pl-10 pt-10">企画一覧</h2>
+    <div className="flex flex-row justify-around pc:pt-32 desktop:pt-44">
+      <Link to="/project/map">
+        <Block header="地図から探す" />
+      </Link>
+      <Link to="/project/group">
+        <Block header="クラス名・団体名から探す" />
+      </Link>
     </div>
-  </ul>
+  </div>
 );
 
 export default Project;
