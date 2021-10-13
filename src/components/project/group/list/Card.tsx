@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import ThumbnailImage from "./ThumbnailImage";
+import WithHeaderCard from "../../WithHeaderCard";
 
 /**
  * 企画一覧のカードコンポーネント
@@ -12,32 +13,25 @@ import ThumbnailImage from "./ThumbnailImage";
 export type CardProps = {
   thumbnailImagePath: string;
   name: string;
-  description: string;
-  gradeAndClass: string;
-  place: string;
+  groupName: string;
 };
 
 const Card: FC<CardProps> = (props) => {
-  const { thumbnailImagePath, name, description, gradeAndClass, place } = props;
+  const { thumbnailImagePath, name, groupName } = props;
   return (
-    <div className="container">
-      <div className="flex">
-        <div>
+    <WithHeaderCard header={name}>
+      <div className="container">
+        <div className="flex flex-row justify-center">
           <ThumbnailImage
             path={thumbnailImagePath}
             alt={`${name}のサムネイル画像`}
           />
         </div>
-        <div className="flex flex-col pl-3">
-          <h3 className="font-bold pb-3">{name}</h3>
-          <div className="pl-10">
-            <div className="pb-4">{description}</div>
-            <div className="pb-4">{gradeAndClass}</div>
-            <div className="pb-4">{place}</div>
-          </div>
+        <div className="text-center">
+          <div className="pb-4">{groupName}</div>
         </div>
       </div>
-    </div>
+    </WithHeaderCard>
   );
 };
 

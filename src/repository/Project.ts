@@ -4,6 +4,7 @@ export type Project = {
   name: string;
   description: string;
   place: string;
+  groupName: string;
 };
 
 export type ProjectList = {

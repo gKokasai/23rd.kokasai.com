@@ -1,23 +1,26 @@
 import React from "react";
 import Card from "./Card";
-import { getProjectList } from "../../../../repository/Project";
+import { getProjectList, ProjectList } from "../../../../repository/Project";
+import { GroupType } from "../../../../types/GroupType";
 
-let projectList = null;
+export type ProjectListProps = {
+  filter?: GroupType;
+};
 
-const ProjectList: React.FC = () => {
+let projectList: ProjectList = null;
+
+const ProjectList: React.FC<ProjectListProps> = () => {
   if (projectList !== null) {
     return (
-      <ul>
+      <ul className="flex flex-wrap">
         {Object.keys(projectList)
           .filter((project) => project !== "default")
           .map((key) => (
-            <li className="" key={key}>
+            <li className="w-1/3 pl-10 pt-5 pb-5" key={key}>
               <Card
                 thumbnailImagePath="https://placehold.jp/150x150.png"
                 name={projectList[key].name}
-                description={projectList[key].description}
-                gradeAndClass={key}
-                place={projectList[key].place}
+                groupName={projectList[key].groupName}
               />
             </li>
           ))}
