@@ -16,11 +16,7 @@ const ThumbnailImage: React.FC<ThumbnailImageProps> = (props) => {
   const { path, alt } = props;
   return (
     <div className="h-30 w-30">
-      <img
-        src={path}
-        alt={alt}
-        className="transition duration-500 ease-in-out transform hover:scale-110"
-      />
+      <img src={path} alt={alt} />
     </div>
   );
 };
