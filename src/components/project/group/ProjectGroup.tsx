@@ -1,6 +1,12 @@
-import React from "react";
-import ProjectList from "./list/ProjectList";
+import React, { lazy, Suspense } from "react";
+import Loading from "../../common/Loading";
 
-const ProjectGroup: React.FC = () => <ProjectList />;
+const ProjectList = lazy(() => import("./list/ProjectList"));
+
+const ProjectGroup: React.FC = () => (
+  <Suspense fallback={<Loading />}>
+    <ProjectList />
+  </Suspense>
+);
 
 export default ProjectGroup;
