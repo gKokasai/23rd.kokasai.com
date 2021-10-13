@@ -18,22 +18,20 @@ const App: React.FC = () => (
               <Left />
             </div>
             <div className="h-full pc:w-3/4 pc:overflow-y-scroll">
-              <div className="min-h-screen h-full w-full">
-                <Switch>
-                  <Route exact path={Pages.top.path} component={Top} />
-                  <Route exact path={Pages.project.path} component={Project} />
-                  <Route
-                    exact
-                    path={Pages.projectGroup.path}
-                    component={ProjectGroup}
-                  />
-                  <Route
-                    exact
-                    path={Pages.projectMap.path}
-                    component={ProjectMap}
-                  />
-                </Switch>
-              </div>
+              <Switch>
+                <Route exact path={Pages.top.path} component={Top} />
+                <Route exact path={Pages.project.path} component={Project} />
+                <Route
+                  exact
+                  path={Pages.projectGroup.path}
+                  component={ProjectGroup}
+                />
+                <Route
+                  exact
+                  path={Pages.projectMap.path}
+                  component={ProjectMap}
+                />
+              </Switch>
               <div className="w-full">
                 <Footer />
               </div>
