@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import WithHeaderCard from "./WithHeaderCard";
+import WithHeaderHoverCard from "./WithHeaderHoverCard";
 
 // TODO: 企画一覧ページの作成
 const Project: React.FC = () => (
@@ -8,10 +8,10 @@ const Project: React.FC = () => (
     <h2 className="pc:text-2xl desktop:text-4xl pl-10 pt-10">企画一覧</h2>
     <div className="flex flex-row justify-around pc:pt-32 desktop:pt-44">
       <Link to="/project/map">
-        <WithHeaderCard header="地図から探す" />
+        <WithHeaderHoverCard header="地図から探す" />
       </Link>
       <Link to="/project/group">
-        <WithHeaderCard header="クラス名・団体名から探す" />
+        <WithHeaderHoverCard header="クラス名・団体名から探す" />
       </Link>
     </div>
   </div>

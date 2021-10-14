@@ -15,7 +15,7 @@ export type ThumbnailImageProps = {
 const ThumbnailImage: React.FC<ThumbnailImageProps> = (props) => {
   const { path, alt } = props;
   return (
-    <div className="h-40 w-40">
+    <div className="pc:h-40 pc:w-40 desktop:h-64 desktop:w-64">
       <img src={path} alt={alt} />
     </div>
   );
