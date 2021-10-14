@@ -10,12 +10,12 @@ const ProjectList: React.FC<ProjectListProps> = (props) => {
   const { projectList } = props;
   return (
     <ul className="flex flex-wrap">
-      {Object.keys(projectList).map((key) => (
-        <li className="w-1/3 pl-10 pt-5 pb-5" key={key}>
+      {projectList.map((key) => (
+        <li className="w-1/3 pl-10 pt-5 pb-5" key={key.name}>
           <Card
             thumbnailImagePath="https://placehold.jp/150x150.png"
-            name={projectList[key].name}
-            groupName={projectList[key].groupName}
+            name={key.name}
+            groupName={key.groupName}
           />
         </li>
       ))}

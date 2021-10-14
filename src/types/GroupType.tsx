@@ -1,7 +1,8 @@
 export type GroupType =
   | "1st"
   | "2nd"
-  | "3th"
+  | "3rd"
   | "4thAnd5th"
-  | "club"
-  | "community";
+  | "bukatsu"
+  | "aikoukai"
+  | "yushi";

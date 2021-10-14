@@ -7,9 +7,7 @@ export type Project = {
   groupName: string;
 };
 
-export type ProjectList = {
-  [className: string]: Project;
-};
+export type ProjectList = Project[];
 
 export const getProjectList = (): Promise<AxiosResponse<ProjectList>> =>
   axios.get("/json/project-list.json");
