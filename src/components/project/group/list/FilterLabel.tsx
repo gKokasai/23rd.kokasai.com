@@ -15,7 +15,7 @@ const FilterLabel: React.FC<LabelProps> = (props) => {
           const isSelected = selects.find((select) => select === item);
 
           const className = `border border-purple-600 rounded-sm text-purple-600 ${
-            isSelected ? "bg-gray-400" : "shadow-2xl"
+            isSelected ? "bg-white" : "shadow-2xl"
           }`;
 
           return (

@@ -9,8 +9,6 @@ import {
 let ready: null | TypeProjectList = null;
 
 const ProjectGroup: React.FC = () => {
-  const [projectList, setProjectList] = useState<TypeProjectList | null>(ready);
-
   const groups = [
     "1年生",
     "2年生",
@@ -20,6 +18,7 @@ const ProjectGroup: React.FC = () => {
     "愛好会",
     "有志",
   ];
+  const [projectList, setProjectList] = useState<TypeProjectList | null>(ready);
   const [selectedGroup, setSelectedGroup] = useState<string[]>(groups);
 
   const onClickFilterLabelItems = (
@@ -47,7 +46,7 @@ const ProjectGroup: React.FC = () => {
             onClick={(event) => onClickFilterLabelItems(event)}
           />
         </div>
-        <ProjectList projectList={projectList} />
+        <ProjectList projectList={projectList} selectedGroup={selectedGroup} />
       </div>
     );
   }
