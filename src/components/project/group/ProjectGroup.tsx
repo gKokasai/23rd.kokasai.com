@@ -46,7 +46,12 @@ const ProjectGroup: React.FC = () => {
             onClick={(event) => onClickFilterLabelItems(event)}
           />
         </div>
-        <ProjectList projectList={projectList} selectedGroup={selectedGroup} />
+        <div className="pc:pr-9">
+          <ProjectList
+            projectList={projectList}
+            selectedGroup={selectedGroup}
+          />
+        </div>
       </div>
     );
   }
