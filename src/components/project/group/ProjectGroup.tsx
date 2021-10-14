@@ -1,12 +1,65 @@
-import React, { lazy, Suspense } from "react";
-import Loading from "../../common/Loading";
+import React, { useState } from "react";
+import FilterLabel from "./list/FilterLabel";
+import ProjectList from "./list/ProjectList";
+import {
+  getProjectList,
+  ProjectList as TypeProjectList,
+} from "../../../repository/Project";
 
-const ProjectList = lazy(() => import("./list/ProjectList"));
+let ready: null | TypeProjectList = null;
 
-const ProjectGroup: React.FC = () => (
-  <Suspense fallback={<Loading />}>
-    <ProjectList />
-  </Suspense>
-);
+const ProjectGroup: React.FC = () => {
+  const [projectList, setProjectList] = useState<TypeProjectList | null>(ready);
+
+  const groups = [
+    "1年生",
+    "2年生",
+    "3年生",
+    "4, 5年生",
+    "部活",
+    "愛好会",
+    "有志",
+  ];
+  const [selectedGroup, setSelectedGroup] = useState<string[]>(groups);
+
+  const onClickFilterLabelItems = (
+    event: React.MouseEvent<HTMLButtonElement>
+  ) => {
+    const targetElement = event.currentTarget;
+    const targetKey = targetElement.dataset.key;
+    const newAllay = selectedGroup.filter((item) => item !== targetKey);
+
+    if (selectedGroup.toString() === newAllay.toString()) {
+      setSelectedGroup(selectedGroup.concat(targetKey));
+    } else {
+      setSelectedGroup(newAllay);
+    }
+  };
+
+  if (ready !== null) {
+    return (
+      <div>
+        <h2 className="pc:text-2xl desktop:text-4xl pl-10 pt-10">企画一覧</h2>
+        <div className="pt-6 w-full">
+          <FilterLabel
+            labelItems={groups}
+            selects={selectedGroup}
+            onClick={(event) => onClickFilterLabelItems(event)}
+          />
+        </div>
+        <ProjectList projectList={projectList} />
+      </div>
+    );
+  }
+
+  // eslint-disable-next-line no-async-promise-executor
+  throw new Promise(async (resolve) => {
+    await getProjectList().then((response) => {
+      ready = response.data;
+      setProjectList(response.data);
+    });
+    resolve(null);
+  });
+};
 
 export default ProjectGroup;

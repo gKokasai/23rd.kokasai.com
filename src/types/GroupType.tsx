@@ -4,5 +4,4 @@ export type GroupType =
   | "3th"
   | "4thAnd5th"
   | "club"
-  | "community"
-  | "all";
+  | "community";
