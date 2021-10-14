@@ -17,7 +17,7 @@ const ProjectList: React.FC<ProjectListProps> = (props) => {
       {filteredProjectList.map((key) => (
         <li className="w-1/3 pl-10 pt-5 pb-5" key={key.name}>
           <Card
-            thumbnailImagePath="https://placehold.jp/150x150.png"
+            thumbnailImagePath={`/img/thumbnail/${key.groupName}.webp`}
             name={key.name}
             groupName={key.groupName}
           />
