@@ -14,6 +14,10 @@
   "keywords": [],
   "author": "",
   "dependencies": {
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@mui/icons-material": "^5.0.4",
+    "@mui/material": "^5.0.4",
     "axios": "^0.23.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

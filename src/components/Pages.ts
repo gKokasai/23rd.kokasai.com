@@ -15,6 +15,10 @@ export const Pages = {
     displayName: "企画一覧",
     path: "/project/group",
   },
+  projectDetail: {
+    displayName: "企画一覧",
+    path: (groupName: string): string => `/project/detail/${groupName}`,
+  },
   access: {
     displayName: "アクセス",
     path: "/access",
