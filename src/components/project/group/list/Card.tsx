@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import ThumbnailImage from "./ThumbnailImage";
+import Static from "../../../../static";
 
 /**
  * 企画一覧のカードコンポーネント
@@ -10,13 +11,12 @@ import ThumbnailImage from "./ThumbnailImage";
  */
 
 export type CardProps = {
-  thumbnailImagePath: string;
   name: string;
   groupName: string;
 };
 
 const Card: FC<CardProps> = (props) => {
-  const { thumbnailImagePath, name, groupName } = props;
+  const { name, groupName } = props;
   return (
     <div className="h-full w-full bg-greenC7D1BD rounded-2xl shadow-2xl transition duration-500 ease-in-out transform hover:scale-110">
       <div className="container h-full">
@@ -24,8 +24,8 @@ const Card: FC<CardProps> = (props) => {
           <h3 className="desktop:text-2xl pt-4">{name}</h3>
           <div className="pt-4">
             <ThumbnailImage
-              path={thumbnailImagePath}
-              alt={`${name}のサムネイル画像`}
+              path={Static.projectThumbnail.path(groupName)}
+              alt={Static.projectThumbnail.alt(groupName)}
             />
           </div>
           <div className="pt-4 pb-4">{groupName}</div>
