@@ -13,7 +13,8 @@ module.exports = {
         cream: '#F9F3DF',
         greenC7D1BD: '#C7D1BD',
         orangeF2954B: '#F2954B',
-        gray: '#DFE0DF'
+        gray: '#DFE0DF',
+        pinkF19393: '#F19393',
       }
     },
   },
