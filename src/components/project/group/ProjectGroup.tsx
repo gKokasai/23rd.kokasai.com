@@ -26,13 +26,7 @@ const ProjectGroup: React.FC = () => {
   ) => {
     const targetElement = event.currentTarget;
     const targetKey = targetElement.dataset.key;
-    const newAllay = selectedGroup.filter((item) => item !== targetKey);
-
-    if (selectedGroup.toString() === newAllay.toString()) {
-      setSelectedGroup(selectedGroup.concat(targetKey));
-    } else {
-      setSelectedGroup(newAllay);
-    }
+    setSelectedGroup([targetKey]);
   };
 
   if (ready !== null) {
