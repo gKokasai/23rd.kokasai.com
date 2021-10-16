@@ -20,7 +20,6 @@ const Header: React.FC = () => {
         <div className="container">
           <ul className="flex flex-col pb-2">
             {
-              // TODO: 各ページ実装後、仮リンクではなく実装する
               Object.keys(Pages).map((key) => (
                 <div className="border-b-2" key={key}>
                   <a href="/">
