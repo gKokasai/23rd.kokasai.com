@@ -11,7 +11,6 @@ const Footer: React.FC = () => (
           <h4 className="font-semibold pb-2">ページ一覧</h4>
           <ul>
             {
-              // TODO: 各ページ実装後、仮リンクではなく実装する
               ToShowPages.map((page) => (
                 <Link to={page.path} key={page.displayName}>
                   <li className="pb-4">{page.displayName}</li>
