@@ -40,7 +40,7 @@ const ProjectGroup: React.FC = () => {
 
   if (ready !== null) {
     return (
-      <div className="bg-cream">
+      <div>
         <h2 className="pc:text-2xl desktop:text-4xl pl-10 pt-10">企画一覧</h2>
         <div className="pt-6 w-full">
           <FilterLabel
