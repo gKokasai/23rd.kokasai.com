@@ -31,7 +31,7 @@ const ProjectGroup: React.FC = () => {
 
   if (ready !== null) {
     return (
-      <div>
+      <div className="bg-cream">
         <h2 className="pc:text-2xl desktop:text-4xl pl-10 pt-10">企画一覧</h2>
         <div className="pt-6 w-full">
           <FilterLabel
@@ -40,7 +40,7 @@ const ProjectGroup: React.FC = () => {
             onClick={(event) => onClickFilterLabelItems(event)}
           />
         </div>
-        <div className="pc:pr-9">
+        <div className="pr-10 pc:pr-9">
           <ProjectList
             projectList={projectList}
             selectedGroup={selectedGroup}

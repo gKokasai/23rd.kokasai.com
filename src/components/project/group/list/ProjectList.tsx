@@ -23,7 +23,7 @@ const ProjectList: React.FC<ProjectListProps> = (props) => {
   return (
     <ul className="flex flex-wrap w-full">
       {filteredProjectList.map((key) => (
-        <li key={key.name} className="w-1/3">
+        <li key={key.name} className="w-1/2 pc:w-1/3">
           <button
             type="button"
             onClick={() => onClickProject(key)}
