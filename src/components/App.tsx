@@ -11,6 +11,7 @@ const ProjectMap = lazy(() => import("./project/map/ProjectMap"));
 const ProjectGroup = lazy(() => import("./project/group/ProjectGroup"));
 const ProjectDetail = lazy(() => import("./project/detail/ProjectDetail"));
 const Access = lazy(() => import("./access/Access"));
+const Greeting = lazy(() => import("./greeting/Greeting"));
 
 const App: React.FC = () => (
   <div className="bg-cream h-full w-full relative">
@@ -42,6 +43,11 @@ const App: React.FC = () => (
                     component={ProjectDetail}
                   />
                   <Route exact path={Pages.access.path} component={Access} />
+                  <Route
+                    exact
+                    path={Pages.greeting.path}
+                    component={Greeting}
+                  />
                 </Switch>
               </Suspense>
               <div className="w-full">
