@@ -20,7 +20,7 @@ const App: React.FC = () => (
             <div className="hidden pc:inline-block pc:h-screen pc:w-1/4">
               <Left />
             </div>
-            <div className="h-full pc:w-3/4 pc:overflow-y-scroll">
+            <div className="h-full w-full pc:w-3/4 pc:overflow-y-scroll">
               <Suspense fallback={Loading}>
                 <Switch>
                   <Route exact path={Pages.top.path} component={Top} />
