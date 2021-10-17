@@ -16,7 +16,7 @@ const ProjectGroup: React.FC = () => {
     "1年生",
     "2年生",
     "3年生",
-    "4, 5年生",
+    "4,5年生",
     "部活",
     "愛好会",
     "有志",
@@ -32,8 +32,9 @@ const ProjectGroup: React.FC = () => {
     const targetElement = event.currentTarget;
     const targetKey = targetElement.dataset.key;
     setSelectedGroup([targetKey]);
+    const encodedTargetKey = encodeURI(targetKey);
     window.location.replace(
-      `${window.location.origin}${window.location.pathname}?select=${targetKey}`
+      `${window.location.origin}${window.location.pathname}?select=${encodedTargetKey}`
     );
   };
 
