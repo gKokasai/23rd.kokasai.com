@@ -25,13 +25,11 @@ const ProjectDetail: React.FC = () => {
           </div>
           <div className="pl-20 pt-6 pr-5">{description}</div>
         </div>
-        <div className="pt-10 pr-10 ">
-          <div className="border-greenC7D1BD border-2">
-            <ThumbnailImage
-              path={Static.projectThumbnail.path(groupName)}
-              alt={Static.projectThumbnail.alt(groupName)}
-            />
-          </div>
+        <div className="pt-10 pr-10">
+          <ThumbnailImage
+            path={Static.projectThumbnail.path(groupName)}
+            alt={Static.projectThumbnail.alt(groupName)}
+          />
         </div>
       </div>
     </div>
