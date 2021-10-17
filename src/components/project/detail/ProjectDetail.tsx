@@ -17,8 +17,10 @@ const ProjectDetail: React.FC = () => {
       <div className="flex justify-between">
         <div>
           <h2 className="text-2xl pl-10 pt-10">{name}</h2>
-          <div className="pl-20 pt-6">
-            <GroupOutlinedIcon />
+          <div className="pl-20 pt-6 flex">
+            <div className="pr-2 pb-4">
+              <GroupOutlinedIcon />
+            </div>
             {groupName}
           </div>
           <div className="pl-20 pt-6 pr-5">{description}</div>
