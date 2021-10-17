@@ -16,7 +16,6 @@ const ProjectList: React.FC<ProjectListProps> = (props) => {
   const filteredProjectList = projectList.filter(
     (project) => !!selectedGroup.find((group) => group === project.type)
   );
-
   const onClickProject = (key: Project) => {
     history.push(
       Pages.projectDetail.path(key.groupName),
