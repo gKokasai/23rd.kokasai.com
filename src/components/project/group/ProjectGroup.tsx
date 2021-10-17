@@ -9,6 +9,9 @@ import {
 let ready: null | TypeProjectList = null;
 
 const ProjectGroup: React.FC = () => {
+  const url = new URL(window.location.href);
+  const param = url.searchParams;
+  const select = param.get("select");
   const groups = [
     "1年生",
     "2年生",
@@ -19,7 +22,9 @@ const ProjectGroup: React.FC = () => {
     "有志",
   ];
   const [projectList, setProjectList] = useState<TypeProjectList | null>(ready);
-  const [selectedGroup, setSelectedGroup] = useState<string[]>(groups);
+  const [selectedGroup, setSelectedGroup] = useState<string[]>(
+    select ? [select] : ["1年生"]
+  );
 
   const onClickFilterLabelItems = (
     event: React.MouseEvent<HTMLButtonElement>
@@ -27,6 +32,9 @@ const ProjectGroup: React.FC = () => {
     const targetElement = event.currentTarget;
     const targetKey = targetElement.dataset.key;
     setSelectedGroup([targetKey]);
+    window.location.replace(
+      `${window.location.origin}${window.location.pathname}?select=${targetKey}`
+    );
   };
 
   if (ready !== null) {
