@@ -16,6 +16,10 @@ const Static = {
   kokasaiIllust: {
     icon: "/img/kokasai-illust.png",
   },
+  projectThumbnail: {
+    path: (groupName: string): string => `/img/thumbnail/${groupName}.webp`,
+    alt: (groupName: string): string => `${groupName}のサムネイル画像`,
+  },
 };
 
 export default Static;

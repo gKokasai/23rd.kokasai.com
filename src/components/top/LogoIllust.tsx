@@ -1,5 +1,5 @@
 import React from "react";
-import Static from "../../../static";
+import Static from "../../static";
 
 const LogoIllust: React.FC = () => (
   <div className="w-10/12 mx-auto">

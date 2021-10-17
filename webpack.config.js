@@ -72,17 +72,17 @@ module.exports = {
     new CopyPlugin(
       {
         patterns: [
-          { from: "**/img/*", to: path.resolve(__dirname, "dist"), context: "static"}
+          { from: "static", to: path.resolve(__dirname, "dist")}
         ]
       }
     ),
     new WriteFilePlugin(),
     new HtmlWebpackPlugin({
-      template: "./static/index.html",
+      template: "./html/index.html",
     }),
     new HtmlWebpackPlugin({
       filename: "404.html",
-      template: "./static/404.html",
+      template: "./html/404.html",
       inject: false
     }),
     new MiniCssExtractPlugin({

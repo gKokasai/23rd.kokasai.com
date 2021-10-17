@@ -65,9 +65,14 @@ module.exports = {
         extensions: ['.jsx', '.tsx'],
       },
     ],
-    'linebreak-style': ["error", "unix"],
+    'linebreak-style': ["error", process.platform === 'win32' ? 'windows' : 'unix'],
     "max-len": [1, 200],
-    "prettier/prettier": "error"
+    "prettier/prettier": [
+        "error",
+        {
+          'endOfLine': 'auto'
+        }
+      ]
   },
   overrides: [
     {

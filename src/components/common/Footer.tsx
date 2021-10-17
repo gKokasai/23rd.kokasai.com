@@ -1,5 +1,6 @@
 import React from "react";
-import Pages from "../Pages";
+import { Link } from "react-router-dom";
+import { ToShowPages } from "../Pages";
 import Static from "../../static";
 
 const Footer: React.FC = () => (
@@ -10,13 +11,10 @@ const Footer: React.FC = () => (
           <h4 className="font-semibold pb-2">ページ一覧</h4>
           <ul>
             {
-              // TODO: 各ページ実装後、仮リンクではなく実装する
-              Object.keys(Pages).map((key) => (
-                <a href="/">
-                  <li className="pb-4" key={key}>
-                    {Pages[key].displayName}
-                  </li>
-                </a>
+              ToShowPages.map((page) => (
+                <Link to={page.path} key={page.displayName}>
+                  <li className="pb-4">{page.displayName}</li>
+                </Link>
               ))
             }
           </ul>
