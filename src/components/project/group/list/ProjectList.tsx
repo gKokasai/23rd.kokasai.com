@@ -1,6 +1,9 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import Card from "./Card";
-import { ProjectList } from "../../../../repository/Project";
+import { Project, ProjectList } from "../../../../repository/Project";
+import { Pages } from "../../../Pages";
+import compareGroupName from "../../../../utill/compareGroupName";
 
 export type ProjectListProps = {
   projectList: ProjectList;
@@ -13,6 +16,7 @@ const ProjectList: React.FC<ProjectListProps> = (props) => {
   const filteredProjectList = projectList.filter(
     (project) => !!selectedGroup.find((group) => group === project.type)
   );
+
   const onClickProject = (key: Project) => {
     history.push(
       Pages.projectDetail.path(key.groupName),
@@ -22,7 +26,7 @@ const ProjectList: React.FC<ProjectListProps> = (props) => {
   };
   return (
     <ul className="flex flex-wrap w-full">
-      {filteredProjectList.map((key) => (
+      {filteredProjectList.sort(compareGroupName).map((key) => (
         <li key={key.name} className="w-1/2 pc:w-1/3">
           <button
             type="button"
