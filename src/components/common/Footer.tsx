@@ -10,13 +10,11 @@ const Footer: React.FC = () => (
         <div>
           <h4 className="font-semibold pb-2">ページ一覧</h4>
           <ul>
-            {
-              ToShowPages.map((page) => (
-                <Link to={page.path} key={page.displayName}>
-                  <li className="pb-4">{page.displayName}</li>
-                </Link>
-              ))
-            }
+            {ToShowPages.map((page) => (
+              <Link to={page.path} key={page.displayName}>
+                <li className="pb-4">{page.displayName}</li>
+              </Link>
+            ))}
           </ul>
         </div>
         <ul>
