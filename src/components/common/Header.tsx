@@ -19,15 +19,13 @@ const Header: React.FC = () => {
       <div className={openHamburger ? "inline-block" : "hidden"}>
         <div className="container">
           <ul className="flex flex-col pb-2">
-            {
-              Object.keys(Pages).map((key) => (
-                <div className="border-b-2" key={key}>
-                  <a href="/">
-                    <li className="pt-4">{Pages[key].displayName}</li>
-                  </a>
-                </div>
-              ))
-            }
+            {Object.keys(Pages).map((key) => (
+              <div className="border-b-2" key={key}>
+                <a href="/">
+                  <li className="pt-4">{Pages[key].displayName}</li>
+                </a>
+              </div>
+            ))}
           </ul>
         </div>
       </div>
