@@ -12,11 +12,12 @@ const ProjectGroup = lazy(() => import("./project/group/ProjectGroup"));
 const ProjectDetail = lazy(() => import("./project/detail/ProjectDetail"));
 const Access = lazy(() => import("./access/Access"));
 const Greeting = lazy(() => import("./greeting/Greeting"));
+const Caution = lazy(() => import("./caution/Caution"));
 
 const App: React.FC = () => (
   <div className="bg-cream h-full w-full relative">
     <BrowserRouter>
-      <div className="container h-full w-full font-serif bg-cream">
+      <div className="container h-full w-full bg-cream">
         <div className="h-full w-full">
           <div className="flex h-full pc:w-full">
             <div className="hidden pc:inline-block pc:h-screen pc:w-1/4">
@@ -48,6 +49,7 @@ const App: React.FC = () => (
                     path={Pages.greeting.path}
                     component={Greeting}
                   />
+                  <Route exact path={Pages.caution.path} component={Caution} />
                 </Switch>
               </Suspense>
               <div className="w-full">
