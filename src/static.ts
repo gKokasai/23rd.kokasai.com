@@ -27,6 +27,10 @@ const Static = {
     src: (name: string): string => `/img/greeting/${name}.webp`,
     alt: (name: string): string => `${name}の写真`,
   },
+  cautionImage: {
+    src: (name: string): string => `/img/caution/${name}.png`,
+    alt: (name: string): string => `${name}のアイコン`,
+  },
 };
 
 export default Static;
