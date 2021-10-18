@@ -27,6 +27,10 @@ export const Pages = {
     displayName: "ごあいさつ",
     path: "/greeting",
   },
+  caution: {
+    displayName: "諸注意",
+    path: "/caution",
+  },
 };
 
 export const ToShowPages = [
@@ -34,4 +38,5 @@ export const ToShowPages = [
   Pages.project,
   Pages.access,
   Pages.greeting,
+  Pages.caution,
 ];
