@@ -7,10 +7,6 @@ export const Pages = {
     displayName: "企画一覧",
     path: "/project",
   },
-  projectMap: {
-    displayName: "企画一覧",
-    path: "/project/map",
-  },
   projectGroup: {
     displayName: "企画一覧",
     path: "/project/group",
