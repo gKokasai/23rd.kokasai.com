@@ -13,10 +13,11 @@ import Static from "../../static";
 export type CardProps = {
   name: string;
   groupName: string;
+  image: string;
 };
 
 const Card: FC<CardProps> = (props) => {
-  const { name, groupName } = props;
+  const { name, groupName, image } = props;
   return (
     <div className="h-full w-full bg-greenC7D1BD rounded-2xl shadow-2xl transition duration-500 ease-in-out transform hover:scale-110">
       <div className="container h-full">
@@ -24,8 +25,8 @@ const Card: FC<CardProps> = (props) => {
           <h3 className="desktop:text-2xl pt-4">{name}</h3>
           <div className="p-4">
             <ThumbnailImage
-              path={Static.projectThumbnail.path(groupName)}
-              alt={Static.projectThumbnail.alt(groupName)}
+              path={Static.projectThumbnail.path(image === "" ? groupName : image)}
+              alt={Static.projectThumbnail.alt(image === "" ? groupName : image)}
             />
           </div>
           <div className="pt-4 pb-4">{groupName}</div>

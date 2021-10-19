@@ -5,12 +5,11 @@ export type Project = {
   description: string;
   place: string;
   groupName: string;
+  image: string;
   type: string;
 };
 
-export type ProjectList = {
-  [className: string]: Project;
-};
+export type ProjectList = Project[];
 
 export const getProjectList = (): Promise<AxiosResponse<ProjectList>> =>
   axios.get("/json/project-list.json");

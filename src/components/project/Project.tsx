@@ -8,7 +8,7 @@ import {
 
 let ready: null | TypeProjectList = null;
 
-const ProjectGroup: React.FC = () => {
+const Project: React.FC = () => {
   const url = new URL(window.location.href);
   const param = url.searchParams;
   const select = param.get("select");
@@ -69,4 +69,4 @@ const ProjectGroup: React.FC = () => {
   });
 };
 
-export default ProjectGroup;
+export default Project;
