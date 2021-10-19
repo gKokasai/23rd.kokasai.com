@@ -13,7 +13,7 @@ const Greeting = lazy(() => import("./greeting/Greeting"));
 const Caution = lazy(() => import("./caution/Caution"));
 
 const App: React.FC = () => (
-  <div className="bg-cream h-full w-full relative">
+  <div className="h-full w-full relative bg-cream">
     <BrowserRouter>
       <div className="h-full w-full">
         <div className="h-full w-full">
@@ -21,7 +21,7 @@ const App: React.FC = () => (
             <div className="hidden pc:inline-block pc:h-screen pc:w-1/4">
               <Left />
             </div>
-            <div className="h-full w-full pc:w-3/4 pc:overflow-y-scroll container mx-auto">
+            <div className="flex-col h-full w-full pc:w-3/4 pc:overflow-y-scroll">
               <Suspense fallback={Loading}>
                 <Switch>
                   <Route exact path={Pages.top.path} component={Top} />

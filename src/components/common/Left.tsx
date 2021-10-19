@@ -4,7 +4,7 @@ import { ToShowPages } from "../Pages";
 
 const Left: React.FC = () => (
   <div className="h-full container">
-    <div className="bg-midBlue flex h-full flex-col items-end justify-end pr-6 text-white">
+    <div className="flex h-full flex-col items-end justify-end pr-6 text-white bg-orangeF2954B">
       <ul>
         {ToShowPages.map((page) => (
           <Link to={page.path} key={page.displayName}>

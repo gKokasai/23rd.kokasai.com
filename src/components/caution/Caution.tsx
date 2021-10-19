@@ -34,7 +34,7 @@ const Caution: React.FC = () => {
         <div className="h-full flex flex-wrap w-full pt-5">
           {imgNames.map((imgName) => (
             <div className="flex flex-col justify-around w-1/2 p-3 pc:py-2 pc:px-10">
-              <div className="w-full h-full text-center bg-orangeF2954B rounded-2xl">
+              <div className="w-full h-full text-center bg-pink-300 rounded-2xl shadow-2xl">
                 <div className="p-2 inline-block">
                   <Img imgName={imgName} />
                 </div>
