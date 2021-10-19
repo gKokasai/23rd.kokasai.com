@@ -20,9 +20,9 @@ const Card: FC<CardProps> = (props) => {
   return (
     <div className="h-full w-full bg-greenC7D1BD rounded-2xl shadow-2xl transition duration-500 ease-in-out transform hover:scale-110">
       <div className="container h-full">
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center justify-around">
           <h3 className="desktop:text-2xl pt-4">{name}</h3>
-          <div className="pt-4">
+          <div className="p-4">
             <ThumbnailImage
               path={Static.projectThumbnail.path(groupName)}
               alt={Static.projectThumbnail.alt(groupName)}
