@@ -33,9 +33,9 @@ const Caution: React.FC = () => {
         <PageTitle>諸注意</PageTitle>
         <div className="h-full flex flex-wrap w-full pt-5">
           {imgNames.map((imgName) => (
-            <div className="h-1/2 w-1/2 py-2 px-10">
-              <div className="w-full flex flex-col items-center bg-orangeF2954B rounded-2xl">
-                <div className="p-2">
+            <div className="flex flex-col justify-around w-1/2 p-3 pc:py-2 pc:px-10">
+              <div className="w-full h-full text-center bg-orangeF2954B rounded-2xl">
+                <div className="p-2 inline-block">
                   <Img imgName={imgName} />
                 </div>
                 <div className="p-2">{cautionSentenceList[imgName]}</div>

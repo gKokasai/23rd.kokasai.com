@@ -10,7 +10,7 @@ const Img: React.FC<ImgProps> = ({ imgName }) => (
     <img
       src={Static.cautionImage.src(imgName)}
       alt={Static.cautionImage.alt(imgName)}
-      width="200px"
+      width="150px"
     />
   </div>
 );
