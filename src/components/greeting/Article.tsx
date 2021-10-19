@@ -9,9 +9,13 @@ export type ArticleProps = {
 };
 const Article: React.FC<ArticleProps> = (props) => {
   const { title, children, imgName, imgDirection } = props;
-  const defaultImgClassName = "hidden w-1/3"
-  const leftImgClassName = `${defaultImgClassName} ${imgDirection === "left" ? "pc:inline-block" : "pc:hidden"}`;
-  const rightImgClassName = `${defaultImgClassName} ${imgDirection === "right" ? "pc:inline-block" : "pc:hidden"}`;
+  const defaultImgClassName = "hidden w-1/3";
+  const leftImgClassName = `${defaultImgClassName} ${
+    imgDirection === "left" ? "pc:inline-block" : "pc:hidden"
+  }`;
+  const rightImgClassName = `${defaultImgClassName} ${
+    imgDirection === "right" ? "pc:inline-block" : "pc:hidden"
+  }`;
   return (
     <div className="pb-2">
       <SubTitle>{title}</SubTitle>
@@ -22,7 +26,7 @@ const Article: React.FC<ArticleProps> = (props) => {
           alt={Static.greetingImage.alt(imgName)}
           width="auto"
         />
-          <p className="text-lg px-6">{children}</p>
+        <p className="text-lg px-6">{children}</p>
         <img
           className={rightImgClassName}
           src={Static.greetingImage.src(imgName)}

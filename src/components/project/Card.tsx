@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import ThumbnailImage from "./ThumbnailImage";
-import Static from "../../../../static";
+import Static from "../../static";
 
 /**
  * 企画一覧のカードコンポーネント

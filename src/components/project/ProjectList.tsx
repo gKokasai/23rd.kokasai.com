@@ -1,9 +1,9 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import Card from "./Card";
-import { Project, ProjectList } from "../../../../repository/Project";
-import { Pages } from "../../../Pages";
-import compareGroupName from "../../../../utill/compareGroupName";
+import { Project, ProjectList } from "../../repository/Project";
+import { Pages } from "../Pages";
+import compareGroupName from "../../utill/compareGroupName";
 
 export type ProjectListProps = {
   projectList: ProjectList;

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import GroupOutlinedIcon from "@mui/icons-material/GroupOutlined";
 import { useLocation } from "react-router-dom";
-import ThumbnailImage from "../group/list/ThumbnailImage";
+import ThumbnailImage from "../ThumbnailImage";
 import Static from "../../../static";
 
 const ProjectDetail: React.FC = () => {
