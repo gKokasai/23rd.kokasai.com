@@ -4,7 +4,7 @@ import { ToShowPages } from "../Pages";
 import Static from "../../static";
 
 const Footer: React.FC = () => (
-  <footer className="bg-blue-100 w-full">
+  <footer className="bg-yellow-300 w-full">
     <div className="container mx-auto pt-6 pb-4 w-full">
       <div className="flex flex-wrap justify-around">
         <div>
