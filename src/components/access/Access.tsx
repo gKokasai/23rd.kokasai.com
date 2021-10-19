@@ -28,11 +28,14 @@ const Access: React.FC = () => (
 
     <SubTitle>JR井野駅より</SubTitle>
     <Paragraph>
-      <li>バス約20分
+      <li>
+        バス約20分
         <div className="pl-6 pt-2">
           <p>井野駅北バス停</p>
           <p className="pl-10">↓</p>
-          <p>市内循環バス「ぐるりん」大八木線・中尾先回りで約20分 (系統番号6)</p>
+          <p>
+            市内循環バス「ぐるりん」大八木線・中尾先回りで約20分 (系統番号6)
+          </p>
           <p className="pl-10">↓</p>
           <p>群馬高専前下車</p>
         </div>
@@ -41,7 +44,8 @@ const Access: React.FC = () => (
 
     <SubTitle>JR高崎駅より</SubTitle>
     <Paragraph>
-      <li>バス約44分
+      <li>
+        バス約44分
         <div className="pl-6 pt-2">
           <p>高崎駅西口バス停9番のりば</p>
           <p className="pl-10">↓</p>

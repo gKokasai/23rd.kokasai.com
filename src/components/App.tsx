@@ -7,7 +7,6 @@ import Loading from "./common/Loading";
 
 const Top = lazy(() => import("./top/Top"));
 const Project = lazy(() => import("./project/Project"));
-const ProjectGroup = lazy(() => import("./project/group/ProjectGroup"));
 const ProjectDetail = lazy(() => import("./project/detail/ProjectDetail"));
 const Access = lazy(() => import("./access/Access"));
 const Greeting = lazy(() => import("./greeting/Greeting"));
@@ -27,11 +26,6 @@ const App: React.FC = () => (
                 <Switch>
                   <Route exact path={Pages.top.path} component={Top} />
                   <Route exact path={Pages.project.path} component={Project} />
-                  <Route
-                    exact
-                    path={Pages.projectGroup.path}
-                    component={ProjectGroup}
-                  />
                   <Route
                     exact
                     path={Pages.projectDetail.path(":groupName")}
