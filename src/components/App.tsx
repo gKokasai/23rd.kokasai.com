@@ -17,13 +17,13 @@ const Caution = lazy(() => import("./caution/Caution"));
 const App: React.FC = () => (
   <div className="bg-cream h-full w-full relative">
     <BrowserRouter>
-      <div className="container h-full w-full bg-cream">
+      <div className="h-full w-full">
         <div className="h-full w-full">
           <div className="flex h-full pc:w-full">
             <div className="hidden pc:inline-block pc:h-screen pc:w-1/4">
               <Left />
             </div>
-            <div className="h-full w-full pc:w-3/4 pc:overflow-y-scroll">
+            <div className="h-full w-full pc:w-3/4 pc:overflow-y-scroll container mx-auto">
               <Suspense fallback={Loading}>
                 <Switch>
                   <Route exact path={Pages.top.path} component={Top} />
