@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja" class="h-full m-0">
-  <head>
+  <head prefix="og: http://ogp.me/ns#">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:site_name" content="第23回　群馬高専 工華祭">
+    <meta property="og:title" content="第23回　群馬高専 工華祭">
+    <meta property="og:description" content="外部公開向け　公式Webページ">
+    <meta property="og:url" content="https://23rd.kokasai.com">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://23rd.kokasai.com/img/kokasai-illust.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@nitgc_kokasai">
+
     <link rel="icon" href="/img/favicon.ico">
     <title>第23回　工華祭</title>
     <script>
@@ -14,6 +23,17 @@
           window.history.replaceState(null, null, route);
         }
       })();
+    </script>
+    <!--Adobeフォントの読み込み 参考: https://helpx.adobe.com/jp/fonts/using/embed-codes.html-->
+    <script>
+      (function(d) {
+        var config = {
+                  kitId: 'ibg3orj',
+                  scriptTimeout: 3000,
+                  async: true
+                },
+                h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
     </script>
     <script defer src="/main.js"></script>
     <link rel="stylesheet"

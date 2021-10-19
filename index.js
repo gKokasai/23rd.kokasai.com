@@ -44545,10 +44545,11 @@ var Footer_1 = __importDefault(__webpack_require__(/*! ./common/Footer */ "./src
 var Loading_1 = __importDefault(__webpack_require__(/*! ./common/Loading */ "./src/components/common/Loading.tsx"));
 var Top = (0, react_1.lazy)(function () { return Promise.resolve().then(function () { return __importStar(__webpack_require__(/*! ./top/Top */ "./src/components/top/Top.tsx")); }); });
 var Project = (0, react_1.lazy)(function () { return Promise.resolve().then(function () { return __importStar(__webpack_require__(/*! ./project/Project */ "./src/components/project/Project.tsx")); }); });
-var ProjectMap = (0, react_1.lazy)(function () { return Promise.resolve().then(function () { return __importStar(__webpack_require__(/*! ./project/map/ProjectMap */ "./src/components/project/map/ProjectMap.tsx")); }); });
-var ProjectGroup = (0, react_1.lazy)(function () { return Promise.resolve().then(function () { return __importStar(__webpack_require__(/*! ./project/group/ProjectGroup */ "./src/components/project/group/ProjectGroup.tsx")); }); });
 var ProjectDetail = (0, react_1.lazy)(function () { return Promise.resolve().then(function () { return __importStar(__webpack_require__(/*! ./project/detail/ProjectDetail */ "./src/components/project/detail/ProjectDetail.tsx")); }); });
-var App = function () { return ((0, jsx_runtime_1.jsx)("div", __assign({ className: "bg-cream h-full w-full relative" }, { children: (0, jsx_runtime_1.jsx)(react_router_dom_1.BrowserRouter, { children: (0, jsx_runtime_1.jsx)("div", __assign({ className: "container h-full w-full font-serif bg-cream" }, { children: (0, jsx_runtime_1.jsx)("div", __assign({ className: "h-full w-full" }, { children: (0, jsx_runtime_1.jsxs)("div", __assign({ className: "flex h-full pc:w-full" }, { children: [(0, jsx_runtime_1.jsx)("div", __assign({ className: "hidden pc:inline-block pc:h-screen pc:w-1/4" }, { children: (0, jsx_runtime_1.jsx)(Left_1.default, {}, void 0) }), void 0), (0, jsx_runtime_1.jsxs)("div", __assign({ className: "h-full w-full pc:w-3/4 pc:overflow-y-scroll" }, { children: [(0, jsx_runtime_1.jsx)(react_1.Suspense, __assign({ fallback: Loading_1.default }, { children: (0, jsx_runtime_1.jsxs)(react_router_dom_1.Switch, { children: [(0, jsx_runtime_1.jsx)(react_router_dom_1.Route, { exact: true, path: Pages_1.Pages.top.path, component: Top }, void 0), (0, jsx_runtime_1.jsx)(react_router_dom_1.Route, { exact: true, path: Pages_1.Pages.project.path, component: Project }, void 0), (0, jsx_runtime_1.jsx)(react_router_dom_1.Route, { exact: true, path: Pages_1.Pages.projectGroup.path, component: ProjectGroup }, void 0), (0, jsx_runtime_1.jsx)(react_router_dom_1.Route, { exact: true, path: Pages_1.Pages.projectMap.path, component: ProjectMap }, void 0), (0, jsx_runtime_1.jsx)(react_router_dom_1.Route, { exact: true, path: Pages_1.Pages.projectDetail.path(":groupName"), component: ProjectDetail }, void 0)] }, void 0) }), void 0), (0, jsx_runtime_1.jsx)("div", __assign({ className: "w-full" }, { children: (0, jsx_runtime_1.jsx)(Footer_1.default, {}, void 0) }), void 0)] }), void 0)] }), void 0) }), void 0) }), void 0) }, void 0) }), void 0)); };
+var Access = (0, react_1.lazy)(function () { return Promise.resolve().then(function () { return __importStar(__webpack_require__(/*! ./access/Access */ "./src/components/access/Access.tsx")); }); });
+var Greeting = (0, react_1.lazy)(function () { return Promise.resolve().then(function () { return __importStar(__webpack_require__(/*! ./greeting/Greeting */ "./src/components/greeting/Greeting.tsx")); }); });
+var Caution = (0, react_1.lazy)(function () { return Promise.resolve().then(function () { return __importStar(__webpack_require__(/*! ./caution/Caution */ "./src/components/caution/Caution.tsx")); }); });
+var App = function () { return ((0, jsx_runtime_1.jsx)("div", __assign({ className: "bg-cream h-full w-full relative" }, { children: (0, jsx_runtime_1.jsx)(react_router_dom_1.BrowserRouter, { children: (0, jsx_runtime_1.jsx)("div", __assign({ className: "h-full w-full" }, { children: (0, jsx_runtime_1.jsx)("div", __assign({ className: "h-full w-full" }, { children: (0, jsx_runtime_1.jsxs)("div", __assign({ className: "flex h-full pc:w-full" }, { children: [(0, jsx_runtime_1.jsx)("div", __assign({ className: "hidden pc:inline-block pc:h-screen pc:w-1/4" }, { children: (0, jsx_runtime_1.jsx)(Left_1.default, {}, void 0) }), void 0), (0, jsx_runtime_1.jsxs)("div", __assign({ className: "h-full w-full pc:w-3/4 pc:overflow-y-scroll container mx-auto" }, { children: [(0, jsx_runtime_1.jsx)(react_1.Suspense, __assign({ fallback: Loading_1.default }, { children: (0, jsx_runtime_1.jsxs)(react_router_dom_1.Switch, { children: [(0, jsx_runtime_1.jsx)(react_router_dom_1.Route, { exact: true, path: Pages_1.Pages.top.path, component: Top }, void 0), (0, jsx_runtime_1.jsx)(react_router_dom_1.Route, { exact: true, path: Pages_1.Pages.project.path, component: Project }, void 0), (0, jsx_runtime_1.jsx)(react_router_dom_1.Route, { exact: true, path: Pages_1.Pages.projectDetail.path(":groupName"), component: ProjectDetail }, void 0), (0, jsx_runtime_1.jsx)(react_router_dom_1.Route, { exact: true, path: Pages_1.Pages.access.path, component: Access }, void 0), (0, jsx_runtime_1.jsx)(react_router_dom_1.Route, { exact: true, path: Pages_1.Pages.greeting.path, component: Greeting }, void 0), (0, jsx_runtime_1.jsx)(react_router_dom_1.Route, { exact: true, path: Pages_1.Pages.caution.path, component: Caution }, void 0)] }, void 0) }), void 0), (0, jsx_runtime_1.jsx)("div", __assign({ className: "w-full" }, { children: (0, jsx_runtime_1.jsx)(Footer_1.default, {}, void 0) }), void 0)] }), void 0)] }), void 0) }), void 0) }), void 0) }, void 0) }), void 0)); };
 exports["default"] = App;
 
 
@@ -44573,10 +44574,6 @@ exports.Pages = {
         displayName: "企画一覧",
         path: "/project",
     },
-    projectMap: {
-        displayName: "企画一覧",
-        path: "/project/map",
-    },
     projectGroup: {
         displayName: "企画一覧",
         path: "/project/group",
@@ -44593,13 +44590,193 @@ exports.Pages = {
         displayName: "ごあいさつ",
         path: "/greeting",
     },
+    caution: {
+        displayName: "諸注意",
+        path: "/caution",
+    },
 };
 exports.ToShowPages = [
     exports.Pages.top,
     exports.Pages.project,
     exports.Pages.access,
     exports.Pages.greeting,
+    exports.Pages.caution,
 ];
+
+
+/***/ }),
+
+/***/ "./src/components/access/Access.tsx":
+/*!******************************************!*\
+  !*** ./src/components/access/Access.tsx ***!
+  \******************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var PageTitle_1 = __importDefault(__webpack_require__(/*! ../common/PageTitle */ "./src/components/common/PageTitle.tsx"));
+var SubTitle_1 = __importDefault(__webpack_require__(/*! ../common/SubTitle */ "./src/components/common/SubTitle.tsx"));
+var Paragraph_1 = __importDefault(__webpack_require__(/*! ../common/Paragraph */ "./src/components/common/Paragraph.tsx"));
+var static_1 = __importDefault(__webpack_require__(/*! ../../static */ "./src/static.ts"));
+var Access = function () { return ((0, jsx_runtime_1.jsxs)("div", __assign({ className: "pb-4 bg-cream" }, { children: [(0, jsx_runtime_1.jsx)(PageTitle_1.default, { children: "\u30A2\u30AF\u30BB\u30B9" }, void 0), (0, jsx_runtime_1.jsx)(SubTitle_1.default, { children: "\u5468\u8FBA\u5730\u56F3" }, void 0), (0, jsx_runtime_1.jsx)(Paragraph_1.default, { children: (0, jsx_runtime_1.jsx)("div", __assign({ className: "pt-96 pb-36 pr-4 h-0 relative" }, { children: (0, jsx_runtime_1.jsx)("iframe", { title: "google map", src: static_1.default.googleMap.src, className: "absolute w-full h-full left-0 right-0 bottom-0 top-0", width: "600", height: "450", loading: "lazy" }, void 0) }), void 0) }, void 0), (0, jsx_runtime_1.jsx)(SubTitle_1.default, { children: "JR\u65B0\u524D\u6A4B\u99C5\u3088\u308A" }, void 0), (0, jsx_runtime_1.jsxs)(Paragraph_1.default, { children: [(0, jsx_runtime_1.jsx)("li", { children: "\u5F92\u6B69\u7D0430\u5206" }, void 0), (0, jsx_runtime_1.jsx)("li", { children: "\u30BF\u30AF\u30B7\u30FC\u7D0410\u5206" }, void 0)] }, void 0), (0, jsx_runtime_1.jsx)(SubTitle_1.default, { children: "JR\u4E95\u91CE\u99C5\u3088\u308A" }, void 0), (0, jsx_runtime_1.jsx)(Paragraph_1.default, { children: (0, jsx_runtime_1.jsxs)("li", { children: ["\u30D0\u30B9\u7D0420\u5206", (0, jsx_runtime_1.jsxs)("div", __assign({ className: "pl-6 pt-2" }, { children: [(0, jsx_runtime_1.jsx)("p", { children: "\u4E95\u91CE\u99C5\u5317\u30D0\u30B9\u505C" }, void 0), (0, jsx_runtime_1.jsx)("p", __assign({ className: "pl-10" }, { children: "\u2193" }), void 0), (0, jsx_runtime_1.jsx)("p", { children: "\u5E02\u5185\u5FAA\u74B0\u30D0\u30B9\u300C\u3050\u308B\u308A\u3093\u300D\u5927\u516B\u6728\u7DDA\u30FB\u4E2D\u5C3E\u5148\u56DE\u308A\u3067\u7D0420\u5206 (\u7CFB\u7D71\u756A\u53F76)" }, void 0), (0, jsx_runtime_1.jsx)("p", __assign({ className: "pl-10" }, { children: "\u2193" }), void 0), (0, jsx_runtime_1.jsx)("p", { children: "\u7FA4\u99AC\u9AD8\u5C02\u524D\u4E0B\u8ECA" }, void 0)] }), void 0)] }, void 0) }, void 0), (0, jsx_runtime_1.jsx)(SubTitle_1.default, { children: "JR\u9AD8\u5D0E\u99C5\u3088\u308A" }, void 0), (0, jsx_runtime_1.jsxs)(Paragraph_1.default, { children: [(0, jsx_runtime_1.jsxs)("li", { children: ["\u30D0\u30B9\u7D0444\u5206", (0, jsx_runtime_1.jsxs)("div", __assign({ className: "pl-6 pt-2" }, { children: [(0, jsx_runtime_1.jsx)("p", { children: "\u9AD8\u5D0E\u99C5\u897F\u53E3\u30D0\u30B9\u505C9\u756A\u306E\u308A\u3070" }, void 0), (0, jsx_runtime_1.jsx)("p", __assign({ className: "pl-10" }, { children: "\u2193" }), void 0), (0, jsx_runtime_1.jsx)("p", { children: "\u5E02\u5185\u5FAA\u74B0\u30D0\u30B9\u300C\u3050\u308B\u308A\u3093\u300D\u5927\u516B\u6728\u7DDA\u30FB\u4E2D\u5C3E\u5148\u56DE\u308A\uFF08\u7CFB\u7D71\u756A\u53F76)" }, void 0), (0, jsx_runtime_1.jsx)("p", __assign({ className: "pl-10" }, { children: "\u2193" }), void 0), (0, jsx_runtime_1.jsx)("p", { children: "\u7FA4\u99AC\u9AD8\u5C02\u524D\u4E0B\u8ECA" }, void 0)] }), void 0)] }, void 0), (0, jsx_runtime_1.jsx)("li", __assign({ className: "pt-2" }, { children: "\u30BF\u30AF\u30B7\u30FC\u7D0430\u5206" }), void 0)] }, void 0), (0, jsx_runtime_1.jsx)(SubTitle_1.default, { children: "\u95A2\u8D8A\u81EA\u52D5\u8ECA\u9053 \u524D\u6A4B\u30A4\u30F3\u30BF\u30FC\u30C1\u30A7\u30F3\u30B8\u3088\u308A\uFF08\u7D041km\uFF09" }, void 0), (0, jsx_runtime_1.jsx)(Paragraph_1.default, { children: "\u8ECA\u3067\u7D045\u5206" }, void 0)] }), void 0)); };
+exports["default"] = Access;
+
+
+/***/ }),
+
+/***/ "./src/components/caution/Caution.tsx":
+/*!********************************************!*\
+  !*** ./src/components/caution/Caution.tsx ***!
+  \********************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var PageTitle_1 = __importDefault(__webpack_require__(/*! ../common/PageTitle */ "./src/components/common/PageTitle.tsx"));
+var Img_1 = __importDefault(__webpack_require__(/*! ./Img */ "./src/components/caution/Img.tsx"));
+var Caution_1 = __webpack_require__(/*! ../../repository/Caution */ "./src/repository/Caution.ts");
+var ready = null;
+var Caution = function () {
+    var _a = (0, react_1.useState)(ready), cautionSentenceList = _a[0], setCautionSentenceList = _a[1];
+    var imgNames = [
+        "hand",
+        "mask",
+        "restaurant",
+        "conversation",
+        "band",
+        "qr",
+        "map",
+        "garbage",
+        "smoking-drinking",
+        "car",
+        "theft",
+        "lost",
+        "photo",
+        "help",
+    ];
+    if (ready !== null) {
+        return ((0, jsx_runtime_1.jsxs)("div", __assign({ className: "w-full bg-cream" }, { children: [(0, jsx_runtime_1.jsx)(PageTitle_1.default, { children: "\u8AF8\u6CE8\u610F" }, void 0), (0, jsx_runtime_1.jsx)("div", __assign({ className: "h-full flex flex-wrap w-full pt-5" }, { children: imgNames.map(function (imgName) { return ((0, jsx_runtime_1.jsx)("div", __assign({ className: "flex flex-col justify-around w-1/2 p-3 pc:py-2 pc:px-10" }, { children: (0, jsx_runtime_1.jsxs)("div", __assign({ className: "w-full h-full text-center bg-orangeF2954B rounded-2xl" }, { children: [(0, jsx_runtime_1.jsx)("div", __assign({ className: "p-2 inline-block" }, { children: (0, jsx_runtime_1.jsx)(Img_1.default, { imgName: imgName }, void 0) }), void 0), (0, jsx_runtime_1.jsx)("div", __assign({ className: "p-2" }, { children: cautionSentenceList[imgName] }), void 0)] }), void 0) }), void 0)); }) }), void 0)] }), void 0));
+    }
+    // eslint-disable-next-line no-async-promise-executor
+    throw new Promise(function (resolve) { return __awaiter(void 0, void 0, void 0, function () {
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, (0, Caution_1.getCautionSentence)().then(function (response) {
+                        ready = response.data;
+                        setCautionSentenceList(response.data);
+                    })];
+                case 1:
+                    _a.sent();
+                    resolve(null);
+                    return [2 /*return*/];
+            }
+        });
+    }); });
+};
+exports["default"] = Caution;
+
+
+/***/ }),
+
+/***/ "./src/components/caution/Img.tsx":
+/*!****************************************!*\
+  !*** ./src/components/caution/Img.tsx ***!
+  \****************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var static_1 = __importDefault(__webpack_require__(/*! ../../static */ "./src/static.ts"));
+var Img = function (_a) {
+    var imgName = _a.imgName;
+    return ((0, jsx_runtime_1.jsx)("div", __assign({ className: "w-full" }, { children: (0, jsx_runtime_1.jsx)("img", { className: "w-20 pc:w-auto", src: static_1.default.cautionImage.src(imgName), alt: static_1.default.cautionImage.alt(imgName), width: "150px" }, void 0) }), void 0));
+};
+exports["default"] = Img;
 
 
 /***/ }),
@@ -44682,9 +44859,69 @@ exports["default"] = Loading;
 
 /***/ }),
 
-/***/ "./src/components/project/Project.tsx":
+/***/ "./src/components/common/PageTitle.tsx":
+/*!*********************************************!*\
+  !*** ./src/components/common/PageTitle.tsx ***!
+  \*********************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var PageTitle = function (_a) {
+    var children = _a.children;
+    return ((0, jsx_runtime_1.jsx)("h2", __assign({ className: "text-xl pc:text-2xl desktop:text-4xl pl-5 pc:pl-10 pt-10" }, { children: children }), void 0));
+};
+exports["default"] = PageTitle;
+
+
+/***/ }),
+
+/***/ "./src/components/common/Paragraph.tsx":
+/*!*********************************************!*\
+  !*** ./src/components/common/Paragraph.tsx ***!
+  \*********************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var Paragraph = function (_a) {
+    var children = _a.children;
+    return ((0, jsx_runtime_1.jsx)("p", __assign({ className: "pc:text-lg desktop:text-xl px-4 pt-3 pc:pl-20 pc:pt-5 pc:pr-8" }, { children: children }), void 0));
+};
+exports["default"] = Paragraph;
+
+
+/***/ }),
+
+/***/ "./src/components/common/SubTitle.tsx":
 /*!********************************************!*\
-  !*** ./src/components/project/Project.tsx ***!
+  !*** ./src/components/common/SubTitle.tsx ***!
   \********************************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
@@ -44701,53 +44938,21 @@ var __assign = (this && this.__assign) || function () {
     };
     return __assign.apply(this, arguments);
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 var jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-var WithHeaderHoverCard_1 = __importDefault(__webpack_require__(/*! ./WithHeaderHoverCard */ "./src/components/project/WithHeaderHoverCard.tsx"));
-var Project = function () { return ((0, jsx_runtime_1.jsxs)("div", __assign({ className: "w-full h-full" }, { children: [(0, jsx_runtime_1.jsx)("h2", __assign({ className: "text-lg pl-5 pt-5 pc:text-2xl desktop:text-4xl pc:pl-10 pc:pt-10" }, { children: "\u4F01\u753B\u4E00\u89A7" }), void 0), (0, jsx_runtime_1.jsxs)("div", __assign({ className: "flex flex-col pt-16 items-center pc:flex-row pc:justify-around pc:pt-32 desktop:pt-44" }, { children: [(0, jsx_runtime_1.jsx)("div", __assign({ className: "pb-10" }, { children: (0, jsx_runtime_1.jsx)(react_router_dom_1.Link, __assign({ to: "/project/map" }, { children: (0, jsx_runtime_1.jsx)(WithHeaderHoverCard_1.default, { header: "\u5730\u56F3\u304B\u3089\u63A2\u3059" }, void 0) }), void 0) }), void 0), (0, jsx_runtime_1.jsx)("div", __assign({ className: "" }, { children: (0, jsx_runtime_1.jsx)(react_router_dom_1.Link, __assign({ to: "/project/group" }, { children: (0, jsx_runtime_1.jsx)(WithHeaderHoverCard_1.default, { header: "\u30AF\u30E9\u30B9\u540D\u30FB\u56E3\u4F53\u540D\u304B\u3089\u63A2\u3059" }, void 0) }), void 0) }), void 0)] }), void 0)] }), void 0)); };
-exports["default"] = Project;
+var SubTitle = function (_a) {
+    var children = _a.children;
+    return ((0, jsx_runtime_1.jsx)("div", __assign({ className: "pl-1" }, { children: (0, jsx_runtime_1.jsx)("h3", __assign({ className: "pc:text-xl desktop:text-2xl pl-8 pc:pl-16 pt-5 border-b border-black w-5/6" }, { children: children }), void 0) }), void 0));
+};
+exports["default"] = SubTitle;
 
 
 /***/ }),
 
-/***/ "./src/components/project/WithHeaderHoverCard.tsx":
-/*!********************************************************!*\
-  !*** ./src/components/project/WithHeaderHoverCard.tsx ***!
-  \********************************************************/
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
-
-"use strict";
-
-var __assign = (this && this.__assign) || function () {
-    __assign = Object.assign || function(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-                t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-var jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-var WithHeaderHoverCard = function (props) {
-    var header = props.header;
-    return ((0, jsx_runtime_1.jsx)("div", __assign({ className: "w-60 h-60 desktop:w-96 desktop:h-96 bg-greenC7D1BD rounded-2xl shadow-2xl transition duration-500 ease-in-out transform hover:scale-110 flex justify-center items-center" }, { children: (0, jsx_runtime_1.jsx)("div", __assign({ className: "text-2xl text-center px-2" }, { children: header }), void 0) }), void 0));
-};
-exports["default"] = WithHeaderHoverCard;
-
-
-/***/ }),
-
-/***/ "./src/components/project/detail/ProjectDetail.tsx":
-/*!*********************************************************!*\
-  !*** ./src/components/project/detail/ProjectDetail.tsx ***!
-  \*********************************************************/
+/***/ "./src/components/greeting/Article.tsx":
+/*!*********************************************!*\
+  !*** ./src/components/greeting/Article.tsx ***!
+  \*********************************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
@@ -44768,29 +44973,125 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 var jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-var react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-var GroupOutlined_1 = __importDefault(__webpack_require__(/*! @mui/icons-material/GroupOutlined */ "./node_modules/@mui/icons-material/GroupOutlined.js"));
-var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-var ThumbnailImage_1 = __importDefault(__webpack_require__(/*! ../group/list/ThumbnailImage */ "./src/components/project/group/list/ThumbnailImage.tsx"));
-var static_1 = __importDefault(__webpack_require__(/*! ../../../static */ "./src/static.ts"));
-var ProjectDetail = function () {
-    var location = (0, react_router_dom_1.useLocation)();
-    var project = location.state[0];
-    var name = project.name, groupName = project.groupName, description = project.description;
-    (0, react_1.useEffect)(function () {
-        window.scroll({ top: 0, behavior: "auto" });
-    }, []);
-    return ((0, jsx_runtime_1.jsx)("div", __assign({ className: "h-full relative m-auto box-border bg-pinkF19393 bg-clip-content bg-cover p-16" }, { children: (0, jsx_runtime_1.jsxs)("div", __assign({ className: "flex justify-between" }, { children: [(0, jsx_runtime_1.jsxs)("div", { children: [(0, jsx_runtime_1.jsx)("h2", __assign({ className: "text-2xl pl-10 pt-10" }, { children: name }), void 0), (0, jsx_runtime_1.jsxs)("div", __assign({ className: "pl-20 pt-6 flex" }, { children: [(0, jsx_runtime_1.jsx)("div", __assign({ className: "pr-2 pb-4" }, { children: (0, jsx_runtime_1.jsx)(GroupOutlined_1.default, {}, void 0) }), void 0), groupName] }), void 0), (0, jsx_runtime_1.jsx)("div", __assign({ className: "pl-20 pt-6 pr-5" }, { children: description }), void 0)] }, void 0), (0, jsx_runtime_1.jsx)("div", __assign({ className: "pt-10 pr-10" }, { children: (0, jsx_runtime_1.jsx)(ThumbnailImage_1.default, { path: static_1.default.projectThumbnail.path(groupName), alt: static_1.default.projectThumbnail.alt(groupName) }, void 0) }), void 0)] }), void 0) }), void 0));
+var SubTitle_1 = __importDefault(__webpack_require__(/*! ../common/SubTitle */ "./src/components/common/SubTitle.tsx"));
+var static_1 = __importDefault(__webpack_require__(/*! ../../static */ "./src/static.ts"));
+var Article = function (props) {
+    var title = props.title, children = props.children, imgName = props.imgName, imgDirection = props.imgDirection;
+    var defaultImgClassName = "hidden w-1/3";
+    var leftImgClassName = defaultImgClassName + " " + (imgDirection === "left" ? "pc:inline-block" : "pc:hidden");
+    var rightImgClassName = defaultImgClassName + " " + (imgDirection === "right" ? "pc:inline-block" : "pc:hidden");
+    return ((0, jsx_runtime_1.jsxs)("div", __assign({ className: "pb-2" }, { children: [(0, jsx_runtime_1.jsx)(SubTitle_1.default, { children: title }, void 0), (0, jsx_runtime_1.jsxs)("div", __assign({ className: "flex flex-col pc:flex-row pt-6 px-4" }, { children: [(0, jsx_runtime_1.jsx)("img", { className: leftImgClassName, src: static_1.default.greetingImage.src(imgName), alt: static_1.default.greetingImage.alt(imgName), width: "auto" }, void 0), (0, jsx_runtime_1.jsx)("p", __assign({ className: "text-lg px-6" }, { children: children }), void 0), (0, jsx_runtime_1.jsx)("img", { className: rightImgClassName, src: static_1.default.greetingImage.src(imgName), alt: static_1.default.greetingImage.alt(imgName), width: "auto" }, void 0), (0, jsx_runtime_1.jsx)("img", { className: "inline-block pc:hidden p-2", src: static_1.default.greetingImage.src(imgName), alt: static_1.default.greetingImage.alt(imgName), width: "auto" }, void 0)] }), void 0)] }), void 0));
 };
-exports["default"] = ProjectDetail;
+exports["default"] = Article;
 
 
 /***/ }),
 
-/***/ "./src/components/project/group/ProjectGroup.tsx":
-/*!*******************************************************!*\
-  !*** ./src/components/project/group/ProjectGroup.tsx ***!
-  \*******************************************************/
+/***/ "./src/components/greeting/Greeting.tsx":
+/*!**********************************************!*\
+  !*** ./src/components/greeting/Greeting.tsx ***!
+  \**********************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var PageTitle_1 = __importDefault(__webpack_require__(/*! ../common/PageTitle */ "./src/components/common/PageTitle.tsx"));
+var Article_1 = __importDefault(__webpack_require__(/*! ./Article */ "./src/components/greeting/Article.tsx"));
+var Greeting = function () { return ((0, jsx_runtime_1.jsxs)("div", __assign({ className: "w-full\u3000pb-2 pc:pb-4 bg-cream" }, { children: [(0, jsx_runtime_1.jsx)(PageTitle_1.default, { children: "\u3054\u3042\u3044\u3055\u3064" }, void 0), (0, jsx_runtime_1.jsx)(Article_1.default, __assign({ imgName: "\u5DE5\u83EF\u796D\u5B9F\u884C\u59D4\u54E1\u9577", imgDirection: "right", title: "\u7B2C23\u56DE\u5DE5\u83EF\u796D\u958B\u50AC\uFF01 \u5DE5\u83EF\u796D\u5B9F\u884C\u59D4\u54E1\u9577 \u65E5\u9AD8\u7F8E\u5E0C" }, { children: "\u307E\u305A\u306F\u5DE5\u83EF\u796D\u304C\u7121\u4E8B\u958B\u50AC\u3067\u304D\u308B\u3053\u3068\u306B\u5B9F\u884C\u59D4\u54E1\u9577\u3068\u3057\u3066\u307B\u3063\u3068\u3057\u3066\u3044\u307E\u3059\u3002\u4ECA\u5E74\u306F\u30B3\u30ED\u30CA\u798D\u3068\u3044\u3046\u3053\u3068\u3082\u3042\u308A\u601D\u3046\u3088\u3046\u306B\u6D3B\u52D5\u6642\u9593\u304C\u78BA\u4FDD\u3067\u304D\u306A\u3044\u4E2D\u3067\u3057\u305F\u304C\u3001\u958B\u50AC\u306B\u5411\u3051\u3066\u7CBE\u4E00\u676F\u6E96\u5099\u3092\u9032\u3081\u3066\u307E\u3044\u308A\u307E\u3057\u305F\u3002\u7279\u306B\u30DD\u30B9\u30BF\u30FC\u3084\u30D1\u30F3\u30D5\u30EC\u30C3\u30C8\u306A\u3069\u306E\u30C7\u30B6\u30A4\u30F3\u95A2\u4FC2\u306F\u3001\u77ED\u6642\u9593\u3067\u5236\u4F5C\u3057\u305F\u3068\u306F\u601D\u3048\u306A\u3044\u9AD8\u30AF\u30AA\u30EA\u30C6\u30A3\u306A\u3082\u306E\u306B\u4ED5\u4E0A\u3052\u3066\u3082\u3089\u3044\u307E\u3057\u305F\u3002 \u4ED6\u306B\u3082\u98F2\u98DF\u4F01\u753B\u30FB\u5B66\u79D1\u306E\u7279\u8272\u3092\u751F\u304B\u3057\u305F\u4F53\u9A13\u4F01\u753B\u30FB\u307E\u308B\u3067\u30E9\u30A4\u30D6\u306E\u3088\u3046\u306A\u30B9\u30C6\u30FC\u30B8\u4F01\u753B\u306A\u3069\u3001\u305C\u3072\u4E94\u611F\u5168\u3066\u3067\u5DE5\u83EF\u796D\u3092\u697D\u3057\u3093\u3067\u304F\u3060\u3055\u3044\u3002 \u6700\u5F8C\u306B\u3001\u958B\u50AC\u306B\u3042\u305F\u308A\u591A\u5927\u306A\u308B\u3054\u652F\u63F4\u3054\u5354\u529B\u3092\u3044\u305F\u3060\u3044\u305F\u95A2\u4FC2\u8005\u306E\u7686\u69D8\u306B\u611F\u8B1D\u7533\u3057\u4E0A\u3052\u307E\u3059\u3002" }), void 0), (0, jsx_runtime_1.jsx)(Article_1.default, __assign({ title: "\u7FA4\u99AC\u9AD8\u5C02\u306E\u9B45\u529B\u3092\u5B58\u5206\u306B \u5B66\u751F\u4F1A\u9577 \u767B\u5742\u771F\u4F0D", imgDirection: "left", imgName: "\u5B66\u751F\u4F1A\u9577" }, { children: "\u672C\u65E5\u306F\u7B2C23\u56DE\u5DE5\u83EF\u796D\u306B\u304A\u8D8A\u3057\u3044\u305F\u3060\u304D\u3042\u308A\u304C\u3068\u3046\u3054\u3056\u3044\u307E\u3059\u3002\u9694\u5E74\u3067\u884C\u308F\u308C\u3066\u3044\u308B\u3053\u306E\u5DE5\u83EF\u796D\u3067\u3059\u304C\u3001\u4ECA\u56DE\u306F\u30B3\u30ED\u30CA\u6E26\u306B\u5165\u3063\u3066\u304B\u3089\u521D\u3081\u3066\u306E\u958B\u50AC\u3068\u306A\u308A\u307E\u3059\u3002\u4E2D\u6B62\u3068\u306A\u308B\u53EF\u80FD\u6027\u3082\u5927\u3044\u306B\u3042\u3063\u305F\u4E2D\u3001\u9014\u5207\u308C\u308B\u3053\u3068\u306A\u304F\u958B\u50AC\u3067\u304D\u308B\u3053\u3068\u3092\u672C\u5F53\u306B\u5B09\u3057\u304F\u601D\u3044\u307E\u3059\u3002\u5DE5\u83EF\u796D\u306E\u305F\u3081\u306B\u3054\u5354\u529B\u3044\u305F\u3060\u3044\u305F\u5168\u3066\u306E\u65B9\u306B\u5FC3\u3088\u308A\u611F\u8B1D\u7533\u3057\u4E0A\u3052\u307E\u3059\u3002 \u7B2C23\u56DE\u5DE5\u83EF\u796D\u306F\u524D\u56DE\u3088\u308A\u3082\u9AD8\u5C02\u3089\u3057\u3044\u4F01\u753B\u304C\u5897\u3048\u3001\u69CB\u5185\u306B\u306FFM\u30E9\u30B8\u30AA\u306E\u96FB\u6CE2\u3092\u98DB\u3070\u3057\u305F\u308A\u3082\u3057\u3066\u3044\u307E\u3059\u3002\u98DB\u6CAB\u9632\u6B62\u7528\u30A2\u30AF\u30EA\u30EB\u30D1\u30CD\u30EB\u306E\u30B9\u30BF\u30F3\u30C9\u3082\u5B9F\u7FD2\u5DE5\u5834\u306B\u3066\u4E00\u304B\u3089\u5236\u4F5C\u3057\u3066\u3044\u305F\u3060\u3044\u305F\u308A\u3068\u3001\u7FA4\u99AC\u9AD8\u5C02\u306E\u9B45\u529B\u304C\u8A70\u307E\u3063\u305F\u796D\u5178\u3068\u306A\u3063\u3066\u3044\u307E\u3059\u306E\u3067\u3001\u3069\u3046\u305E\u3054\u3086\u3063\u304F\u308A\u3068\u304A\u697D\u3057\u307F\u304F\u3060\u3055\u3044\u3002" }), void 0), (0, jsx_runtime_1.jsx)(Article_1.default, __assign({ title: "\u7B2C23\u56DE\u5DE5\u83EF\u796D\u306B\u5411\u3051\u3066 \u5B66\u751F\u4E3B\u4E8B \u6AFB\u5CA1 \u5E83", imgName: "\u6AFB\u5CA1\u5B66\u751F\u4E3B\u4E8B", imgDirection: "right" }, { children: "\u7B2C23\u56DE\u5DE5\u83EF\u796D\u306E\u958B\u50AC\u3092\u5FC3\u3088\u308A\u304A\u795D\u3044\u3044\u305F\u3057\u307E\u3059\u3002\u6628\u5E74\u5EA6\u304B\u3089\u306E\u65B0\u578B\u30B3\u30ED\u30CA\u798D\u306E\u4E2D\u3001\u6628\u5E74\u5EA6\u3060\u3051\u3067\u306A\u304F\u4ECA\u5E74\u3082\u3001\u4F53\u80B2\u5927\u4F1A\u3092\u306F\u3058\u3081\u8272\u3005\u306A\u884C\u4E8B\u30FB\u6D3B\u52D5\u304C\u4F8B\u5E74\u901A\u308A\u884C\u3048\u306A\u3044\u72B6\u6CC1\u304C\u7D9A\u3044\u3066\u3044\u307E\u3059\u3002\u5DE5\u83EF\u796D\u306B\u95A2\u3057\u3066\u3082\u3001\u3064\u3044\u5148\u3054\u308D\u307E\u3067\u958B\u50AC\u3059\u308B\u304B\u3069\u3046\u304B\u3092\u8FF7\u3044\u307E\u3057\u305F\u3002\u5834\u5408\u306B\u3088\u3063\u3066\u306F\u3001\u76F4\u524D\u3067\u3082\u4E2D\u6B62\u305B\u3056\u308B\u3092\u5F97\u306A\u3044\u72B6\u6CC1\u3067\u3059\u304C\u3001\u5B66\u751F\u8AF8\u541B\u304C\u3053\u308C\u3092\u8AAD\u3093\u3067\u3044\u308B\u3068\u3044\u3046\u3053\u3068\u306F\u958B\u50AC\u3067\u304D\u305F\u3068\u3044\u3046\u3053\u3068\u3067\u3057\u3087\u3046\u3002 \u6B8B\u5FF5\u306A\u304C\u3089\u3001\u4F8B\u5E74\u901A\u308A\u306E\u958B\u50AC\u3068\u306F\u3044\u304D\u307E\u305B\u3093\u3067\u3057\u305F\u304C\u3001\u5236\u7D04\u306E\u3042\u308B\u4E2D\u3067\u3082\u5B66\u751F\u8AF8\u541B\u306F\u5DE5\u83EF\u796D\u3092\u5B58\u5206\u306B\u697D\u3057\u3093\u3067\u304F\u3060\u3055\u3044\u3002\u305F\u3060\u3057\u3001\u305D\u308C\u305E\u308C\u304C\u611F\u67D3\u75C7\u5BFE\u7B56\u3092\u5FD8\u308C\u306A\u3044\u3067\u304F\u3060\u3055\u3044\u3002" }), void 0), (0, jsx_runtime_1.jsx)(Article_1.default, __assign({ title: "\u30B3\u30ED\u30CA\u798D\u3060\u304B\u3089\u3053\u305D\u3001\u9AD8\u5C02\u751F\u6D3B\u306E\u601D\u3044\u51FA\u3092\u3064\u304F\u308D\u3046 \u5B66\u6821\u9577 \u5C71\uFA11\u8AA0", imgName: "\u5C71\u5D0E\u6821\u9577", imgDirection: "left" }, { children: "\u9694\u5E74\u3067\u958B\u304B\u308C\u308B\u5DE5\u83EF\u796D\u3001\u7FA4\u99AC\u9AD8\u5C02\u3067\u306E\u601D\u3044\u51FA\u3068\u3057\u3066\u79C1\u305F\u3061\u4E00\u4EBA\u4E00\u4EBA\u306E\u5FC3\u306B\u6B8B\u3063\u3066\u3044\u304D\u307E\u3059\u3002\u6628\u5E74\u306B\u7D9A\u304D\uFF0C\u4ECA\u5E74\u3082\u65B0\u578B\u30B3\u30ED\u30CA\u30A6\u30A4\u30EB\u30B9\u611F\u67D3\u75C7\u306E\u5F71\u97FF\u3067\u901A\u5E38\u306E\u5B66\u6821\u751F\u6D3B\u304C\u3067\u304D\u305A\uFF0C\u5DE5\u83EF\u796D\u3082\u53C2\u52A0\u8005\u3084\u884C\u52D5\u306B\u5236\u9650\u304C\u3064\u3044\u3066\u3044\u307E\u3059\u3002\u305D\u308C\u3067\u3082\u3001\u5DE5\u83EF\u796D\u306F\u666E\u6BB5\u306E\u6388\u696D\u3068\u306F\u9055\u3063\u305F\u5B66\u6821\u751F\u6D3B\u306E\u4E00\u30B3\u30DE\u3067\u3059\u3002 \u5DE5\u83EF\u796D\u306F\u7FA4\u99AC\u9AD8\u5C02\u6700\u5927\u306E\u304A\u796D\u308A\u3067\u3059\u3002\u4F01\u753B\u904B\u55B6\u3059\u308B\u7686\u3055\u3093\u81EA\u8EAB\u304C\u697D\u3057\u3080\u3053\u3068\u306F\u3082\u3061\u308D\u3093\u3001\u53C2\u52A0\u8005\u304C\u3053\u308C\u3092\u697D\u3057\u3080\u3053\u3068\u3053\u305D\u4E00\u756A\u5927\u4E8B\u306A\u3053\u3068\u3067\u3059\u3002\u30AF\u30E9\u30B9\u3084\u30AF\u30E9\u30D6\uFF0C\u4EF2\u9593\u540C\u58EB\u306E\u4F01\u753B\uFF0C\u8272\u3005\u306A\u53D6\u7D44\u307F\u304C\u7528\u610F\u3055\u308C\u3066\u3044\u308B\u3068\u601D\u3044\u307E\u3059\u3002 \u9AD8\u5C02\u751F\u6D3B\u306E\u601D\u3044\u51FA\u306E\u4E00\u30DA\u30FC\u30B8\u3092\u523B\u3093\u3067\u4E0B\u3055\u3044\u3002" }), void 0)] }), void 0)); };
+exports["default"] = Greeting;
+
+
+/***/ }),
+
+/***/ "./src/components/project/Card.tsx":
+/*!*****************************************!*\
+  !*** ./src/components/project/Card.tsx ***!
+  \*****************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var ThumbnailImage_1 = __importDefault(__webpack_require__(/*! ./ThumbnailImage */ "./src/components/project/ThumbnailImage.tsx"));
+var static_1 = __importDefault(__webpack_require__(/*! ../../static */ "./src/static.ts"));
+var Card = function (props) {
+    var name = props.name, groupName = props.groupName;
+    return ((0, jsx_runtime_1.jsx)("div", __assign({ className: "h-full w-full bg-greenC7D1BD rounded-2xl shadow-2xl transition duration-500 ease-in-out transform hover:scale-110" }, { children: (0, jsx_runtime_1.jsx)("div", __assign({ className: "container h-full" }, { children: (0, jsx_runtime_1.jsxs)("div", __assign({ className: "flex flex-col items-center justify-around" }, { children: [(0, jsx_runtime_1.jsx)("h3", __assign({ className: "desktop:text-2xl pt-4" }, { children: name }), void 0), (0, jsx_runtime_1.jsx)("div", __assign({ className: "p-4" }, { children: (0, jsx_runtime_1.jsx)(ThumbnailImage_1.default, { path: static_1.default.projectThumbnail.path(groupName), alt: static_1.default.projectThumbnail.alt(groupName) }, void 0) }), void 0), (0, jsx_runtime_1.jsx)("div", __assign({ className: "pt-4 pb-4" }, { children: groupName }), void 0)] }), void 0) }), void 0) }), void 0));
+};
+exports["default"] = Card;
+
+
+/***/ }),
+
+/***/ "./src/components/project/FilterLabel.tsx":
+/*!************************************************!*\
+  !*** ./src/components/project/FilterLabel.tsx ***!
+  \************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var FilterLabel = function (props) {
+    var labelItems = props.labelItems, onClick = props.onClick, selects = props.selects;
+    return ((0, jsx_runtime_1.jsx)("div", __assign({ className: "container text-center w-full" }, { children: (0, jsx_runtime_1.jsx)("ul", __assign({ className: "flex justify-around bg-gray w-full p-1" }, { children: labelItems.map(function (item) {
+                var isSelected = selects.find(function (select) { return select === item; });
+                var className = "border border-orangeF2954B rounded-sm text-black " + (isSelected ? "bg-orangeF2954B" : "bg-white");
+                return ((0, jsx_runtime_1.jsx)("li", __assign({ className: className }, { children: (0, jsx_runtime_1.jsx)("button", __assign({ type: "button", "data-key": item, onClick: function (event) { return onClick(event); }, className: "p-2" }, { children: item }), void 0) }), void 0));
+            }) }), void 0) }), void 0));
+};
+exports["default"] = FilterLabel;
+
+
+/***/ }),
+
+/***/ "./src/components/project/Project.tsx":
+/*!********************************************!*\
+  !*** ./src/components/project/Project.tsx ***!
+  \********************************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
@@ -44848,9 +45149,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 var jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 var react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-var FilterLabel_1 = __importDefault(__webpack_require__(/*! ./list/FilterLabel */ "./src/components/project/group/list/FilterLabel.tsx"));
-var ProjectList_1 = __importDefault(__webpack_require__(/*! ./list/ProjectList */ "./src/components/project/group/list/ProjectList.tsx"));
-var Project_1 = __webpack_require__(/*! ../../../repository/Project */ "./src/repository/Project.ts");
+var FilterLabel_1 = __importDefault(__webpack_require__(/*! ./FilterLabel */ "./src/components/project/FilterLabel.tsx"));
+var ProjectList_1 = __importDefault(__webpack_require__(/*! ./ProjectList */ "./src/components/project/ProjectList.tsx"));
+var Project_1 = __webpack_require__(/*! ../../repository/Project */ "./src/repository/Project.ts");
 var ready = null;
 var ProjectGroup = function () {
     var url = new URL(window.location.href);
@@ -44875,7 +45176,7 @@ var ProjectGroup = function () {
         window.location.replace("" + window.location.origin + window.location.pathname + "?select=" + encodedTargetKey);
     };
     if (ready !== null) {
-        return ((0, jsx_runtime_1.jsxs)("div", __assign({ className: "bg-cream" }, { children: [(0, jsx_runtime_1.jsx)("h2", __assign({ className: "pc:text-2xl desktop:text-4xl pl-10 pt-10" }, { children: "\u4F01\u753B\u4E00\u89A7" }), void 0), (0, jsx_runtime_1.jsx)("div", __assign({ className: "pt-6 w-full" }, { children: (0, jsx_runtime_1.jsx)(FilterLabel_1.default, { labelItems: groups, selects: selectedGroup, onClick: function (event) { return onClickFilterLabelItems(event); } }, void 0) }), void 0), (0, jsx_runtime_1.jsx)("div", __assign({ className: "pr-10 pc:pr-9" }, { children: (0, jsx_runtime_1.jsx)(ProjectList_1.default, { projectList: projectList, selectedGroup: selectedGroup }, void 0) }), void 0)] }), void 0));
+        return ((0, jsx_runtime_1.jsxs)("div", __assign({ className: "bg-cream" }, { children: [(0, jsx_runtime_1.jsx)("h2", __assign({ className: "pc:text-2xl desktop:text-4xl pl-10 pt-10" }, { children: "\u4F01\u753B\u4E00\u89A7" }), void 0), (0, jsx_runtime_1.jsx)("div", __assign({ className: "pt-6 w-full" }, { children: (0, jsx_runtime_1.jsx)(FilterLabel_1.default, { labelItems: groups, selects: selectedGroup, onClick: function (event) { return onClickFilterLabelItems(event); } }, void 0) }), void 0), (0, jsx_runtime_1.jsx)("div", __assign({ className: "pr-10 pc:pr-9 bg-cream" }, { children: (0, jsx_runtime_1.jsx)(ProjectList_1.default, { projectList: projectList, selectedGroup: selectedGroup }, void 0) }), void 0)] }), void 0));
     }
     // eslint-disable-next-line no-async-promise-executor
     throw new Promise(function (resolve) { return __awaiter(void 0, void 0, void 0, function () {
@@ -44898,79 +45199,10 @@ exports["default"] = ProjectGroup;
 
 /***/ }),
 
-/***/ "./src/components/project/group/list/Card.tsx":
-/*!****************************************************!*\
-  !*** ./src/components/project/group/list/Card.tsx ***!
-  \****************************************************/
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
-
-"use strict";
-
-var __assign = (this && this.__assign) || function () {
-    __assign = Object.assign || function(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-                t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-var jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-var ThumbnailImage_1 = __importDefault(__webpack_require__(/*! ./ThumbnailImage */ "./src/components/project/group/list/ThumbnailImage.tsx"));
-var static_1 = __importDefault(__webpack_require__(/*! ../../../../static */ "./src/static.ts"));
-var Card = function (props) {
-    var name = props.name, groupName = props.groupName;
-    return ((0, jsx_runtime_1.jsx)("div", __assign({ className: "h-full w-full bg-greenC7D1BD rounded-2xl shadow-2xl transition duration-500 ease-in-out transform hover:scale-110" }, { children: (0, jsx_runtime_1.jsx)("div", __assign({ className: "container h-full" }, { children: (0, jsx_runtime_1.jsxs)("div", __assign({ className: "flex flex-col items-center" }, { children: [(0, jsx_runtime_1.jsx)("h3", __assign({ className: "desktop:text-2xl pt-4" }, { children: name }), void 0), (0, jsx_runtime_1.jsx)("div", __assign({ className: "pt-4" }, { children: (0, jsx_runtime_1.jsx)(ThumbnailImage_1.default, { path: static_1.default.projectThumbnail.path(groupName), alt: static_1.default.projectThumbnail.alt(groupName) }, void 0) }), void 0), (0, jsx_runtime_1.jsx)("div", __assign({ className: "pt-4 pb-4" }, { children: groupName }), void 0)] }), void 0) }), void 0) }), void 0));
-};
-exports["default"] = Card;
-
-
-/***/ }),
-
-/***/ "./src/components/project/group/list/FilterLabel.tsx":
-/*!***********************************************************!*\
-  !*** ./src/components/project/group/list/FilterLabel.tsx ***!
-  \***********************************************************/
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
-
-"use strict";
-
-var __assign = (this && this.__assign) || function () {
-    __assign = Object.assign || function(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-                t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-var jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-var FilterLabel = function (props) {
-    var labelItems = props.labelItems, onClick = props.onClick, selects = props.selects;
-    return ((0, jsx_runtime_1.jsx)("div", __assign({ className: "container text-center w-full" }, { children: (0, jsx_runtime_1.jsx)("ul", __assign({ className: "flex justify-around bg-gray w-full p-1" }, { children: labelItems.map(function (item) {
-                var isSelected = selects.find(function (select) { return select === item; });
-                var className = "border border-orangeF2954B rounded-sm text-black " + (isSelected ? "bg-orangeF2954B" : "bg-white");
-                return ((0, jsx_runtime_1.jsx)("li", __assign({ className: className }, { children: (0, jsx_runtime_1.jsx)("button", __assign({ type: "button", "data-key": item, onClick: function (event) { return onClick(event); }, className: "p-2" }, { children: item }), void 0) }), void 0));
-            }) }), void 0) }), void 0));
-};
-exports["default"] = FilterLabel;
-
-
-/***/ }),
-
-/***/ "./src/components/project/group/list/ProjectList.tsx":
-/*!***********************************************************!*\
-  !*** ./src/components/project/group/list/ProjectList.tsx ***!
-  \***********************************************************/
+/***/ "./src/components/project/ProjectList.tsx":
+/*!************************************************!*\
+  !*** ./src/components/project/ProjectList.tsx ***!
+  \************************************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
@@ -44992,9 +45224,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 var jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-var Card_1 = __importDefault(__webpack_require__(/*! ./Card */ "./src/components/project/group/list/Card.tsx"));
-var Pages_1 = __webpack_require__(/*! ../../../Pages */ "./src/components/Pages.ts");
-var compareGroupName_1 = __importDefault(__webpack_require__(/*! ../../../../utill/compareGroupName */ "./src/utill/compareGroupName.ts"));
+var Card_1 = __importDefault(__webpack_require__(/*! ./Card */ "./src/components/project/Card.tsx"));
+var Pages_1 = __webpack_require__(/*! ../Pages */ "./src/components/Pages.ts");
+var compareGroupName_1 = __importDefault(__webpack_require__(/*! ../../utill/compareGroupName */ "./src/utill/compareGroupName.ts"));
 var ProjectList = function (props) {
     var projectList = props.projectList, selectedGroup = props.selectedGroup;
     var history = (0, react_router_dom_1.useHistory)();
@@ -45003,17 +45235,17 @@ var ProjectList = function (props) {
         history.push(Pages_1.Pages.projectDetail.path(key.groupName), projectList.filter(function (project) { return project.name === key.name; }));
         window.scroll({ top: 0, behavior: "auto" });
     };
-    return ((0, jsx_runtime_1.jsx)("ul", __assign({ className: "flex flex-wrap w-full" }, { children: filteredProjectList.sort(compareGroupName_1.default).map(function (key) { return ((0, jsx_runtime_1.jsx)("li", __assign({ className: "w-1/2 pc:w-1/3" }, { children: (0, jsx_runtime_1.jsx)("button", __assign({ type: "button", onClick: function () { return onClickProject(key); }, className: "w-full pl-10 pt-5 pb-5" }, { children: (0, jsx_runtime_1.jsx)(Card_1.default, { name: key.name, groupName: key.groupName }, void 0) }), void 0) }), key.name)); }) }), void 0));
+    return ((0, jsx_runtime_1.jsx)("ul", __assign({ className: "flex flex-wrap w-full" }, { children: filteredProjectList.sort(compareGroupName_1.default).map(function (key) { return ((0, jsx_runtime_1.jsx)("li", __assign({ className: "flex flex-col justify-around w-1/2 pc:w-1/3 pl-10 pt-5 pb-5" }, { children: (0, jsx_runtime_1.jsx)("button", __assign({ type: "button", onClick: function () { return onClickProject(key); }, className: "w-full" }, { children: (0, jsx_runtime_1.jsx)(Card_1.default, { name: key.name, groupName: key.groupName }, void 0) }), void 0) }), key.name)); }) }), void 0));
 };
 exports["default"] = ProjectList;
 
 
 /***/ }),
 
-/***/ "./src/components/project/group/list/ThumbnailImage.tsx":
-/*!**************************************************************!*\
-  !*** ./src/components/project/group/list/ThumbnailImage.tsx ***!
-  \**************************************************************/
+/***/ "./src/components/project/ThumbnailImage.tsx":
+/*!***************************************************!*\
+  !*** ./src/components/project/ThumbnailImage.tsx ***!
+  \***************************************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
@@ -45040,18 +45272,45 @@ exports["default"] = ThumbnailImage;
 
 /***/ }),
 
-/***/ "./src/components/project/map/ProjectMap.tsx":
-/*!***************************************************!*\
-  !*** ./src/components/project/map/ProjectMap.tsx ***!
-  \***************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ "./src/components/project/detail/ProjectDetail.tsx":
+/*!*********************************************************!*\
+  !*** ./src/components/project/detail/ProjectDetail.tsx ***!
+  \*********************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
 
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 var jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-var ProjectMap = function () { return (0, jsx_runtime_1.jsx)("div", { children: "Map" }, void 0); };
-exports["default"] = ProjectMap;
+var react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var GroupOutlined_1 = __importDefault(__webpack_require__(/*! @mui/icons-material/GroupOutlined */ "./node_modules/@mui/icons-material/GroupOutlined.js"));
+var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+var ThumbnailImage_1 = __importDefault(__webpack_require__(/*! ../ThumbnailImage */ "./src/components/project/ThumbnailImage.tsx"));
+var static_1 = __importDefault(__webpack_require__(/*! ../../../static */ "./src/static.ts"));
+var ProjectDetail = function () {
+    var location = (0, react_router_dom_1.useLocation)();
+    var project = location.state[0];
+    var name = project.name, groupName = project.groupName, description = project.description;
+    (0, react_1.useEffect)(function () {
+        window.scroll({ top: 0, behavior: "auto" });
+    }, []);
+    return ((0, jsx_runtime_1.jsx)("div", __assign({ className: "h-full w-full relative bg-clip-content bg-cover p-10" }, { children: (0, jsx_runtime_1.jsxs)("div", __assign({ className: "bg-blue-200" }, { children: [(0, jsx_runtime_1.jsx)("div", __assign({ className: "p-4 w-1/3 pc:hidden" }, { children: (0, jsx_runtime_1.jsx)(ThumbnailImage_1.default, { path: static_1.default.projectThumbnail.path(groupName), alt: static_1.default.projectThumbnail.alt(groupName) }, void 0) }), void 0), (0, jsx_runtime_1.jsxs)("div", __assign({ className: "flex justify-between" }, { children: [(0, jsx_runtime_1.jsxs)("div", { children: [(0, jsx_runtime_1.jsx)("div", __assign({ className: "pc:text-2xl p-2 px-4 pc:p-4" }, { children: name }), void 0), (0, jsx_runtime_1.jsxs)("div", __assign({ className: "pc:text-lg flex p-4" }, { children: [(0, jsx_runtime_1.jsx)(GroupOutlined_1.default, {}, void 0), (0, jsx_runtime_1.jsx)("div", __assign({ className: "pl-2" }, { children: groupName }), void 0)] }), void 0)] }, void 0), (0, jsx_runtime_1.jsx)("div", { children: (0, jsx_runtime_1.jsx)("div", __assign({ className: "p-4 w-1/3 hidden pc:inline-block" }, { children: (0, jsx_runtime_1.jsx)(ThumbnailImage_1.default, { path: static_1.default.projectThumbnail.path(groupName), alt: static_1.default.projectThumbnail.alt(groupName) }, void 0) }), void 0) }, void 0)] }), void 0), (0, jsx_runtime_1.jsx)("div", __assign({ className: "p-4" }, { children: description }), void 0)] }), void 0) }), void 0));
+};
+exports["default"] = ProjectDetail;
 
 
 /***/ }),
@@ -45228,6 +45487,26 @@ react_dom_1.default.render((0, jsx_runtime_1.jsx)(react_1.default.StrictMode, { 
 
 /***/ }),
 
+/***/ "./src/repository/Caution.ts":
+/*!***********************************!*\
+  !*** ./src/repository/Caution.ts ***!
+  \***********************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getCautionSentence = void 0;
+var axios_1 = __importDefault(__webpack_require__(/*! axios */ "./node_modules/axios/index.js"));
+var getCautionSentence = function () { return axios_1.default.get("/json/caution-sentence.json"); };
+exports.getCautionSentence = getCautionSentence;
+
+
+/***/ }),
+
 /***/ "./src/repository/Project.ts":
 /*!***********************************!*\
   !*** ./src/repository/Project.ts ***!
@@ -45280,6 +45559,17 @@ var Static = {
     projectThumbnail: {
         path: function (groupName) { return "/img/thumbnail/" + groupName + ".webp"; },
         alt: function (groupName) { return groupName + "\u306E\u30B5\u30E0\u30CD\u30A4\u30EB\u753B\u50CF"; },
+    },
+    googleMap: {
+        src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.458921419906!2d139.02010350336255!3d36.37627653385497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601e8cc32e0daf8d%3A0x207d7e6356e87ed8!2z576k6aas5bel5qWt6auY562J5bCC6ZaA5a2m5qCh!5e0!3m2!1sja!2sjp!4v1634367380548!5m2!1sja!2sjp",
+    },
+    greetingImage: {
+        src: function (name) { return "/img/greeting/" + name + ".webp"; },
+        alt: function (name) { return name + "\u306E\u5199\u771F"; },
+    },
+    cautionImage: {
+        src: function (name) { return "/img/caution/" + name + ".png"; },
+        alt: function (name) { return name + "\u306E\u30A2\u30A4\u30B3\u30F3"; },
     },
 };
 exports["default"] = Static;
