@@ -45046,8 +45046,8 @@ var jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules
 var ThumbnailImage_1 = __importDefault(__webpack_require__(/*! ./ThumbnailImage */ "./src/components/project/ThumbnailImage.tsx"));
 var static_1 = __importDefault(__webpack_require__(/*! ../../static */ "./src/static.ts"));
 var Card = function (props) {
-    var name = props.name, groupName = props.groupName;
-    return ((0, jsx_runtime_1.jsx)("div", __assign({ className: "h-full w-full bg-greenC7D1BD rounded-2xl shadow-2xl transition duration-500 ease-in-out transform hover:scale-110" }, { children: (0, jsx_runtime_1.jsx)("div", __assign({ className: "container h-full" }, { children: (0, jsx_runtime_1.jsxs)("div", __assign({ className: "flex flex-col items-center justify-around" }, { children: [(0, jsx_runtime_1.jsx)("h3", __assign({ className: "desktop:text-2xl pt-4" }, { children: name }), void 0), (0, jsx_runtime_1.jsx)("div", __assign({ className: "p-4" }, { children: (0, jsx_runtime_1.jsx)(ThumbnailImage_1.default, { path: static_1.default.projectThumbnail.path(groupName), alt: static_1.default.projectThumbnail.alt(groupName) }, void 0) }), void 0), (0, jsx_runtime_1.jsx)("div", __assign({ className: "pt-4 pb-4" }, { children: groupName }), void 0)] }), void 0) }), void 0) }), void 0));
+    var name = props.name, groupName = props.groupName, image = props.image;
+    return ((0, jsx_runtime_1.jsx)("div", __assign({ className: "h-full w-full bg-greenC7D1BD rounded-2xl shadow-2xl transition duration-500 ease-in-out transform hover:scale-110" }, { children: (0, jsx_runtime_1.jsx)("div", __assign({ className: "container h-full" }, { children: (0, jsx_runtime_1.jsxs)("div", __assign({ className: "flex flex-col items-center justify-around" }, { children: [(0, jsx_runtime_1.jsx)("h3", __assign({ className: "desktop:text-2xl pt-4" }, { children: name }), void 0), (0, jsx_runtime_1.jsx)("div", __assign({ className: "p-4" }, { children: (0, jsx_runtime_1.jsx)(ThumbnailImage_1.default, { path: static_1.default.projectThumbnail.path(image === "" ? groupName : image), alt: static_1.default.projectThumbnail.alt(image === "" ? groupName : image) }, void 0) }), void 0), (0, jsx_runtime_1.jsx)("div", __assign({ className: "pt-4 pb-4" }, { children: groupName }), void 0)] }), void 0) }), void 0) }), void 0));
 };
 exports["default"] = Card;
 
@@ -45153,7 +45153,7 @@ var FilterLabel_1 = __importDefault(__webpack_require__(/*! ./FilterLabel */ "./
 var ProjectList_1 = __importDefault(__webpack_require__(/*! ./ProjectList */ "./src/components/project/ProjectList.tsx"));
 var Project_1 = __webpack_require__(/*! ../../repository/Project */ "./src/repository/Project.ts");
 var ready = null;
-var ProjectGroup = function () {
+var Project = function () {
     var url = new URL(window.location.href);
     var param = url.searchParams;
     var select = param.get("select");
@@ -45194,7 +45194,7 @@ var ProjectGroup = function () {
         });
     }); });
 };
-exports["default"] = ProjectGroup;
+exports["default"] = Project;
 
 
 /***/ }),
@@ -45235,7 +45235,7 @@ var ProjectList = function (props) {
         history.push(Pages_1.Pages.projectDetail.path(key.groupName), projectList.filter(function (project) { return project.name === key.name; }));
         window.scroll({ top: 0, behavior: "auto" });
     };
-    return ((0, jsx_runtime_1.jsx)("ul", __assign({ className: "flex flex-wrap w-full" }, { children: filteredProjectList.sort(compareGroupName_1.default).map(function (key) { return ((0, jsx_runtime_1.jsx)("li", __assign({ className: "flex flex-col justify-around w-1/2 pc:w-1/3 pl-10 pt-5 pb-5" }, { children: (0, jsx_runtime_1.jsx)("button", __assign({ type: "button", onClick: function () { return onClickProject(key); }, className: "w-full" }, { children: (0, jsx_runtime_1.jsx)(Card_1.default, { name: key.name, groupName: key.groupName }, void 0) }), void 0) }), key.name)); }) }), void 0));
+    return ((0, jsx_runtime_1.jsx)("ul", __assign({ className: "flex flex-wrap w-full" }, { children: filteredProjectList.sort(compareGroupName_1.default).map(function (key) { return ((0, jsx_runtime_1.jsx)("li", __assign({ className: "flex flex-col justify-around w-1/2 pc:w-1/3 pl-10 pt-5 pb-5" }, { children: (0, jsx_runtime_1.jsx)("button", __assign({ type: "button", onClick: function () { return onClickProject(key); }, className: "w-full" }, { children: (0, jsx_runtime_1.jsx)(Card_1.default, { name: key.name, groupName: key.groupName, image: key.image }, void 0) }), void 0) }), key.name)); }) }), void 0));
 };
 exports["default"] = ProjectList;
 
