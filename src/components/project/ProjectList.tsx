@@ -32,7 +32,7 @@ const ProjectList: React.FC<ProjectListProps> = (props) => {
             onClick={() => onClickProject(key)}
             className="w-full"
           >
-            <Card name={key.name} groupName={key.groupName} />
+            <Card name={key.name} groupName={key.groupName} image={key.image} />
           </button>
         </li>
       ))}

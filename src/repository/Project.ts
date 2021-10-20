@@ -5,6 +5,7 @@ export type Project = {
   description: string;
   place: string;
   groupName: string;
+  image: string;
   type: string;
 };
 
