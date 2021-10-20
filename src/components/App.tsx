@@ -39,11 +39,7 @@ const App: React.FC = () => (
                     component={Greeting}
                   />
                   <Route exact path={Pages.caution.path} component={Caution} />
-                  <Route
-                    exact
-                    path={Pages.stage.path}
-                    component={Timetable}
-                  />
+                  <Route exact path={Pages.stage.path} component={Timetable} />
                 </Switch>
               </Suspense>
               <div className="w-full">

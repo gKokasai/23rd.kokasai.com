@@ -31,7 +31,7 @@ const Static = {
     src: (name: string): string => `/img/caution/${name}.png`,
     alt: (name: string): string => `${name}のアイコン`,
   },
-  timeTableImage: {
+  stageImage: {
     src: (name: string): string => `/img/timetable/${name}.webp`,
     alt: (name: string): string => `${name}のアイコン`,
   },
