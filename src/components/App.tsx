@@ -11,6 +11,7 @@ const ProjectDetail = lazy(() => import("./project/detail/ProjectDetail"));
 const Access = lazy(() => import("./access/Access"));
 const Greeting = lazy(() => import("./greeting/Greeting"));
 const Caution = lazy(() => import("./caution/Caution"));
+const Timetable = lazy(() => import("./timetable/Timetable"));
 
 const App: React.FC = () => (
   <div className="bg-cream h-full w-full relative">
@@ -38,6 +39,11 @@ const App: React.FC = () => (
                     component={Greeting}
                   />
                   <Route exact path={Pages.caution.path} component={Caution} />
+                  <Route
+                    exact
+                    path={Pages.timetable.path}
+                    component={Timetable}
+                  />
                 </Switch>
               </Suspense>
               <div className="w-full">
