@@ -27,13 +27,9 @@ export const Pages = {
     displayName: "諸注意",
     path: "/caution",
   },
-  timetable: {
-    displayName: "タイムテーブル",
-    path: "/timetable",
-  },
-  timetableDetail: {
-    displayName: "タイムテーブル",
-    path: (day: string, place): string => `/timetable/${day}/${place}`,
+  stage: {
+    displayName: "ステージ企画",
+    path: "/stage",
   },
 };
 
@@ -43,5 +39,5 @@ export const ToShowPages = [
   Pages.access,
   Pages.greeting,
   Pages.caution,
-  Pages.timetable,
+  Pages.stage,
 ];
