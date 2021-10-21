@@ -16,7 +16,6 @@ const Stage: React.FC = () => {
   if (ready !== null) {
     const kokasaiTimeLine = makeKokasaiTimeLine(ready);
     const history = useHistory();
-    console.log(history.location.search);
     const [select, setSelect] = useState<"day1" | "day2">(
       (history.location.search.split("=")[1] as "day1" | "day2") || "day1"
     );
