@@ -8,8 +8,21 @@ export type KokasaiTimeLineItemModel = {
 };
 export const makeKokasaiTimeLine = (
   timeTable: Timetable
-): KokasaiTimeLineItemModel => (
-  {
-    day1: timeTable.day1.map((time) => ({title: time.time, cardTitle: time.title, media: {type: "IMAGE", source: {url: Static.stageImage.src(time.groupName)}}})),
-    day2: timeTable.day2.map((time) => ({title: time.time, cardTitle: time.title, media: {type: "IMAGE", source: {url: Static.stageImage.src(time.groupName)}}}))
-  });
+): KokasaiTimeLineItemModel => ({
+  day1: timeTable.day1.map((time) => ({
+    title: time.time,
+    cardTitle: time.title,
+    media: {
+      type: "IMAGE",
+      source: { url: Static.stageImage.src(time.groupName) },
+    },
+  })),
+  day2: timeTable.day2.map((time) => ({
+    title: time.time,
+    cardTitle: time.title,
+    media: {
+      type: "IMAGE",
+      source: { url: Static.stageImage.src(time.groupName) },
+    },
+  })),
+});

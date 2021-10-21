@@ -25,8 +25,12 @@ const Card: FC<CardProps> = (props) => {
           <h3 className="desktop:text-2xl pt-4">{name}</h3>
           <div className="p-4">
             <ThumbnailImage
-              path={Static.projectThumbnail.path(image === "" ? groupName : image)}
-              alt={Static.projectThumbnail.alt(image === "" ? groupName : image)}
+              path={Static.projectThumbnail.path(
+                image === "" ? groupName : image
+              )}
+              alt={Static.projectThumbnail.alt(
+                image === "" ? groupName : image
+              )}
             />
           </div>
           <div className="pt-4 pb-4">{groupName}</div>
