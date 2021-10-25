@@ -4,6 +4,7 @@ export type Time = {
   time: string;
   title: string;
   groupName: string;
+  url: string;
 };
 
 export type Timetable = {
