@@ -20,7 +20,7 @@ const Stage: React.FC = () => {
       (history.location.search.split("=")[1] as "day1" | "day2") || "day1"
     );
     const [showElement, setShowElement] = useState<TimelineItemModel[]>(
-      select ? kokasaiTimeLine[select] : kokasaiTimeLine.day1
+      select ? kokasaiTimeLine[select].items : kokasaiTimeLine.day1.items
     );
     const onClickTabChangeBar = (
       event: React.MouseEvent<HTMLButtonElement>
@@ -29,8 +29,8 @@ const Stage: React.FC = () => {
         | "day1"
         | "day2";
       setSelect(targetKey);
-      setShowElement(kokasaiTimeLine[targetKey]);
-      history.replace(`${Pages.stage.path}?day=${targetKey}`);
+      setShowElement(kokasaiTimeLine[targetKey].items);
+      window.location.replace(`${Pages.stage.path}?day=${targetKey}`);
     };
 
     return (
@@ -47,6 +47,7 @@ const Stage: React.FC = () => {
         </Paragraph>
         <SubTitle>タイムテーブル</SubTitle>
         <Paragraph>
+          Youtubeのアイコンをクリックするとライブ配信のサイトに飛べます。
           <TabChangeBar onClick={onClickTabChangeBar} select={select} />
           <div className="h-full w-full">
             <Chrono
@@ -54,7 +55,9 @@ const Stage: React.FC = () => {
               items={showElement}
               mode="VERTICAL_ALTERNATING"
               allowDynamicUpdate
-            />
+            >
+              {kokasaiTimeLine[select].icons}
+            </Chrono>
           </div>
         </Paragraph>
       </div>

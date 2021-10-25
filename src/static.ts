@@ -7,6 +7,9 @@ const Static = {
     icon: "/img/instagram-icon.svg",
     url: "https://instagram.com/nitgc_kokasai",
   },
+  youtube: {
+    icon: "/img/youtube.png",
+  },
   hamburgerMenu: {
     icon: "/img/hamburger-menu.svg",
   },
@@ -34,6 +37,10 @@ const Static = {
   stageImage: {
     src: (name: string): string => `/img/timetable/${name}.webp`,
     alt: (name: string): string => `${name}のアイコン`,
+  },
+  stageLink: {
+    src: (day: "day1" | "day2", name: string): string =>
+      `https://live.kokasai.com/${day}/${name}`,
   },
 };
 
