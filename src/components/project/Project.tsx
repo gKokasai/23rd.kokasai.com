@@ -5,27 +5,28 @@ import {
   getProjectList,
   ProjectList as TypeProjectList,
 } from "../../repository/Project";
+import {useHistory} from "react-router-dom";
+import {Pages} from "../Pages";
 
 let ready: null | TypeProjectList = null;
 
 const Project: React.FC = () => {
-  const url = new URL(window.location.href);
-  const param = url.searchParams;
-  const select = param.get("select");
+  const history = useHistory();
+  const param = history.location.search.split("=")[1];
+  const select = decodeURI(param);
   const groups = [
     "1年生",
     "2年生",
     "3年生",
     "4,5年生",
     "部活",
-    "愛好会",
+    "愛好会・研究会",
     "有志",
   ];
   const [projectList, setProjectList] = useState<TypeProjectList | null>(ready);
   const [selectedGroup, setSelectedGroup] = useState<string[]>(
     select ? [select] : ["1年生"]
   );
-
   const onClickFilterLabelItems = (
     event: React.MouseEvent<HTMLButtonElement>
   ) => {
@@ -33,8 +34,8 @@ const Project: React.FC = () => {
     const targetKey = targetElement.dataset.key;
     setSelectedGroup([targetKey]);
     const encodedTargetKey = encodeURI(targetKey);
-    window.location.replace(
-      `${window.location.origin}${window.location.pathname}?select=${encodedTargetKey}`
+    history.replace(
+      `${Pages.project.path}?select=${encodedTargetKey}`
     );
   };
 
