@@ -6,12 +6,11 @@ type ImgProps = {
 };
 
 const Img: React.FC<ImgProps> = ({ imgName }) => (
-  <div className="w-full">
+  <div className="w-20 pc:w-40">
     <img
-      className="w-20 pc:w-auto"
       src={Static.cautionImage.src(imgName)}
       alt={Static.cautionImage.alt(imgName)}
-      width="150px"
+      width="auto"
     />
   </div>
 );
