@@ -35,9 +35,9 @@ export const Pages = {
 
 export const ToShowPages = [
   Pages.top,
-  Pages.project,
-  Pages.access,
   Pages.greeting,
-  Pages.caution,
+  Pages.project,
   Pages.stage,
+  Pages.caution,
+  Pages.access,
 ];
