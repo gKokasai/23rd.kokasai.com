@@ -21,17 +21,18 @@ const Footer: React.FC = () => (
           {
             // TODO: 仮リンクではなく、別ファイルで定義したものを参照する
           }
-          <a href="/">
-            <li className="pb-4">プライバシーポリシー</li>
-          </a>
-          <a href="https://www.gunma-ct.ac.jp/">
-            <li className="pb-4">群馬高専公式サイト</li>
-          </a>
+          <h4 className="font-semibold pb-2">リンク</h4>
           <a href={Static.instagram.url}>
             <li className="pb-4">Instagram</li>
           </a>
           <a href={Static.twitter.url}>
             <li className="pb-4">Twitter</li>
+          </a>
+          <a href="https://www.gunma-ct.ac.jp/">
+            <li className="pb-4">群馬高専公式サイト</li>
+          </a>
+          <a href="/">
+            <li className="pb-4">プライバシーポリシー</li>
           </a>
         </ul>
       </div>
