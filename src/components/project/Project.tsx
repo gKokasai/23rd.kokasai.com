@@ -25,7 +25,7 @@ const Project: React.FC = () => {
   ];
   const [projectList, setProjectList] = useState<TypeProjectList | null>(ready);
   const [selectedGroup, setSelectedGroup] = useState<string[]>(
-    select ? [select] : ["1年生"]
+    select ? ["1年生"] : [select]
   );
   const onClickFilterLabelItems = (
     event: React.MouseEvent<HTMLButtonElement>
