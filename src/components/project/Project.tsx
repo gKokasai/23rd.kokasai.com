@@ -1,12 +1,12 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import FilterLabel from "./FilterLabel";
 import ProjectList from "./ProjectList";
 import {
   getProjectList,
   ProjectList as TypeProjectList,
 } from "../../repository/Project";
-import {useHistory} from "react-router-dom";
-import {Pages} from "../Pages";
+import { Pages } from "../Pages";
 
 let ready: null | TypeProjectList = null;
 
@@ -34,9 +34,7 @@ const Project: React.FC = () => {
     const targetKey = targetElement.dataset.key;
     setSelectedGroup([targetKey]);
     const encodedTargetKey = encodeURI(targetKey);
-    history.replace(
-      `${Pages.project.path}?select=${encodedTargetKey}`
-    );
+    history.replace(`${Pages.project.path}?select=${encodedTargetKey}`);
   };
 
   if (ready !== null) {
