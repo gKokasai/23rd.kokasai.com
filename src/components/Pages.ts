@@ -31,6 +31,10 @@ export const Pages = {
     displayName: "ステージ企画",
     path: "/stage",
   },
+  liveStream: {
+    displayName: "生配信",
+    path: "/stage/live-stream",
+  },
 };
 
 export const ToShowPages = [

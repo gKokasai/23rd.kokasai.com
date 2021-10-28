@@ -39,6 +39,17 @@ const Stage: React.FC = () => {
     return (
       <div className="bg-cream">
         <PageTitle>ステージ企画</PageTitle>
+        <SubTitle>生配信</SubTitle>
+        <Paragraph>
+          生配信は
+          <button
+            type="button"
+            onClick={() => history.push(Pages.liveStream.path, kokasaiTimeLine)}
+            className="text-blue-800 border-b"
+          >
+            こちら
+          </button>
+        </Paragraph>
         <SubTitle>入場についての注意</SubTitle>
         <Paragraph>
           コロナ感染症対策のため、人数制限を行っております。
@@ -59,10 +70,6 @@ const Stage: React.FC = () => {
               mode={timelineForm}
               allowDynamicUpdate
               useReadMore={false}
-              onItemSelected={(item: TimelineItemModel & { url: string }) => {
-                if (item.url === "") return;
-                window.location.assign(item.url);
-              }}
             />
           </div>
         </Paragraph>
