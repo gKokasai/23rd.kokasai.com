@@ -41,13 +41,12 @@ const Stage: React.FC = () => {
         <PageTitle>ステージ企画</PageTitle>
         <SubTitle>生配信</SubTitle>
         <Paragraph>
-          生配信は
           <button
             type="button"
             onClick={() => history.push(Pages.liveStream.path, kokasaiTimeLine)}
             className="text-blue-800 border-b"
           >
-            こちら
+            生配信ページへ
           </button>
         </Paragraph>
         <SubTitle>入場についての注意</SubTitle>
