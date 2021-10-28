@@ -13,7 +13,6 @@ export const makeKokasaiTimeLine = (
     url: time.url !== "" ? Static.stageLink.src("day1", time.url) : null,
     title: time.time,
     cardTitle: time.title,
-    cardDetailedText: time.url ? "生配信はこちら" : null,
     media: {
       type: "IMAGE",
       source: { url: Static.stageImage.src(time.groupName) },
@@ -22,7 +21,6 @@ export const makeKokasaiTimeLine = (
   day2: timeTable.day2.map((time) => ({
     title: time.time,
     cardTitle: time.title,
-    cardDetailedText: time.url ? "生配信はこちら" : null,
     media: {
       type: "IMAGE",
       source: { url: Static.stageImage.src(time.groupName) },
