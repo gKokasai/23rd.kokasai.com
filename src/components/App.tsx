@@ -4,7 +4,6 @@ import { Pages } from "./Pages";
 import Left from "./common/Left";
 import Footer from "./common/Footer";
 import Loading from "./common/Loading";
-import LiveStream from "./LiveStream";
 
 const Top = lazy(() => import("./top/Top"));
 const Project = lazy(() => import("./project/Project"));
@@ -41,11 +40,6 @@ const App: React.FC = () => (
                   />
                   <Route exact path={Pages.caution.path} component={Caution} />
                   <Route exact path={Pages.stage.path} component={Timetable} />
-                  <Route
-                    exact
-                    path={Pages.liveStream.path}
-                    component={LiveStream}
-                  />
                 </Switch>
               </Suspense>
               <div className="w-full">

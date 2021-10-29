@@ -1,8 +1,9 @@
 import React from "react";
+import { Day } from "./Day";
 
 export type TabChangeBarProps = {
   onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
-  select: "day1" | "day2";
+  select: Day;
 };
 
 const TabChangeBar: React.FC<TabChangeBarProps> = (props) => {
