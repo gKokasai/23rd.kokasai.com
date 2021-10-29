@@ -1,54 +1,36 @@
 import React, { useState } from "react";
-import { Chrono } from "react-chrono";
-import { TimelineItemModel } from "react-chrono/dist/models/TimelineItemModel";
 import { useHistory } from "react-router-dom";
-import { useMedia } from "use-media";
 import PageTitle from "../common/PageTitle";
-import { getTimetable, Timetable } from "../../repository/Timetabel";
-import { makeKokasaiTimeLine } from "../../utill/makeItems";
+import { getTimetable, Time, Timetable } from "../../repository/Timetabel";
 import TabChangeBar from "./TabChangeBar";
 import Paragraph from "../common/Paragraph";
 import SubTitle from "../common/SubTitle";
 import { Pages } from "../Pages";
+import { Day } from "./Day";
+import Static from "../../static";
+import TimeCard from "./TimeCard";
 
-let ready: null | Timetable = null;
+let timetable: null | Timetable = null;
 
 const Stage: React.FC = () => {
-  if (ready !== null) {
-    const isWide = useMedia({ minWidth: "1000px" });
-    const timelineForm = isWide ? "VERTICAL_ALTERNATING" : "VERTICAL";
-    const kokasaiTimeLine = makeKokasaiTimeLine(ready);
+  if (timetable !== null) {
     const history = useHistory();
-    const [select, setSelect] = useState<"day1" | "day2">(
-      (history.location.search.split("=")[1] as "day1" | "day2") || "day1"
+    const [day, setDay] = useState<Day>(
+      (history.location.search.split("=")[1] as Day) || "day1"
     );
-    const [showElement, setShowElement] = useState<TimelineItemModel[]>(
-      select ? kokasaiTimeLine[select] : kokasaiTimeLine.day1
-    );
+    const [times, setTimes] = useState<Time[]>(timetable.day1);
     const onClickTabChangeBar = (
       event: React.MouseEvent<HTMLButtonElement>
     ) => {
-      const targetKey: "day1" | "day2" = event.currentTarget.dataset.key as
-        | "day1"
-        | "day2";
-      setSelect(targetKey);
-      setShowElement(kokasaiTimeLine[targetKey]);
-      window.location.replace(`${Pages.stage.path}?day=${targetKey}`);
+      const targetKey: Day = event.currentTarget.dataset.key as Day;
+      setDay(targetKey);
+      setTimes(timetable[targetKey]);
+      history.replace(`${Pages.stage.path}?day=${targetKey}`);
     };
 
     return (
-      <div className="bg-cream">
+      <div className="bg-cream pb-4">
         <PageTitle>ステージ企画</PageTitle>
-        <SubTitle>生配信</SubTitle>
-        <Paragraph>
-          <button
-            type="button"
-            onClick={() => history.push(Pages.liveStream.path, kokasaiTimeLine)}
-            className="text-blue-800 border-b"
-          >
-            生配信ページへ
-          </button>
-        </Paragraph>
         <SubTitle>入場についての注意</SubTitle>
         <Paragraph>
           コロナ感染症対策のため、人数制限を行っております。
@@ -60,17 +42,32 @@ const Stage: React.FC = () => {
         </Paragraph>
         <SubTitle>タイムテーブル</SubTitle>
         <Paragraph>
-          <TabChangeBar onClick={onClickTabChangeBar} select={select} />
-          <div className="h-full w-full">
-            <Chrono
-              disableNavOnKey={false}
-              hideControls
-              items={showElement}
-              mode={timelineForm}
-              allowDynamicUpdate
-              useReadMore={false}
-            />
-          </div>
+          <TabChangeBar onClick={onClickTabChangeBar} select={day} />
+          {times.map(({ time, title, groupName, url }) => (
+            <div className="bg-white my-2" key={time}>
+              {url ? (
+                <a
+                  href={Static.stageLink.src(day, url)}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <TimeCard
+                    title={title}
+                    groupName={groupName}
+                    time={time}
+                    live
+                  />
+                </a>
+              ) : (
+                <TimeCard
+                  title={title}
+                  groupName={groupName}
+                  time={time}
+                  live={false}
+                />
+              )}
+            </div>
+          ))}
         </Paragraph>
       </div>
     );
@@ -79,7 +76,7 @@ const Stage: React.FC = () => {
   // eslint-disable-next-line no-async-promise-executor
   throw new Promise(async (resolve) => {
     await getTimetable().then((response) => {
-      ready = response.data;
+      timetable = response.data;
     });
     resolve(null);
   });
