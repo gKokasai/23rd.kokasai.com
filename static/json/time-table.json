@@ -4,50 +4,42 @@
         {
           "time": "9:30～10:10",
           "title": "吹奏楽ステージ演奏(1)",
-          "groupName": "吹奏楽部",
-          "url": "orchestra"
+          "groupName": "吹奏楽部"
         },
         {
           "time": "10:20～10:45",
           "title": "有志団体ダンス「平均 158cm」",
-          "groupName": "有志ダンス",
-          "url": "dance1"
+          "groupName": "有志ダンス"
         },
         {
           "time": "10:55～11:35",
           "title": "令和ダンdism(1)",
-          "groupName": "ダンス愛好会",
-          "url": "dance2"
+          "groupName": "ダンス愛好会"
         },
         {
           "time": "11:45～12:30",
           "title": "令和ダンdism(1)",
-          "groupName": "ダンス愛好会",
-          "url": "dance3"
+          "groupName": "ダンス愛好会"
         },
         {
           "time": "13:30～14:15",
           "title": "バンドステージ「ROCK IN GUNMAKOSEN FESTIVAL」(1)",
-          "groupName": "有志バンド",
-          "url": "band1"
+          "groupName": "有志バンド"
         },
         {
           "time": "14:30～15:30",
           "title": "演劇部講演 (大講義室にて)",
-          "groupName": "演劇部",
-          "url": ""
+          "groupName": "演劇部"
         },
         {
           "time": "14:35～15:20",
           "title": "バンドステージ「ROCK IN GUNMAKOSEN FESTIVAL」(2)",
-          "groupName": "有志バンド",
-          "url": "band2"
+          "groupName": "有志バンド"
         },
         {
           "time": "15:40～16:25",
           "title": "コスプレコンテスト 「コス娘プリティダービー",
-          "groupName": "有志コスプレイヤー",
-          "url": "cosplay"
+          "groupName": "有志コスプレイヤー"
         }
       ]
   ,
@@ -56,45 +48,38 @@
         {
           "time": "9:30～10:10",
           "title": "吹奏楽ステージ演奏(2)",
-          "groupName": "吹奏楽部",
-          "url": "orchestra"
+          "groupName": "吹奏楽部"
         },
         {
           "time": "10:30～11:15",
           "title": "令和ダンdism(3)",
-          "groupName": "ダンス愛好会",
-          "url": "dance1"
+          "groupName": "ダンス愛好会"
         },
         {
           "time": "11:35～12:20",
           "title": "令和ダンdism(4)",
-          "groupName": "ダンス愛好会",
-          "url": "dance2"
+          "groupName": "ダンス愛好会"
         },
         {
           "time": "13:30～14:15",
           "title": "バンドステージ「ROCK IN GUNMAKOSEN FESTIVAL」(3)",
-          "groupName": "有志バンド",
-          "url": "band1"
+          "groupName": "有志バンド"
 
         },
         {
           "time": "14:30～15:30",
           "title": "演劇部講演 (大講義室にて)",
-          "groupName": "演劇部",
-          "url": ""
+          "groupName": "演劇部"
         },
         {
           "time": "14:35～15:20",
           "title": "バンドステージ「ROCK IN GUNMAKOSEN FESTIVAL」(4)",
-          "groupName": "有志バンド",
-          "url": "band2"
+          "groupName": "有志バンド"
         },
         {
           "time": "14:35～15:20",
           "title": "バンドステージ「ROCK IN GUNMAKOSEN FESTIVAL」(5)",
-          "groupName": "有志バンド",
-          "url": "band3"
+          "groupName": "有志バンド"
         }
       ]
 }
